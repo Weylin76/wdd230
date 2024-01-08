@@ -1,7 +1,11 @@
-const date = new Date();
-const currentYear = date.getFullYear();
-const dateTime = date.getDate();
-console.log(date.toString());
+//create year and last modified varables
+const now = new Date();
+const currentYear = now.getFullYear();
+let dateTime = document.lastModified;
 
+// Append to footer paragraphs
 const domCurrentYear = document.querySelector('#current-year');
 domCurrentYear.innerText = currentYear;
+
+const lastModified = document.querySelector('#current-date');
+lastModified.innerText = dateTime
