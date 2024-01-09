@@ -7,12 +7,16 @@
     <title>Weylin Douglas - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal by Weylin Douglas.">
     <meta name="author" content="Weylin Douglas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <header>
+    <header class="background-color">
         <img src="images/weylinportrait.jpg" alt="picure of Weylin (self)">
         <h1>Weylin Douglas</h1>
     </header>
@@ -26,8 +30,9 @@
     </nav>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
+        <hr>
         <section class="card">
-            <h3>Learning Activities</h3>
+            <h3 class="background-color">Learning Activities</h3>
             <ul>
                 <li><a href="#">01:</a></li>
                 <li><a href="#">02:</a></li>
@@ -42,13 +47,19 @@
             </ul>
         </section>
         <section class="card">
-            <h3>Information</h3>
+            <h3 class="background-color">Information</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit corrupti minima labore magni itaque
+                nulla iste eveniet obcaecati necessitatibus inventore sunt, quis molestias quisquam vitae adipisci.
+                Maxime quidem eaque aut.</p>
         </section>
     </main>
-    <footer>
-        <p>&copy; <span id="current-year"></span> <br> Weylin B. Douglas <br> Michigan <img src="images/usa-flag.jpg"
-                alt="USA Flag"></p>
-        <p>Last updated date: <span id="current-date"></span></p>
+    <footer class="background-color ">
+        <div class="footer-container">
+            <p>&copy;<span id="current-year"></span></p>
+            <p>Weylin B. Douglas</p>
+            <p class="footer-box">Michigan, USA <img src="images/usa-flag.jpg" alt="USA Flag"> </p>
+            <p class="last-update">Last updated date: <span id="current-date"></span></p>
+        </div>
     </footer>
 </body>
 
