@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+a:link {
+    color: blue;
+}
+  
+a:hover {
+    color: rgb(189, 31, 31);
+}
+
+body {
+    font-family: 'Patrick Hand', cursive, sans-serif;
+    background-color: rgba(216, 220, 223, 0.674);
+    max-width: 800px;
+    margin: auto;
+}
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+  }
+
+  header,
+  footer {
+      background-color: black;;
+      color: white;
+      text-align: center;
+      padding: .5rem;
+      margin: 10px;
+      border-radius: 2.5rem;
+  }
+  
+  header h1 {
+      color: white;
+      font-family: 'Oleo Script', cursive, sans-serif;
+      font-size: 55px;
+      margin: 0;
+      
+  }
+  header h2 {
+      margin: 10px;
+      font-size: 35px;
+      font-family: 'Oleo Script', cursive, sans-serif;    
+  }
+  
+  main {
+      display: grid;
+      grid-template-columns: 1fr;
+      max-width: 900px;
+      line-height: 1.9em;
+  }
+  
+  main section {
+      margin: 0.7rem;
+      padding: 0 1rem;
+      background-color: rgb(233, 232, 232);
+      border-radius: 1rem;
+  }
+  
+  main h2 {
+      color: white;
+      background-color: rgb(4, 34, 95);
+      font-size: 26px;
+      text-align: center;
+      padding: 10px;
+      border-radius: 1rem;
+      margin: 10px 0px;
+  }
+  
+  main section h3 {
+    color: black;
+    font-size: 22px;
+  }
+  
+  main section img:nth-child(3) {
+      max-width: 100%;
+      margin: 1rem auto;
+      text-align: left;
+  }
+   
+  main section p {
+      margin: 15px;
+      font-size: 20px;
+      line-height: 1.2;
+      padding: .5rem;
+  }
+  
+  footer {
+      padding-top: .5rem;
+      font-size: 20px;
+  }
+  
+  footer p:last-of-type{
+      padding-top: .3rem;
+      color: yellow;
+  }
