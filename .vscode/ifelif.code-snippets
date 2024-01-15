@@ -232,5 +232,30 @@
       "$0"
     ],
     "description": "Create a new Date object and extract all date-time components"
+  },
+
+  "Detailed Switch Statement": {
+    "prefix": "switchcase",
+    "body": [
+      "// The switch statement is used to perform different actions based on different conditions.",
+      "// Use the switch to select one of many code blocks to be executed.",
+      "switch (${1:expression}) {",
+      "\tcase ${2:value1}:",
+      "\t\t// Code to run when the expression matches value1",
+      "\t\t${3:// Code for case 1}",
+      "\t\tbreak;",
+      "\tcase ${4:value2}:",
+      "\t\t// Code to run when the expression matches value2",
+      "\t\t${5:// Code for case 2}",
+      "\t\tbreak;",
+      "\t// You can add more cases here",
+      "\tdefault:",
+      "\t\t// Code to run if no case is matched",
+      "\t\t${6:// Default case code}",
+      "\t\tbreak;",
+      "}",
+      "$0"
+    ],
+    "description": "A detailed switch statement with comments and structure"
   }
 }
