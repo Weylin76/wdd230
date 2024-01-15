@@ -1,0 +1,236 @@
+{
+  // Place your wdd230 workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  "Print to console": {
+    "scope": "javascript,typescript",
+    "prefix": "cl",
+    "body": ["console.log('is working');"],
+    "description": "Log output to console"
+  },
+
+  "If-ElseIf-Else Statement": {
+    "prefix": "ifelif",
+    "body": [
+      "if (${1:condition}) {",
+      "\t$2 code block runs",
+      "} else if (${3:anotherCondition}) {",
+      "\t$4 code block runs",
+      "} else {",
+      "\t$5 code block runs",
+      "}"
+    ],
+    "description": "If-ElseIf-Else Statement"
+  },
+
+  "For Loop": {
+    "prefix": "forloop",
+    "body": [
+      "for (let ${1:i} = 0; $1 < ${2:array}.length; $1++) {",
+      "\t${3:// body}",
+      "}"
+    ],
+    "description": "For Loop"
+  },
+
+  "While Loop": {
+    "prefix": "whileloop",
+    "body": [
+      "while (${1:condition}) {",
+      "\t// TODO: Add your code here",
+      "\t$0",
+      "}"
+    ],
+    "description": "While Loop with a comment"
+  },
+
+  "Do-While Loop": {
+    "prefix": "dowhileloop",
+    "body": [
+      "do {",
+      "\t// TODO: Add your code here",
+      "} while (${1:condition});",
+      "$0"
+    ],
+    "description": "Do-While Loop with a TODO comment"
+  },
+
+  "Async Function": {
+    "prefix": "asyncfun",
+    "body": [
+      "async function ${1:functionName}(${2:params}) {",
+      "\t// TODO: Replace the URL with your actual data source",
+      "\tconst url = '${3:http://example.com/data}';",
+      "\ttry {",
+      "\t\t// TODO: Modify the fetch as per your requirements",
+      "\t\tconst response = await fetch(url);",
+      "\t\tif (!response.ok) {",
+      "\t\t\tthrow new Error(`HTTP error! status: ${response.status}`);",
+      "\t\t}",
+      "\t\tconst data = await response.json();",
+      "\t\t// TODO: Process the data",
+      "\t\tconsole.log(data);",
+      "\t\t$0",
+      "\t} catch (error) {",
+      "\t\tconsole.error('Fetch error:', error);",
+      "\t}",
+      "}"
+    ],
+    "description": "Enhanced Async Function with fetch example and error handling"
+  },
+
+  "Add Event Listener": {
+    "prefix": "addeventlistener",
+    "body": [
+      "document.querySelector('${1:selector}').addEventListener('${2:event}', (e) => {",
+      "\t// TODO: Add your code here",
+      "\t$0",
+      "});"
+    ],
+    "description": "Add an event listener to a DOM element with a TODO comment"
+  },
+
+  "Document QuerySelector": {
+    "prefix": "queryselector",
+    "body": ["const $1 = document.querySelector('$2');", "$0"],
+    "description": "Shortcut for document.querySelector"
+  },
+
+  "Document QuerySelectorAll": {
+    "prefix": "queryselectorall",
+    "body": ["const $1 = document.querySelectorAll('$2');", "$0"],
+    "description": "Shortcut for document.querySelectorAll"
+  },
+
+  "DOM Element": {
+    "prefix": "getelement",
+    "body": ["const $1 = document.getElementById('$2');", "$0"],
+    "description": "Create a variable for a DOM element"
+  },
+
+  "Ternary Operator with Hints": {
+    "prefix": "ternary",
+    "body": [
+      "// The ternary operator is a shorthand for the if-else statement.",
+      "// It's written as condition ? exprIfTrue : exprIfFalse;",
+      "// This snippet includes a variable assignment using the ternary operator.",
+      "// Example Usage: ",
+      "// let result = a > b ? 'a is greater' : 'b is greater';",
+      "",
+      "let ${1:result} = ${2:condition} ? ${3:exprIfTrue} : ${4:exprIfFalse};",
+      "$0"
+    ],
+    "description": "Ternary Operator with variable assignment and explanatory comments"
+  },
+
+  "Add Image Element with JavaScript": {
+    "prefix": "addimgjs",
+    "body": [
+      "// This snippet creates a new image element and adds it to the DOM",
+      "// First, create a new Image object",
+      "const $1 = new Image();",
+      "",
+      "// Optionally, set the width and height of the image (in pixels)",
+      "$1.width = ${2:width};",
+      "$1.height = ${3:height};",
+      "",
+      "// Set the source of the image",
+      "$1.src = '${4:sourceURL}';",
+      "",
+      "// Optionally, add alt text for the image",
+      "$1.alt = '${5:altText}';",
+      "",
+      "// Finally, append the image to an existing element in the DOM",
+      "// Replace 'targetElementSelector' with your target element's selector",
+      "document.querySelector('${6:targetElementSelector}').appendChild($1);",
+      "$0"
+    ],
+    "description": "Create and add an image element to the DOM with JavaScript"
+  },
+
+  "Append Element to DOM": {
+    "prefix": "addelement",
+    "body": [
+      "// This snippet creates a new element and appends it to the DOM",
+      "// First, create a new element of your desired type",
+      "const $1 = document.createElement('${2:elementTag}');",
+      "",
+      "// Optionally, set properties for the element",
+      "$1.id = '${3:id}';",
+      "$1.className = '${4:className}';",
+      "// Add more properties as needed",
+      "",
+      "// Optionally, set content for the element",
+      "$1.textContent = '${5:textContent}';",
+      "// Use $1.innerHTML for HTML content",
+      "",
+      "// Finally, append the element to an existing element in the DOM",
+      "// Replace 'targetElementSelector' with your target element's selector",
+      "document.querySelector('${6:targetElementSelector}').appendChild($1);",
+      "$0"
+    ],
+    "description": "Create and append a new element to the DOM"
+  },
+
+  "Set innerHTML with Template Literals": {
+    "prefix": "setinnerhtml",
+    "body": [
+      "// This snippet sets the innerHTML of an element using template literals",
+      "// First, select the target element",
+      "const $1 = document.querySelector('${2:selector}');",
+      "",
+      "// Then, set the innerHTML using template literals for HTML content",
+      "$1.innerHTML = `\n\t${3:<div>Your HTML content here</div>}\n`;",
+      "// The backticks (``) allow for multi-line strings and embedding expressions",
+      "",
+      "// Example:",
+      "// element.innerHTML = `<div class='class-name'>${dynamicValue}</div>`;",
+      "$0"
+    ],
+    "description": "Set innerHTML of an element using ES6 template literals"
+  },
+
+  "Detailed Try-Catch Block": {
+    "prefix": "trycatch",
+    "body": [
+      "// The try-catch block is used for error handling in JavaScript.",
+      "// 'try' allows you to define a block of code to be tested for errors while it is being executed.",
+      "// 'catch' allows you to define a block of code to be executed, if an error occurs in the try block.",
+      "try {",
+      "\t// Code to try goes here",
+      "\t${1:// Code}",
+      "} catch (${2:error}) {",
+      "\t// Code to handle errors goes here",
+      "\tconsole.error('Error caught:', $2);",
+      "\t$0",
+      "}"
+    ],
+    "description": "Detailed try-catch block with comments"
+  },
+
+  "New Date and Date Components": {
+    "prefix": "newdatecomponents",
+    "body": [
+      "// Create a new Date object",
+      "const now = new Date();",
+      "",
+      "// Extracting date and time components",
+      "const year = now.getFullYear();",
+      "const month = now.getMonth() + 1; // Note: Months are 0-indexed",
+      "const day = now.getDate();",
+      "const hours = now.getHours();",
+      "const minutes = now.getMinutes();",
+      "const seconds = now.getSeconds();",
+      "const milliseconds = now.getMilliseconds();",
+      "const dayOfWeek = now.getDay(); // Note: 0 is Sunday, 1 is Monday, etc.",
+      "",
+      "// Use these variables as needed in your code",
+      "$0"
+    ],
+    "description": "Create a new Date object and extract all date-time components"
+  }
+}
