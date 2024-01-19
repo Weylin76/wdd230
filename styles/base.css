@@ -51,14 +51,13 @@ nav{
 
 #header {
     position: relative;
-    padding-bottom: 1.6rem; /* Adjust as needed */
 }
 
 .material-symbols-outlined {
     cursor: pointer;
     position: absolute;
-    left: 0.5rem;
-    bottom: 0; /* Align with the bottom of the header */
+    right: 0.5rem;
+    bottom: 0; 
     margin-bottom: .5rem;
 }
 

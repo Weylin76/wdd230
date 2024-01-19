@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
        // Apply scale
         hamBtn.style.transform = 'scale(0.90)';
 
-       // Revert scale after a delay (e.g., 150ms)
+       // Revert scale after a delay
         setTimeout(function() {
             hamBtn.style.transform = 'scale(1)';
         }, 150);
