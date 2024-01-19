@@ -17,20 +17,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalized.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
     <title>Weylin Douglas - WDD 230 - Web Frontend Development</title>
 </head>
 
 <body>
-    <header class="background-color">
+    <header class="background-color" id="header">
         <img src="images/weylinportrait.jpg" alt="picure of Weylin (self)">
         <h1>Weylin Douglas</h1>
+        <div class="button-container">
+            <button id="menu-btn" class="material-symbols-outlined">menu</button>
+        </div>
     </header>
-    <nav>
+    <nav id="nav">
         <a href="#">Home</a>
         <a href="lesson03/chamber-site-plan.html">Site Plan</a>
         <a href="chamber/">Chamber</a>

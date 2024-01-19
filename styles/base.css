@@ -49,6 +49,23 @@ nav{
     align-items: center;
 }
 
+#header {
+    position: relative;
+    padding-bottom: 1.6rem; /* Adjust as needed */
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0; /* Align with the bottom of the header */
+    margin-bottom: .5rem;
+}
+
+.nav-menu-close{
+    display: none;
+}
+
 nav a{
     padding: .5rem;
     color: var(--text-color);
