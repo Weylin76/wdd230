@@ -57,11 +57,23 @@ nav{
     cursor: pointer;
     position: absolute;
     right: 0.5rem;
-    bottom: 0; 
+    top: .5rem; 
     margin-bottom: .5rem;
 }
 
 .nav-menu-close{
+    display: none;
+}
+
+#menu-Btn, #close-Btn {
+    display: inline-block;
+}
+
+.close-ham-btn{
+    display: none;
+}
+
+.close-close-btn{
     display: none;
 }
 
