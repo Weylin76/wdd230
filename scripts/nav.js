@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
          closeBtn.classList.remove('close-close-btn');
          hamBtn.classList.add('close-ham-btn');
       }, 150);
-      
    }); 
 
    closeBtn.addEventListener('click', function(){
@@ -28,6 +27,5 @@ document.addEventListener('DOMContentLoaded', function () {
          hamBtn.classList.remove('close-ham-btn');
          closeBtn.classList.add('close-close-btn');
      }, 150);
-
    });
 });
