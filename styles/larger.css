@@ -17,4 +17,18 @@
         display: none;
     }
 
+  /* Disable animations on larger screens */
+  #nav, .nav-closed a, .nav-closed {
+    animation: none !important;
+    opacity: 1 !important;
+    max-height: none !important;
+    display: block !important;
+}
+
+/* Additional CSS to revert any inline styles added by JavaScript */
+#nav a {
+    transform: scale(1) !important;
+    opacity: 1 !important;
+}
+
 }
