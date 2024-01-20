@@ -156,6 +156,24 @@ h3{
     padding: 1rem;
 }
 
+.map-container {
+    position: relative; /* Positions the iframe absolutely relative to this container */
+    padding-bottom: 56.25%; /* Aspect ratio padding hack (16:9 aspect ratio) */
+    height: 0; /* Height controlled by padding for the aspect ratio */
+    width: 90%; /* Container takes 90% width of parent */
+    margin: 1rem;
+    border: 1px solid black;
+}
+
+#map {
+    box-sizing: border-box; /* Border included in width and height */
+    position: absolute; /* Absolute positioning relative to .map-container */
+    top: 0;
+    left: 0;
+    width: 100%; /* iframe takes full width of .map-container */
+    height: 100%; /* iframe takes full height of .map-container */
+}
+
 .footer-container{
     display: flex;
     flex-direction: column;
