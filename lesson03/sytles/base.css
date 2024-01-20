@@ -50,4 +50,5 @@ p{
 footer{
     background-color: var(--grinch-red);
     color: var(--pure-white);
+    text-align: center;
 }
