@@ -118,6 +118,10 @@ ul li a{
     text-decoration: none;
 }
 
+ul li::before{
+    content: '🖋️';
+}
+
 nav a:hover{
     color: yellow;
 }
