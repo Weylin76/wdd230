@@ -41,6 +41,7 @@ ul, ul li, footer p{
     font-size: 1.5rem;
 }
 
+
 nav{
     background-color: var(--cream);
     display: flex;
@@ -60,7 +61,6 @@ nav a{
 nav a:hover{
     color: var(--grinch-green)
 }
-
 
 body{
     font-family: 'Amatic SC', sans-serif;
@@ -155,8 +155,4 @@ footer img{
 .footer-box{
     display: flex;
     justify-content: center;
-}
-
-.last-update{
-    color: yellow;
 }
