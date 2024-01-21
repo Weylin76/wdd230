@@ -22,7 +22,7 @@ header img{
 }
 
 header p{
-    font-size: 5rem;
+    font-size: 3rem;
     font-family: 'Amatic SC', sans-serif;
 }
 
@@ -44,7 +44,8 @@ ul, ul li, footer p{
 nav{
     background-color: var(--cream);
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
     padding: .5rem 0;
 }
 
@@ -67,6 +68,11 @@ body{
     color: var(--pure-white);
     max-width: 1200px;
     margin: 0 auto;
+}
+
+#logo{
+    width: 40vw;
+    height: auto;
 }
 
 .color-container{
