@@ -120,6 +120,16 @@ p{
     color: white;
 }
 
+.wire-frame-h2{
+    text-align: center;
+    font-size: 2.5rem;;
+}
+
+picture{
+    display: flex;
+    justify-content: center;
+}
+
 footer{
     background-color: var(--grinch-red);
     color: var(--pure-white);
