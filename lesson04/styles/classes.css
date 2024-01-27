@@ -18,6 +18,7 @@
     width: 100%;
     margin: 0 auto;
     overflow: auto; /* To clear the float */
+    font-size: 2rem;
 }
 
 #para2 {
@@ -29,5 +30,35 @@
 
 #para3 {
     float: right;
+}
+
+#box-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#myButton {
+    background-color: lightblue;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 250px;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+#colorBox {
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    margin: 10px auto;
+    
+}
+
+#colorBox.green {
+    background-color: green;
 }
 
