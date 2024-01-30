@@ -10,15 +10,7 @@ html{
 }
 
 header{
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-
-header img{
-    margin: 1rem;
-    border-radius: .5rem;
-    border: 2px solid var(--grinch-red);
+    text-align: center;
 }
 
 header p{
