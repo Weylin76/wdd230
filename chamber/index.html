@@ -26,10 +26,64 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <p>test</p>
+    <header>
+        <img id="logo" src="images/mount_crumpit_banner.jpg" alt="picutre of Mount Crumpit">
+        <p>Mount Crumpit</p>
+
+    </header>
+    <nav id="nav">
+        <a href="#">Home</a>
+        <a href="#">Discover</a>
+        <a href="#">Dirextory</a>
+        <a href="#">Join</a>
+    </nav>
+    <main>
+        <div class="image-wrapper">
+            <picture>
+                <img id="hero" src="images/mount_crumpit_hero.jpg" alt="picture of Mount Crumpit">
+            </picture>
+            <button id="join">Join Now!</button>
+            <section id="current-event">
+                <h2>Events</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, dignissimos. Quo recusandae suscipit
+                    sapiente cum incidunt accusantium, omnis aliquam quam? Debitis non aperiam mollitia est.</p>
+            </section>
+            <section id="weather-card">
+                <h2>Weather</h2>
+                <div>33 deg</div>
+                <div>sunny</div>
+                <div>35%</div>
+                <div>-5 deg</div>
+            </section>
+            <section id="spotlights">
+                <div>
+                    <h2>Business #1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, necessitatibus.</p>
+                </div>
+                <div>
+                    <h2>Business #2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, necessitatibus.</p>
+                </div>
+                <div>
+                    <h2>Business #3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, necessitatibus.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>&copy;<span id="current-year"></span></p>
+            <p>Weylin B. Douglas</p>
+            <p>WDD 230 Chamber of Commerce Project</p>
+            <p class="footer-box">Michigan, USA <img src="images/usa-flag.jpg" alt="USA Flag"> </p>
+            <p class="last-update">Last updated date: <span id="current-date"></span></p>
+        </div>
+    </footer>
 </body>
 
 </html>
