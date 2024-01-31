@@ -34,21 +34,32 @@ ul, ul li, footer p{
 }
 
 
-nav{
+nav {
     background-color: var(--cream);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
+    width: 100%;
 }
 
-nav a{
+nav a {
     color: var(--grinch-red);
+    display: block;
+    width: 100%; 
     font-size: 2rem;
     font-weight: bolder;
     font-family: 'Pacifico', cursive;
     text-decoration: none;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0; 
+    text-align: center; 
 }
+
+nav a:last-child {
+    margin-bottom: 0;
+}
+
 
 nav a:hover{
     color: var(--grinch-green)
@@ -156,14 +167,17 @@ picture{
 
 #current-event{
     border: 1px solid black;
+    margin: 1rem;
 }
 
 #weather-card{
     border: 1px solid black;
+    margin: 1rem;
 }
 
 #spotlights{
     border: 1px solid black;
+    margin: 1rem;
 }
 
 footer{

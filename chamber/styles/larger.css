@@ -1,7 +1,20 @@
 @media screen and (min-width: 500px){
-    nav{
+    nav {
         flex-direction: row;
         justify-content: space-evenly;
+        padding: 0.5rem 0;
+    }
+
+    nav a {
+        padding: 0.5rem; /* Adjust this value as needed to reduce the space */
+        margin: 0; /* Ensure there's no extra margin taking up space */
+        border: 1px solid var(--grinch-red);
+        border-radius: 5%; /* This is a percentage, so it's responsive to the size of the <a> tag */
+        animation: rotate 1s infinite alternate;
+        background-color: white;
+        /* If you're still seeing too much space, you might need to reset any flex-grow or width properties */
+        flex-grow: 0; /*Prevents the <a> tags from growing to fill the space */
+        width: auto; /*Lets the <a> tags shrink to fit their content plus padding */
     }
 
     header p{
@@ -17,15 +30,6 @@
         }
     }
     
-    #nav a {
-        display: block; 
-        background-color: white;
-        padding: .5rem;
-        border: 1px solid var(--grinch-red);
-        border-radius: 5%;
-        animation: rotate 1s infinite alternate;
-    }
-    
     @keyframes rotateReverse {
         0%, 100% {
             transform: rotate(0deg);
@@ -38,5 +42,39 @@
     #nav a:nth-child(even) { /* For even-numbered links, if you want alternate rotation */
         animation: rotateReverse 1s infinite alternate;
     }
+
+    .content-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* This sets up three columns of equal width */
+        grid-template-rows: auto auto  auto auto; /* auto allows the row height to fit the content */
+        gap: 10px; /* This adds some space between the grid items */
+    }
+
+    picture{
+        grid-area: 1 / 1 / 2 / 4;
+    }
+
+    #current-event{
+        grid-area: 2/1/3/3;
+    }
+
+    #member-heading{
+        grid-area: 3/1/4/4;
+    }
+    #spotlights{
+        grid-area: 4/1/5/4;
+    }
+
+    #spotlights {
+        display: flex;        /* Establishes a flex container */
+        justify-content: space-around; /* This will space out the child divs evenly */
+        align-items: flex-start; /* This aligns the items to the start of the flex container */
+        border: none;
+    }
     
+    #spotlights > div {
+        flex: 0 1 auto; /* This means don't grow, can shrink, and based on the width of the content */
+        margin: 0 10px; /* This adds some space between the divs, adjust as needed */
+        border: 1px solid black;
+    }
 }
