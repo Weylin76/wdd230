@@ -77,4 +77,62 @@
         margin: 0 10px; /* This adds some space between the divs, adjust as needed */
         border: 1px solid black;
     }
+
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Allocate twice as much space to the second column */
+    }
+
+    #my-info{
+        grid-column: 1/3;
+    }
+
+    #my-info {
+        display: flex;
+        justify-content: space-evenly; /* This distributes space evenly between and around the flex items */
+        align-items: center; /* This vertically centers the items in the container (if needed) */
+    }
+
+    #map-container {
+        position: relative;
+        width: 30%; /* Reduce width to fit the space, adjust as needed */
+        padding-bottom: 30%; /* Adjust padding-bottom to maintain aspect ratio */
+        margin: 1rem auto; /* Keeps it centered, adjust as needed */
+        border: 1px solid black; /* Optional, for visibility */
+    }
+    
+    .map-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; /* Make sure this is 100% to fill the container */
+        height: 100%; /* Make sure this is 100% to fill the container */
+        border: 0; /* No border */
+    }
+
+    #crumpit-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #crumpit-info p{
+        padding: 1rem .5rem;
+        font-size: 2.5rem;
+    }
+
+    footer hr {
+        grid-column: 1 / 3; 
+        width: 98%; 
+        border: none;
+        height: 1px;
+        background-color: white;
+        margin: .5rem; 
+    }
+    
+    
+    
 }
