@@ -72,7 +72,7 @@
         border: none;
     }
     
-    #spotlights > div {
+    #spotlights > article {
         flex: 0 1 auto; /* This means don't grow, can shrink, and based on the width of the content */
         margin: 0 10px; /* This adds some space between the divs, adjust as needed */
         border: 1px solid black;
