@@ -10,12 +10,46 @@ html{
 }
 
 header{
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
-header p{
-    font-size: 3rem;
+header h1{
+    font-size: 2rem;
     font-family: 'Amatic SC', sans-serif;
+}
+
+header section{
+    align-self: center;
+}
+
+.icon{
+    max-width: 32px;
+    height: auto;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+    position: absolute;
+    right: 0.5rem;
+    top: .5rem; 
+    margin-bottom: 1rem;
+}
+
+.nav-menu-close{
+    display: none;
+}
+
+#menu-Btn, #close-Btn {
+    display: inline-block;
+}
+
+.close-ham-btn{
+    display: none;
+}
+
+.close-close-btn{
+    display: none;
 }
 
 
@@ -103,6 +137,7 @@ body{
     width: 40vw;
     height: auto;
 }
+
 
 .color-container{
     display: flex;
@@ -199,4 +234,13 @@ footer img{
 .footer-box{
     display: flex;
     justify-content: center;
+}
+
+#map {
+    box-sizing: border-box; /* Border included in width and height */
+    position: absolute; /* Absolute positioning relative to .map-container */
+    top: 0;
+    left: 0;
+    width: 100%; /* iframe takes full width of .map-container */
+    height: 100%; /* iframe takes full height of .map-container */
 }
