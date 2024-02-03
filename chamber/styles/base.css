@@ -8,6 +8,10 @@
 html{
     background-color: var(--pure-white);
 }
+body {
+    position: relative; 
+   
+}
 
 header{
     display: flex;
