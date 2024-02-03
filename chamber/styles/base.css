@@ -8,14 +8,15 @@
 html{
     background-color: var(--pure-white);
 }
+
 body {
     position: relative; 
-   
 }
 
-header{
+header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Push content to the edges */
+    align-items: center; /* Center items vertically */
 }
 
 header h1{
@@ -23,13 +24,8 @@ header h1{
     font-family: 'Amatic SC', sans-serif;
 }
 
-header section{
-    align-self: center;
-}
-
 .icon{
-    max-width: 32px;
-    height: auto;
+    max-width: 64px;
 }
 
 .material-symbols-outlined {
