@@ -178,6 +178,7 @@ h3{
     height: 100%; /* iframe takes full height of .map-container */
 }
 
+
 .footer-container{
     display: flex;
     flex-direction: column;
