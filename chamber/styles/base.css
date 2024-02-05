@@ -52,6 +52,10 @@ header h1{
     display: none;
 }
 
+#mode{
+    font-size: 2rem;
+    padding: .5rem;
+}
 
 body{
     padding: 1rem;
@@ -216,7 +220,7 @@ picture{
 }
 
 footer{
-    background-color: var(--grinch-red);
+     background-color: var(--grinch-red); 
     color: var(--pure-white);
     text-align: center;
     margin: 1rem 0; 
