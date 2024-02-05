@@ -17,8 +17,11 @@ btn.addEventListener('click', () => {
             article.style.borderColor = 'white';
         })
 
-        //Change all footer font to black
+        //Change all footer font to black and bold
         document.querySelector('.footer-container').style.color = 'black';
+        document.querySelectorAll('.footer-container').forEach(element => {
+            element.style.fontWeight = '900';
+        });
         
         //Change button to read Light Mode
         btn.textContent = 'Light Mode';
@@ -39,8 +42,11 @@ btn.addEventListener('click', () => {
             article.style.borderColor = ''; //the original border color 
         })
 
-        //revert its footer font to white
+        //revert its footer font to white and reset font weight
         document.querySelector('.footer-container').style.color = '';
+        document.querySelectorAll('.footer-container').forEach(element => {
+            element.style.fontWeight = '';
+        });
 
          //Change button to read Dark Mode
         btn.textContent = 'Dark Mode';
