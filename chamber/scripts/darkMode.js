@@ -3,7 +3,7 @@ let isDarkMode = false; // Flag to track whether dark mode is currently enabled
 
 btn.addEventListener('click', () => {
     if (!isDarkMode) {
-        // If not in dark mode, change to dark mode
+        // Change to dark mode
         document.body.style.backgroundColor = 'black';
         document.querySelector('.footer-container').style.backgroundColor = 'darkgray';
         
@@ -20,6 +20,7 @@ btn.addEventListener('click', () => {
         //Change all footer font to black
         document.querySelector('.footer-container').style.color = 'black';
         
+        //Change button to read Light Mode
         btn.textContent = 'Light Mode';
         isDarkMode = true; // Update flag
 
@@ -41,6 +42,7 @@ btn.addEventListener('click', () => {
         //revert its footer font to white
         document.querySelector('.footer-container').style.color = '';
 
+         //Change button to read Dark Mode
         btn.textContent = 'Dark Mode';
         isDarkMode = false; // Update flag
     }
