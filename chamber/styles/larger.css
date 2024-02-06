@@ -17,6 +17,14 @@
         width: auto; /*Lets the <a> tags shrink to fit their content plus padding */
     }
 
+    header {
+        align-items: center; /* Center items vertically */
+    }
+
+    .icon{
+        max-width: 64px;
+    }
+
     header h1{
         font-size: 4rem;
     }
