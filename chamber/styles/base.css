@@ -10,7 +10,14 @@ html{
 }
 
 body {
+    font-family: 'Amatic SC', sans-serif;
     position: relative; 
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: var(--grinch-green);
+    color: var(--pure-white);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header {
@@ -21,7 +28,6 @@ header {
 
 header h1{
     font-size: 2rem;
-    font-family: 'Amatic SC', sans-serif;
 }
 
 .icon{
@@ -36,20 +42,7 @@ header h1{
     margin-bottom: 1rem;
 }
 
-.nav-menu-close{
-    display: none;
-    
-}
-
-#menu-Btn, #close-Btn {
-    display: inline-block;
-}
-
-.close-ham-btn{
-    display: none;
-}
-
-.close-close-btn{
+#menu-Btn, #close-Btn, .nav-menu-close, .close-ham-btn, .close-close-btn {
     display: none;
 }
 
@@ -62,11 +55,6 @@ header h1{
     padding: .25rem;
 }
 
-body{
-    padding: 1rem;
-    box-sizing: border-box;
-}
-
 main p{
     padding: .5rem;
     font-size: 1.5rem;
@@ -75,7 +63,6 @@ main p{
 ul, ul li, footer p{
     font-size: 1.5rem;
 }
-
 
 nav {
     background-color: var(--cream);
@@ -89,43 +76,35 @@ nav {
 nav a {
     color: var(--grinch-red);
     display: block;
-    width: 100%; 
+    width: 100%;
     font-size: 2rem;
     font-weight: bolder;
     font-family: 'Pacifico', cursive;
     text-decoration: none;
     margin-bottom: 1rem;
-    padding: 0.5rem 0; 
-    text-align: center; 
+    padding: 0.5rem 0;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--grinch-green);
 }
 
 nav a:last-child {
     margin-bottom: 0;
 }
 
-
-nav a:hover{
-    color: var(--grinch-green)
-}
-
-body{
-    font-family: 'Amatic SC', sans-serif;
-    background-color: var(--grinch-green);
-    color: var(--pure-white);
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .image-wrapper {
     position: relative;
-    display: block; /* Use block instead of flex */
-    text-align: center; /* Center inline or inline-block children */
+    display: block; 
+    text-align: center;
     margin: 1rem;
 }
 
 #hero {
-    display: inline-block; /* Makes the image an inline-block element */
-    width: 100%; /* Responsive within the picture element */
+    display: inline-block;
+    width: 100%;
     height: auto;
 }
 
@@ -141,52 +120,10 @@ body{
     z-index: 1;
 }
 
-
-#logo{
-    width: 40vw;
-    height: auto;
-}
-
-
-.color-container{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.color-container span{
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid black;
-    border-radius: 1rem;
-    font-size: 1rem;
-}
-
-.color-container span:nth-child(1){
-    background-color: var(--grinch-green);
-}
-
-.color-container span:nth-child(2){
-    background-color: var(--pure-white);
-    color: black;
-}
-
-.color-container span:nth-child(3){
-    background-color: var(--cream);
-    color: black;
-}
-
-.color-container span:nth-child(4){
-    background-color: var(--grinch-red);
-}
-
-h1, h2, h3, h4, h5, h6{
+h2{
     font-family: 'Pacifico', cursive;
     color: var(--pure-white);
     background-color: var(--bright-red);
-}
-
-h1{
-    font-size: 3rem;
 }
 
 p{
@@ -194,32 +131,7 @@ p{
     font-size: 16px;
 }
 
-#color-on-color{
-    background-color: var(--grinch-red);
-    color: white;
-}
-
-.wire-frame-h2{
-    text-align: center;
-    font-size: 2.5rem;;
-}
-
-picture{
-    display: flex;
-    justify-content: center;
-}
-
-#current-event{
-    border: 1px solid black;
-    margin: 1rem;
-}
-
-#weather-card{
-    border: 1px solid black;
-    margin: 1rem;
-}
-
-#spotlights{
+#current-event, #weather-card, #spotlights {
     border: 1px solid black;
     margin: 1rem;
 }
