@@ -16,6 +16,19 @@
         width: auto;
     }
 
+    .nav-menu-close{
+        display: flex;
+    }
+
+    .material-symbols-outlined {
+        display: none;
+    }
+
+    #mode{
+        top: .5rem;
+        right: .5rem;
+    }
+
     header {
         align-items: center; 
     }
