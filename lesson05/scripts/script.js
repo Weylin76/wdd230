@@ -29,7 +29,7 @@ input.addEventListener('keydown', function (event){
         event.preventDefault();
         let li = document.createElement('li');
         let deleteButton = document.createElement('button');
-        // Capitalizes the first letter of the word if you don't use caps.
+        // Capitalizes the first letter of the word
         let word = input.value;
         let capWord = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
         li.textContent = capWord;
