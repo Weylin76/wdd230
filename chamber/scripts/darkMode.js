@@ -4,6 +4,7 @@ let isDarkMode = false; // Flag to track whether dark mode is currently enabled
 btn.addEventListener('click', () => {
     if (!isDarkMode) {
         // Change to dark mode
+        document.querySelector('html').style.backgroundColor = '#2B2B2B';
         document.body.style.backgroundColor = 'black';
         document.querySelector('.footer-container').style.backgroundColor = 'darkgray';
         
@@ -29,6 +30,7 @@ btn.addEventListener('click', () => {
 
     } else {
         // If already in dark mode, revert to original colors
+        document.querySelector('html').style.backgroundColor = '';
         document.body.style.backgroundColor = ''; //the original color 
         document.querySelector('.footer-container').style.backgroundColor = ''; //the original color
         
