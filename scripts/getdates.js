@@ -4,8 +4,8 @@ const currentYear = now.getFullYear();
 let dateTime = document.lastModified;
 
 // Append to footer paragraphs
-const domCurrentYear = document.querySelector('#current-year');
+const domCurrentYear = document.querySelector('#currentyear');
 domCurrentYear.innerText = currentYear;
 
-const lastModified = document.querySelector('#current-date');
+const lastModified = document.querySelector('#lastmodification');
 lastModified.innerText = dateTime
