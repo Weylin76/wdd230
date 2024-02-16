@@ -31,6 +31,8 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/darkMode.js" defer></script>
+    <script src="scripts/hero.js" defer></script>
+    <script src="scripts/windchill.js"></script>
 </head>
 
 <body>
@@ -58,10 +60,19 @@
     </nav>
     <main>
         <div class="image-wrapper content-container">
-            <picture>
+            <!-- <picture>
                 <img id="hero" src="images/mount_crumpit_hero_full.webp" alt="picture of Mount Crumpit">
-            </picture>
-            <button id="join">Join Now!</button>
+            </picture> -->
+            <div class="image-container">
+                <picture>
+                    <source srcset="images/hero_small.webp" media="(max-width: 450px)">
+                    <source srcset="images/hero_medium.webp" media="(max-width: 750px)">
+                    <source srcset="images/hero_large.webp" media="(max-width: 1000px)">
+                    <img src="images/hero_large.webp" alt="picture of temple">
+                </picture>
+                <p id="hero"></p>
+            </div>
+            <!-- <button id="join">Join Now!</button> -->
             <section id="current-event">
                 <h2>Events</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, dignissimos. Quo recusandae suscipit
@@ -69,10 +80,11 @@
             </section>
             <section id="weather-card">
                 <h2>Weather</h2>
-                <div>33 deg</div>
+                <div id="temp">10</div>
+                <div id="speed">4</div>
                 <div>sunny</div>
                 <div>35%</div>
-                <div>-5 deg</div>
+                <div id="windchill"></div>
             </section>
             <h2 id="member-heading">Member Spotlight</h2>
             <section id="spotlights">
@@ -116,13 +128,13 @@
             <div id="contact-info">
                 <p>email: grinch@gmail.com</p>
                 <p>(517) 651-2738</p>
-                <div id="map-container">
+                <!-- <div id="map-container">
                     <iframe class="map-iframe"
                         src="
                 https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10319.223287671342!2d-123.11585523986913!3d49.71445726792257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486f9c5b3deed77%3A0x7f0dd39e7ab59885!2sMount%20Crumpit!5e0!3m2!1sen!2sus!4v1706909452831!5m2!1sen!2sus"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                </div> -->
             </div>
             <hr>
             <div id="my-info">
