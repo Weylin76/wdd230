@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Lazy Load Demo.">
+    <meta name="author" content="Weylin Douglas">
+    <title>Lazy Load</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<header>
+    <h1>Lazy Loading Demo</h1>
+</header>
+
+<body>
+    <main>
+        <div class="container"></div>
+        <picture><img src="https://picsum.photos/id/237/400/600" alt=" placeholder 1" loading="lazy" width="400"
+                height="600"></picture>
+        <picture><img src="https://picsum.photos/id/236/400/600" alt=" placeholder 2" loading="lazy" width="400"
+                height="600"></picture>
+        <picture><img src="https://picsum.photos/id/235/400/600" alt=" placeholder 3" loading="lazy" width="400"
+                height="600"></picture>
+        <picture><img src="https://picsum.photos/id/234/400/600" alt=" placeholder 4" loading="lazy" width="400"
+                height="600"></picture>
+        <picture><img src="https://picsum.photos/id/233/400/600" alt=" placeholder 5" loading="lazy" width="400"
+                height="600"></picture>
+        <picture> <img src="https://picsum.photos/id/232/400/600" alt="placeholder 6" loading="lazy" width="400"
+                height="600"></picture>
+    </main>
+    <footer>
+        <p>Weylin Douglas</p>
+        <p>WDD 230 Web Fundamentals</p>
+        <p>Current Year: <span id="current-year"></span></p>
+        <p>Last modification: <span id="lastmodification"></span></p>
+    </footer>
+</body>
+
+</html>

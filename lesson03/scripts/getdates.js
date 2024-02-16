@@ -7,5 +7,5 @@ let dateTime = document.lastModified;
 const domCurrentYear = document.querySelector('#current-year');
 domCurrentYear.innerText = currentYear;
 
-const lastModified = document.querySelector('#current-date');
-lastModified.innerText = dateTime
+const lastModified = document.querySelector('#lastmodification');
+lastModified.innerText = dateTime;

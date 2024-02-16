@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+}
+
+body{
+    background-color: lightcyan;
+}
+
+main{
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+}
