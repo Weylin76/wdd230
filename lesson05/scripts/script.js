@@ -14,6 +14,7 @@ btn.addEventListener('click', () => {
         li.append(delbtn);
         list.append(li);
         input.value = '';
+        input.value = '';
 
         delbtn.addEventListener('click', ()=>{
             list.removeChild(li);
