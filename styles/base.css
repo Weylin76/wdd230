@@ -183,6 +183,14 @@ h3{
     padding: 1rem;
 }
 
+#information{
+    margin: 1rem;
+    padding: 1rem;
+    color: black;
+    border: 1px solid black;
+    
+}
+
 .map-container {
     position: relative; /* Positions the iframe absolutely relative to this container */
     padding-bottom: 56.25%; /* Aspect ratio padding hack (16:9 aspect ratio) */
