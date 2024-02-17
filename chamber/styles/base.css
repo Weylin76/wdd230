@@ -196,3 +196,32 @@ footer img{
     border: 0; /* No border */
 }
 
+/* Discover Page CSS */
+#discover-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.fact-item {
+    display: flex; /* Use flexbox instead of grid */
+    justify-content: space-between; /* This will create space between the text and image */
+    align-items: center; /* This will vertically center the text with the image */
+    margin-bottom: 20px; /* Adds space between each fact-item */
+}
+
+.fact-item p {
+    /* Adjust the width as needed to give more space to the text or image */
+    width: 50%; /* This is an example value; adjust as needed */
+    margin: 0; /* Adjust as needed for your design */
+}
+
+.fact-item img {
+    width: 50%; /* This is an example value; adjust as needed */
+    height: auto; /* Maintains the aspect ratio */
+    max-width: 600px;
+
+}
+
+
+
+
