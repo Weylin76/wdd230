@@ -207,6 +207,7 @@ h3{
     left: 0;
     width: 100%; /* iframe takes full width of .map-container */
     height: 100%; /* iframe takes full height of .map-container */
+    border: none;
 }
 
 footer{
