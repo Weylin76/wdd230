@@ -242,9 +242,10 @@ footer img{
 /* Join Page CSS */
 
 
-label, input{
+label, input, textarea{
     display: block;
     margin: .5rem;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 input{
