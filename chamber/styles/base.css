@@ -238,3 +238,29 @@ footer img{
 #visit-info{
     font-size: 2rem;
 }
+
+/* Join Page CSS */
+
+
+label, input{
+    display: block;
+    margin: .5rem;
+}
+
+input{
+    padding: .75rem .25rem;
+}
+
+
+input:required{
+    border-left: 6px solid red ;
+}
+
+input:required:valid{
+    border-left: 6px solid greenyellow;
+}
+
+.submitBtn{
+    margin: .5rem 2rem;
+    padding: .5rem;
+}

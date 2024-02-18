@@ -32,6 +32,7 @@
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/darkMode.js" defer></script>
     <script src="scripts/hero.js" defer></script>
+    <script src="scripts/joinTimeStamp.js" defer></script>
 </head>
 
 <body>
@@ -61,17 +62,38 @@
         <h2>User Information</h2>
         <form action="thankyou.html" method="get">
             <fieldset>
-                <label class="top">First Name*<input type="text" name="fname" required></label>
-                <label class="top">Last Name*<input type="text" name="lname" required></label>
+                <label>First Name*<input type="text" name="fname" required title="Enter your first name"></label>
+                <label>Last Name*<input type="text" name="lname" required title="Enter your last name"></label>
+                <label for="title">Title/Position
+                    <input type="text" id="title" name="title" required pattern="[A-Za-z\s\-0-9]{7,}"
+                        title="Title must be at least 7 characters long and can only contain alphanumeric characters, hyphens, and spaces."></label>
 
                 <label>Email
                     <input type="email" id="email" name="email" placeholder="someone@gmail.com"
-                        title="Please enter a valid email address" required></label>
-                <label class="top">Phone<input type="tel" name="phone" placeholder="1234567890"></label>
+                        title="Please enter a valid email address" required title="Enter a valid email address"></label>
+                <label>Phone<input type="tel" name="phone" placeholder="1234567890"
+                        title="enter a valid phone number"></label>
+                <label for="business">Business/Organization's Name
+                    <input type="text" name="business" id="business" required
+                        title="Enter your business or organization's name"></label>
 
+                <legend>Membership Level</legend>
+                <label class="sbs"><input type="radio" name="membership" value="np" checked>NP Membership (No fee for
+                    non-profit organizations)</label>
+                <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="silver">Silver Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="gold">Gold Membership</label>
+
+                <label for="business-description">Business/Organization's Description</label>
+                <textarea name="businessDescription" id="business-description" rows="4" cols="50"
+                    placeholder="Enter a brief description of the business or organization."
+                    title="Enter comments about your business or organization"></textarea>
+
+                <input type="hidden" name="timestamp" id="timestamp">
 
             </fieldset>
             <input type="submit" value="Provide Feedback" class="submitBtn">
+
         </form>
     </main>
     <footer>
