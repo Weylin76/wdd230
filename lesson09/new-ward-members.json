@@ -1,0 +1,40 @@
+{
+    "wardInformation":{
+        "familiyName": "Cramer"
+        ,"Move in Date": "2023-10-05"
+        ,"Num in Family": "5"
+        ,"Bishopric visited": "yes"
+        ,"familyMembers" :[
+            {
+                "name": "Krista"
+                ,"gender": "Female" 
+                ,"birthday": "1980-10-05"
+            }
+            ,{
+                "name": "Josh"
+                ,"gender": "Male" 
+                ,"birthday": "1982-09-12"
+            }
+            ,{
+                "name": "Elina"
+                ,"gender": "Female" 
+                ,"birthday": "1983-04-12"
+            }
+            ,{
+                "name": "Tiffany"
+                ,"gender": "Female" 
+                ,"birthday": "1979-08-06"
+            }
+            ,{
+                "name": "Tom"
+                ,"gender": "Male" 
+                ,"birthday": "1974-09-16"
+            }
+            ,{
+                "name": "Reane"
+                ,"gender": "Female" 
+                ,"birthday": "1981-08-14"
+            }
+        ]
+    }
+}
