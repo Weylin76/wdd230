@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px){
+@media screen and (min-width: 700px){
     nav {
         flex-direction: row;
         justify-content: space-evenly;
@@ -156,5 +156,11 @@
         background-color: white;
         margin: .5rem; 
     }
+
+    /* Discover page Css */
+    #visit-info{
+        font-size: 2rem;
+    }
+
     
 }
