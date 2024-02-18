@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 230 - Chamber of Commerce website by Weylin Douglas.">
+    <meta name="description" content="WDD 230 - Chamber of Commerce Join page by Weylin Douglas.">
     <meta name="author" content="Weylin Douglas">
-    <title>Mount Crumpit Chamber of Commerce</title>
+    <title>Mount Crumpit Chamber of Commerce Join Page</title>
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Mount Crumpit Chamber of Commerce">
+    <meta property="og:title" content="Mount Crumpit Chamber of Commerce join page">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://weylin76.github.io/wdd230/chamber/">
     <meta property="og:image" content="https://weylin76.github.io/wdd230/chamber/images/mount_crumpit_hero.jpg">
@@ -32,13 +32,11 @@
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/darkMode.js" defer></script>
     <script src="scripts/hero.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
-    <script src="scripts/visits.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Mount Crumpit Chamber of Commerce</h1>
+        <h1>Mount Crumpit Chamber of Commerce Join Page</h1>
         <aside>
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                 <img class="icon" src="images/facebookicon.png" alt="facebook icon">
@@ -54,72 +52,27 @@
         </div>
     </header>
     <nav id="nav" class="nav-menu-close">
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
         <a href="discover.html">Discover</a>
         <a href="#">Directory</a>
         <a href="join.html">Join</a>
     </nav>
     <main>
-        <div class="image-wrapper content-container">
-            <!-- <picture>
-                <img id="hero" src="images/mount_crumpit_hero_full.webp" alt="picture of Mount Crumpit">
-            </picture> -->
-            <div class="image-container">
-                <picture>
-                    <source srcset="images/hero_small.webp" media="(max-width: 450px)">
-                    <source srcset="images/hero_medium.webp" media="(max-width: 750px)">
-                    <source srcset="images/hero_large.webp" media="(max-width: 1000px)">
-                    <img src="images/hero_large.webp" alt="picture of temple">
-                </picture>
-                <p id="hero"></p>
-            </div>
-            <!-- <button id="join">Join Now!</button> -->
-            <section id="current-event">
-                <h2>Events</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, dignissimos. Quo recusandae suscipit
-                    sapiente cum incidunt accusantium, omnis aliquam quam? Debitis non aperiam mollitia est.</p>
-            </section>
-            <section id="weather-card">
-                <h2>Information</h2>
-                <div id="temp">Temp: <span>10</span></div>
-                <div id="speed">Wind speed: <span>4</span></div>
-                <div>Currnet conditions: <span>sunny</span></div>
-                <div>Humidity: <span>35%</span></div>
-                <div>Windchill: <span id="windchill"></span></div>
-                <div>Page visits: <span id="visits"></span></div>
-            </section>
-            <h2 id="member-heading">Member Spotlight</h2>
-            <section id="spotlights">
-                <!-- Grinch Cafe -->
-                <article>
-                    <h2>Grinch Cafe</h2>
-                    <p>Come enjoy a bite to eat at our Grinch-themed cafe, featuring a wide variety of onion-flavored
-                        delights and holiday specials inspired by Whoville's cuisine. Don't miss our 'Max's Delight'
-                        section with treats for your furry friends!</p>
-                    <p>For reservations, call: 1-800-Eat-Junk</p>
-                    <p>Website: Grinchcafe.com</p>
-                </article>
+        <h2>User Information</h2>
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <label class="top">First Name*<input type="text" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" required></label>
 
-                <!-- Go Away Lasers -->
-                <article>
-                    <h2>Go Away Lasers</h2>
-                    <p>Ensure your solitude with our Grinch-themed gadgets. From motion-activated phrases to
-                        customizable laser shows, keep those Whoville well-wishers at bay in the most delightful way.
-                    </p>
-                    <p>Order now: 1-800-GO-AWAY</p>
-                    <p>Website: gowayandstayaway.com</p>
-                </article>
+                <label>Email
+                    <input type="email" id="email" name="email" placeholder="someone@gmail.com"
+                        title="Please enter a valid email address" required></label>
+                <label class="top">Phone<input type="tel" name="phone" placeholder="1234567890"></label>
 
-                <!-- Grinch's Garbage Service -->
-                <article>
-                    <h2>Grinch's Garbage Service</h2>
-                    <p>Your Christmas trash is our treasure. We specialize in eco-friendly disposal and upcycling of
-                        holiday waste. Let us help you declutter with a heartwarming touch this season.</p>
-                    <p>Service inquiries: 1-800-Trash-Us</p>
-                    <p>Website: Christmasistrash.com</p>
-                </article>
-            </section>
-        </div>
+
+            </fieldset>
+            <input type="submit" value="Provide Feedback" class="submitBtn">
+        </form>
     </main>
     <footer>
         <div class="footer-container">

@@ -51,26 +51,27 @@
         <h2>User Information</h2>
         <form action="record.html" method="get">
             <fieldset>
-                <label for="userName" title="Use must enter your user name">User Name</label>
-                <input type="text" id="userName" name="userName" required>
+                <label for="userName" title="Use must enter your user name">User Name
+                    <input type="text" id="userName" name="userName" required></label>
 
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}"
-                    title="Your unique username must be 8-20 characters long." required>
+                <label for="password">Password
+                    <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}"
+                        title="Your unique username must be 8-20 characters long." required></label>
 
-                <label for="password2">Reenter Password</label>
-                <input type="password" id="password2" name="password2" title="Your passwords must match." required>
+                <label for="password2">Reenter Password
+                    <input type="password" id="password2" name="password2" title="Your passwords must match."
+                        required></label>
 
                 <!-- Error message placeholder -->
                 <div id="passwordError" class="errorMessage">Passwords do not match.</div>
 
-                <label>Email</label>
-                <input type="email" id="email" name="email" placeholder="someone@gmail.com"
-                    title="Please enter a valid email address" required>
+                <label>Email
+                    <input type="email" id="email" name="email" placeholder="someone@gmail.com"
+                        title="Please enter a valid email address" required></label>
 
                 <div id="rangevalue"></div>
-                <label for="r">Range</label>
-                <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+                <label for="r">Range
+                    <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues"></label>
                 <datalist id="rangevalues">
                     <option value="0">0</option>
                     <option value="1">1</option>
