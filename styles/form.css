@@ -2,6 +2,10 @@ main {
     color: black;
 }
 
+h1{
+    color: black;
+}
+
 label, input{
     display: block;
     margin: .5rem;
