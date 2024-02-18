@@ -23,3 +23,12 @@ input:required{
 input:required:valid{
     border-left: 6px solid green;
 }
+
+.submitBtn{
+    margin: .5rem 2rem;
+    padding: .5rem;
+}
+
+#rangevalue{
+    margin: 1rem;
+}
