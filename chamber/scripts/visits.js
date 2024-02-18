@@ -1,15 +1,41 @@
-// Initialize display element variable
-const visitsDisplay = document.querySelector("#visits");
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize display element variable
+    const visitsDisplay = document.querySelector("#visits");
+    const now = new Date(); // Current date and time
 
-// Get the stored VALUE for the numVisits-ls KEY in localStorage if it exists. If the numVisits KEY is missing, then assign 0 to the numVisits variable.
-let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+    // Retrieve the number of visits and the last visit date from localStorage
+    let discoverNumVisits = Number(localStorage.getItem("discoverNumVisits")) || 0;
+    const lastVisitString = localStorage.getItem("lastVisitDate");
 
-//display number of visits
-visitsDisplay.textContent = numVisits;
+    let message = ""; // Message to display based on the visit
 
-//increment the number of visits by one.
-numVisits++;
+    if (discoverNumVisits === 0) {
+        message = "Welcome! Let us know if you have any questions.";
+    } else if (discoverNumVisits === 1) {
+        message = "Back so soon! Awesome!";
+    } else { // discoverNumVisits > 1
+        if (lastVisitString) {
+            const lastVisitDate = new Date(lastVisitString);
+            const timeDiff = now - lastVisitDate; // Time difference in milliseconds
+            const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24)); // Convert to days
 
-//store the new visit total into localStorage, key=numVisits-ls
-localStorage.setItem("numVisits-ls", numVisits);
+            if (daysDiff <= 1) {
+                message = "You last visited 1 day ago.";
+            } else {
+                message = `You last visited ${daysDiff} days ago.`;
+            }
+        }
+    }
+
+    // Increment the number of visits by one for the next visit
+    discoverNumVisits++;
+
+    // Display the appropriate message based on the visit
+    visitsDisplay.textContent = message;
+
+    // Update the last visit date and number of visits in localStorage
+    localStorage.setItem("lastVisitDate", now.toISOString());
+    localStorage.setItem("discoverNumVisits", discoverNumVisits.toString());
+});
+
 
