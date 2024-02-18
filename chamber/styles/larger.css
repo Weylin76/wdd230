@@ -153,10 +153,6 @@
         margin: .5rem; 
     }
 
-    #visit-info{
-        font-size: 2rem;
-    }
-
     @keyframes shake {
         0% { transform: translateX(0); }
         10% { transform: translateX(-10px); }
