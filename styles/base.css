@@ -213,5 +213,6 @@ h3{
 footer{
     background-color: var(--main-color);
     text-align: center;
+    padding: .5rem;
 }
 

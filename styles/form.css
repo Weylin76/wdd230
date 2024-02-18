@@ -1,0 +1,25 @@
+main {
+    color: black;
+}
+
+label, input{
+    display: block;
+    margin: .5rem;
+}
+
+input{
+    padding: .75rem .25rem;
+}
+
+.errorMessage {
+    color: red;
+    display: none;
+}
+
+input:required{
+    border-left: 6px solid red ;
+}
+
+input:required:valid{
+    border-left: 6px solid green;
+}
