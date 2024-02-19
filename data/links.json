@@ -1,0 +1,126 @@
+{
+    "lessons": [
+      {
+        "lesson": "01"
+        ,"links": [
+          {
+            "url": "lesson01/holygrail.html"
+            ,"title": "Holy Grail"
+          }
+          ,{
+            "url": "https://codepen.io/weylin76/pen/rNRjvrm"
+            ,"title":"JS Pen"
+          }
+        ]
+      }
+      ,{
+        "lesson": "02"
+        ,"links": [
+            {
+                "url": "lesson01/media-query.html"
+                ,"title": "Media Query"
+              }
+           ,{
+            "url": "lesson02/design-principles.html"
+                ,"title": "Design principles"
+           }
+        ]
+      }
+      ,{
+        "lesson": "03"
+        ,"links": [
+            {
+                "url": "lesson03/images/css-combinators.png"
+                ,"title": "CSS Combinators"
+              }
+            ,{
+                "url": "https://codepen.io/weylin76/pen/VwRPQXZ"
+                ,"title": "pseudo-element"
+            }
+            ,{
+                "url": "lesson03/chamber-site-plan.html"
+                ,"title": "Chamber Site Design"
+            }
+        ] 
+      }
+      ,{
+        "lesson": "04"
+        ,"links": [
+            {
+                "url": "chamber/index.html"
+                ,"title": "Mount Crumpit Chamber of Commerce"
+              }
+        ] 
+      }
+      ,{
+        "lesson": "05"
+        ,"links": [
+            {
+                "url": "lesson05/bom.html"
+                ,"title": "BOM"
+              }
+        ] 
+      }
+      ,{
+        "lesson": "06"
+        ,"links": [
+            {
+                "url": "lesson03/images/landscape.webp"
+                ,"title": "WebP"
+              }
+        ] 
+      }
+      ,{
+        "lesson": "07"
+        ,"links": [
+            {
+                "url": "lesson03/lazyload.html"
+                ,"title": "Lazy Load"
+              }
+            ,{
+                "url": "lesson07/bom.html"
+                ,"title": "BOM Local Storage"
+            }
+        ] 
+      }
+      ,{
+        "lesson": "08"
+        ,"links": [
+            {
+                "url": "lesson08/tablebuild.html"
+                ,"title": "Table"
+              }
+            ,{
+                "url": "lesson08/form-start/index.html"
+                ,"title": "Form Example"
+            }
+        ] 
+      }
+      ,{
+        "lesson": "09"
+        ,"links": [
+            {
+                "url": "lesson09/new-ward-members.json"
+                ,"title": "Json"
+              }
+            , {
+                "url": "lesson09/prophets.html"
+                ,"title": "Prophets"
+              }
+        ] 
+      }
+      ,{
+        "lesson": "10"
+        ,"links": [
+            {
+                "url": "#"
+                ,"title": "#"
+              }
+            , {
+                "url": "#"
+                ,"title": "#"
+              }
+        ] 
+      }
+    ]
+}
