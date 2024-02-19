@@ -11,7 +11,7 @@ async function loadLinks() {
         // Select the UL element where you want to append the list items
         const ul = document.querySelector('#insert-data');
 
-        // Clear the current content of the UL, including the commented code
+        // Clear the current content of the UL
         ul.innerHTML = '';
 
         // Process the data and create list items
@@ -25,15 +25,18 @@ async function loadLinks() {
             const linksList = document.createElement('ul');
 
             lessonObj.links.forEach(link => {
+                //Create li and a tag
                 const li = document.createElement('li');
                 const a = document.createElement('a');
-                a.setAttribute('href', link.url); // Set the href attribute to the link's URL
-                a.textContent = link.title; // Set the anchor text to the link's title
-                li.appendChild(a); // Append the anchor to the list item
-                linksList.appendChild(li); // Append the list item to the nested unordered list
+                //set teh href and update content
+                a.setAttribute('href', link.url);
+                a.textContent = link.title;
+                //append to the li tag
+                li.appendChild(a); 
+                linksList.appendChild(li); 
             });
-
-            ul.appendChild(linksList); // Append the nested list to the main unordered list
+            //append to the ul tag
+            ul.appendChild(linksList); 
         });
 
     } catch (error) {
