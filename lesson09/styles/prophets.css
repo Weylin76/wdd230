@@ -1,0 +1,55 @@
+body {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    align-items: center; /* Vertically center the content in the body */
+    min-height: 100vh; /* At least the full height of the viewport */
+  }
+  
+  header, main, footer, h1 {
+    margin: 1rem;
+    max-width: 400px; /* Example width */
+    width: 100%; /* Ensures the element takes up the width of its parent up to max-width */
+    margin: .5rem auto; /* This will center the header, main, and footer blocks horizontally */
+  }
+  
+  h1, footer {
+    background-color: black;
+    color: white;
+    text-align: center; /* This centers the text inside h1 horizontally */
+    padding: 1rem;
+  }
+  
+  .card {
+    background-color: slategray;
+    text-align: center; 
+    border-radius: 10px;
+    gap: 20px;
+  }
+
+  #cards {
+    color: yellow;
+  
+  }
+
+  img{
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    border-radius: 10px;
+  }
+
+  h2{
+    padding-top: .5rem;
+    font-weight: 900;
+  }
+
+
+
+
+
+
+
+
+
+
+
