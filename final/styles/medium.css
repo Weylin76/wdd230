@@ -1,0 +1,49 @@
+@media screen and (min-width: 700px){
+    nav {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0.5rem 0;
+    }
+
+    nav a {
+        padding: 0.5rem; 
+        margin: 0;
+        border: 1px solid var(--grinch-red);
+        border-radius: 5%;
+        animation: rotate 1s infinite alternate;
+        background-color: white;
+        flex-grow: 0; 
+        width: auto;
+    }
+
+    .nav-menu-close{
+        display: flex;
+    }
+
+    .material-symbols-outlined {
+        display: none;
+    }
+
+    #mode{
+        top: .5rem;
+        right: .5rem;
+    }
+
+    header {
+        align-items: center; 
+    }
+
+    .icon{
+        max-width: 64px;
+    }
+
+    header h1{
+        font-size: 4rem;
+    }
+
+
+
+ 
+
+    
+}
