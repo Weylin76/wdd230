@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", function() {
         let heroText = document.getElementById('hero');
         // Check viewport width and set text accordingly
         if (window.innerWidth <= 450) {
-            heroText.innerHTML = '<strong>Small</strong>';
+            heroText.innerHTML = '<button>Join</button>';
             heroText.style.fontSize = '2rem';
         } else if (window.innerWidth <= 750) {
-            heroText.innerHTML = '<strong>Medium</strong>';
+            heroText.innerHTML = '<button>Join</button>';
             heroText.style.fontSize = '2rem';
         } else {
-            heroText.innerHTML = '<strong>Large</strong>';
+            heroText.innerHTML = '<button>Join</button>';
             heroText.style.fontSize = '2rem';
         }
     }
@@ -19,4 +19,3 @@ document.addEventListener("DOMContentLoaded", function() {
  
     window.addEventListener('resize', updateText);
  });
-

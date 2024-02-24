@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const timeDiff = now - lastVisitDate; // Time difference in milliseconds
             const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24)); // Convert to days
 
-            if (daysDiff <= 1) {
+            if (daysDiff <= 2) {
                 message = "You last visited 1 day ago.";
             } else {
                 message = `You last visited ${daysDiff} days ago.`;

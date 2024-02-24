@@ -22,7 +22,7 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between; /* Push content to the edges */
+    justify-content: space-between;
     align-items: end;
 }
 
@@ -116,30 +116,27 @@ nav a:last-child {
     margin-bottom: 0;
 }
 
-.image-wrapper {
+.image-container {
+    margin-top: 1rem;
     position: relative;
-    display: block; 
-    text-align: center;
-    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container picture img {
+    max-width: 100%;
+    max-height: 80vh; 
+    display: block;
 }
 
 #hero {
-    display: inline-block;
-    width: 100%;
-    height: auto;
+    position: absolute;
+    top: 0; 
+    color: black; 
+    text-align: center; 
 }
 
-#join {
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
-    font-size: 2rem;
-    padding: 1rem;
-    border: 1px solid var(--grinch-red);
-    opacity: .8;
-    border-radius: .5rem;
-    z-index: 1;
-}
 
 h2{
     font-family: 'Pacifico', cursive;
