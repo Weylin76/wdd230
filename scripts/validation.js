@@ -9,6 +9,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Show error message
             passwordError.style.display = 'block';
             confirmPassword.setCustomValidity('Passwords do not match.'); // Prevent form submission
+            
+            // Clear out the passwords
+            password.value = '';
+            confirmPassword.value = '';
+
+            // Focus back to the first password field
+            password.focus();
         } else {
             // Hide error message and clear any set custom validity
             passwordError.style.display = 'none';
@@ -16,3 +23,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
