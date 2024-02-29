@@ -1,9 +1,17 @@
-main {
-    color: black;
+:root {
+    --color-blue: #007BFF;
+    --color-red: red;
+    --color-darkred:  darkred;
+    --color-coral: lightcoral;
+    --color-greenb: green;
+    --color-darkGreen: darkgreen;
+    --color-lightGreen: lightgreen;
+    --color-white: white;
+    --color-black: black;
 }
 
-h2{
-    color: black;
+main, h2 {
+    color: var(--color-black);
 }
 
 label, input{
@@ -13,24 +21,24 @@ label, input{
 }
 
 .errorMessage {
-    color: red;
+    color: --var(--color-red);
     display: none;
 }
 
 input:required{
-    border-left: 6px solid red ;
-    color: darkred;
-    background-color: lightcoral;
+    border-left: 6px --var(--color-red); ;
+    color: var(--color-darkred);
+    background-color: var(--color-coral);
 }
 
 input:required:valid{
-    border-left: 6px solid green;
-    color: darkgreen;
-    background-color: lightgreen;
+    border-left: 6px solid var(--color-green);
+    color: var(--color-darkGreen);
+    background-color: var(--color-lightGreen);
 }
 
 input:focus {
-    border: 2px solid #007BFF; 
+    border: 2px solid var(--color-blue); 
     outline: none; 
 }
 
@@ -40,8 +48,8 @@ input:focus {
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
-    color: white;
+    background-color: var(--color-blue);
+    color: var(--color-white);
     transform: scale(1.25);
     transition: transfrom 0.3s ease;
 }
