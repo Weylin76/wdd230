@@ -171,5 +171,14 @@
         animation: shake 0.5s;
         animation-iteration-count: 2;
       }
+
+      /* Join Page */
+      label{
+        font-size: 2rem;
+      }
+
+      textarea{
+        max-width: 500px;
+      }
     
 }

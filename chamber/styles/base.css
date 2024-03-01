@@ -262,3 +262,53 @@ input:required:valid{
     margin: .5rem 2rem;
     padding: .5rem;
 }
+
+/* Join Page */
+.free-plan, .bronze-plan, .silver-plan, .gold-plan {
+    color: black;
+    border-radius: 10px;
+    padding: .5rem;
+    margin-top: 10px;
+}
+
+.membership-header h2{
+    text-align: center;
+}
+
+.membership-tier h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.free-plan{
+    background-color: #F5F5DC; 
+}
+
+.bronze-plan {
+    background-color: #CD7F32; /* Bronze */
+}
+
+.silver-plan {
+    background-color: #C0C0C0; /* Silver */
+}
+
+.gold-plan {
+    background-color: #FFD700; /* Gold */
+}
+
+ .radio {
+    padding-left: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 20px;
+} 
+
+.radio input {
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+} 
+
+textarea{
+    max-width: 300px;
+}
