@@ -312,3 +312,18 @@ input:required:valid{
 textarea{
     max-width: 300px;
 }
+
+.submitBtn {
+    border-radius: 5px;
+    display: block;
+    margin: 15px auto;
+    padding: 20px 30px; 
+    font-size: 1.5rem;
+    background-color: lightgray; 
+    transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+    cursor: pointer;
+    background-color: lightgreen; /* Darker shade on hover */
+}
