@@ -59,75 +59,90 @@
     <main>
         <h2>User Information</h2>
         <form action="thankyou.html" method="get">
-            <fieldset>
-                <label>First Name*<input type="text" name="fname" required title="Enter your first name"></label>
-                <label>Last Name*<input type="text" name="lname" required title="Enter your last name"></label>
-                <label for="title">Title/Position
-                    <input type="text" id="title" name="title" required pattern="[A-Za-z\s\-0-9]{7,}"
-                        title="Title must be at least 7 characters long and can only contain alphanumeric characters, hyphens, and spaces."></label>
+            <div id="main-container">
+                <fieldset>
+                    <div id="left-container">
+                        <label>First Name*<input type="text" name="fname" required
+                                title="Enter your first name"></label>
+                        <label>Last Name*<input type="text" name="lname" required title="Enter your last name"></label>
+                        <label for="title">Title/Position
+                            <input type="text" id="title" name="title" required pattern="[A-Za-z\s\-0-9]{7,}"
+                                title="Title must be at least 7 characters long and can only contain alphanumeric characters, hyphens, and spaces."></label>
 
-                <label>Email
-                    <input type="email" id="email" name="email" placeholder="someone@gmail.com" required
-                        title="Enter a valid email address"></label>
-                <label>Phone<input type="tel" name="phone" placeholder="5176512738"
-                        title="enter a valid phone number"></label>
-                <label for="business">Business/Organization's Name
-                    <input type="text" name="business" id="business" required
-                        title="Enter your business or organization's name"></label>
+                        <label>Email
+                            <input type="email" id="email" name="email" placeholder="someone@gmail.com" required
+                                title="Enter a valid email address"></label>
+                        <label>Phone<input type="tel" name="phone" placeholder="5176512738"
+                                title="enter a valid phone number"></label>
+                        <label for="business">Business/Organization's Name
+                            <input type="text" name="business" id="business" required
+                                title="Enter your business or organization's name"></label>
 
-                <h2>Membership Level</h2>
-                <label class="sbs"><input type="radio" name="membership" value="np" checked>Free Membership</label>
-                <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze Membership</label>
-                <label class="sbs"><input type="radio" name="membership" value="silver">Silver Membership</label>
-                <label class="sbs"><input type="radio" name="membership" value="gold">Gold Membership</label>
 
-                <label for="business-description">Business/Organization's Description</label>
-                <textarea name="businessDescription" id="business-description" rows="4" cols="50"
-                    placeholder="Enter a brief description of the business or organization."
-                    title="Enter comments about your business or organization"></textarea>
+                        <h2>Membership Level</h2>
+                        <label class="sbs"><input type="radio" name="membership" value="np" checked>Free
+                            Membership</label>
+                        <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze
+                            Membership</label>
+                        <label class="sbs"><input type="radio" name="membership" value="silver">Silver
+                            Membership</label>
+                        <label class="sbs"><input type="radio" name="membership" value="gold">Gold Membership</label>
 
-                <input type="hidden" name="timestamp" id="timestamp">
+                        <label for="business-description">Business/Organization's Description</label>
+                        <textarea name="businessDescription" id="business-description" rows="4" cols="50"
+                            placeholder="Enter a brief description of the business or organization."
+                            title="Enter comments about your business or organization"></textarea>
+                    </div>
+                    <input type="hidden" name="timestamp" id="timestamp">
 
-            </fieldset>
-            <table>
-                <tr id="membership-title">
-                    <th>Chamber of Commerce Membership Pricing Plans</th>
-                </tr>
-                <tr>
-                    <th>Type</th>
-                    <th>Annual Price</th>
-                    <th class="table-text">Benefits</th>
-                </tr>
-                <!-- Non-member level -->
-                <tr>
-                    <td>Free Membership</td>
-                    <td>$0</td>
-                    <td class="table-text">Free Newsletter updates.</td>
-                </tr>
-                <!-- Bronze level -->
-                <tr>
-                    <td>Bronze</td>
-                    <td>$100</td>
-                    <td class="table-text">Non-member benefits, plus 25% discount seminars & advertisement.</td>
-                </tr>
-                <!-- Silver level-->
-                <tr>
-                    <td>Silver</td>
-                    <td>$500</td>
-                    <td class="table-text">Bronze benefits, plus 35% discount seminars & advertisement & free admission
-                        to
-                        lunch and learning.
-                        events</td>
-                </tr>
+                </fieldset>
+                <div id="right-container">
+                    <section class="membership-header">
+                        <h2>Membership Plan Information</h2>
+                    </section>
+                    <section class="free-plan membership-tier">
+                        <h3>Complimentary Membership</h3>
+                        <p class="price">Free</p>
+                        <ul class="benefits-list">
+                            <li>Stay informed with monthly newsletters.</li>
+                            <li>Access to our online business resources.</li>
+                            <li>Network with community members at open events.</li>
+                        </ul>
+                    </section>
+                    <section class="bronze-plan membership-tier white-text">
+                        <h3>Bronze Partnership</h3>
+                        <p class="price">$100 Annually</p>
+                        <ul class="benefits-list">
+                            <li>All Complimentary Membership benefits.</li>
+                            <li>Exclusive 25% discount on workshops and seminars.</li>
+                            <li>Enhanced business visibility with advertising opportunities.</li>
+                        </ul>
+                    </section>
+                    <section class="silver-plan membership-tier white-text">
+                        <h3>Silver Partnership</h3>
+                        <p class="price">$500 Annually</p>
+                        <ul class="benefits-list">
+                            <li>All Bronze Partnership benefits plus:</li>
+                            <li>35% discount on specialized business seminars.</li>
+                            <li>Complimentary admission to exclusive networking luncheons.</li>
+                            <li>Priority invitations to chamber-hosted learning events.</li>
+                        </ul>
+                    </section>
+                    <section class="gold-plan membership-tier white-text">
+                        <h3>Gold Partnership</h3>
+                        <p class="price">$1,000 Annually</p>
+                        <ul class="benefits-list">
+                            <li>All Silver Partnership benefits plus:</li>
+                            <li>45% discount on premium business seminars and workshops.</li>
+                            <li>Prominent advertising placements and spotlight features.</li>
+                            <li>Opportunities for main stage presentations at events.</li>
+                        </ul>
+                    </section>
 
-                <!-- Gold level -->
-                <tr>
-                    <td>Gold</td>
-                    <td>$1,000</td>
-                    <td class="table-text">Silver benefits, plus 45% discount seminars & advertisement & showcased on
-                        spotlight banner.</td>
-                </tr>
-            </table>
+
+
+                </div>
+            </div>
             <input type="submit" value="Process Membership" class="submitBtn">
         </form>
     </main>
