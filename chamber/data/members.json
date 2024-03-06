@@ -1,17 +1,4 @@
 {"BusinessInformation":[{
-    "id":1
-    ,"name":"Ayven Grace Coffee"
-    ,"address":"750 Grand River"
-    ,"city":"Laingsburg"
-    ,"state":"Michigan"
-    ,"zip":"48848"
-    ,"phone":"517-651-6228"
-    ,"image":"https://scontent.fyip1-1.fna.fbcdn.net/v/t1.6435-9/84137078_100573378199522_5721913593901875200_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=J-RxajsjbmAAX-8Jqm3&_nc_ht=scontent.fyip1-1.fna&oh=00_AT8xw35CdigsHnz0x23WlcII_4E8Sko5q42qtNx6y1H-dA&oe=62D0769C"
-    ,"alt":"picture of Ayven Grace Coffee"
-    ,"website":"https://www.facebook.com/ayvengracecoffee/"
-    ,"membershipLevel":"Gold"
-
-    },{
     "id":2
     ,"name":"Laingsburg Screw Inc"
     ,"address":"9905 Round Lake Rd"
@@ -51,32 +38,6 @@
     ,"membershipLevel":"Gold"
    
     },{
-    "id":5
-    ,"name":"Subway"
-    ,"address":"750 E Grand River"
-    ,"city":"Laingsburg"
-    ,"state":"Michigan"
-    ,"zip":"48848"
-    ,"phone":"517-651-7373"
-    ,"image":"https://scontent.fyip1-1.fna.fbcdn.net/v/t1.18169-9/21761684_258170481370599_818416778808349072_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=PRHBCslRoH4AX9ZYcax&_nc_ht=scontent.fyip1-1.fna&oh=00_AT-vTnceXtAxOaMORZLyQ_BN5uCmFVpOi9EdXYIsNQBI2w&oe=62CDDD19"
-    ,"alt":"picture of Subway"
-    ,"website":"https://www.facebook.com/Laingsburg-Subway-258170038037310/"
-    ,"membershipLevel":"Gold"
- 
-    },{
-    "id":6
-    ,"name":"K-13 Physical Therapy and Sport"
-    ,"address":"239 E Grand River Rd"
-    ,"city":"Laingsburg"
-    ,"state":"Michigan"
-    ,"zip":"48848"
-    ,"phone":"517-651-1322"
-    ,"image":"https://k-13physicaltherapy.com/wp-content/uploads/2016/06/K-13-web-logo.png"
-    ,"alt":"picture of K-13 PT"
-    ,"website":"https://k-13physicaltherapy.com/"
-    ,"membershipLevel":"Bronze"
-     
-        },{
     "id":7
     ,"name":"Peacock Road Family Farm"
     ,"address":"12896 Peacock Rd"
@@ -89,18 +50,6 @@
     ,"website":"https://www.bookmarkalpacas.com/"
     ,"membershipLevel":"Bronze"
          
-    },{
-    "id":8
-    ,"name":"All Tech Automotive"
-    ,"address":"9865 Round Lake Road"
-    ,"city":"Laingsburg"
-    ,"state":"Michigan"
-    ,"zip":"48848"
-    ,"phone":"517-651-5043"
-    ,"image":"https://media.istockphoto.com/vectors/auto-service-sign-car-repair-logo-eps-vector-id1036660952"
-    ,"alt":"picture of All Tech Automotive"
-    ,"website":"https://www.facebook.com/All-Tech-Auto-Sales-and-Service-178465542321492/"
-    ,"membershipLevel":"Gold"
     },{
     "id":9
     ,"name":"Professional Turf & Landscape"
