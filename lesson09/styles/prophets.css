@@ -2,8 +2,6 @@ body {
     font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
-    align-items: center; /* Vertically center the content in the body */
-    min-height: 100vh; /* At least the full height of the viewport */
   }
   
   header, main, footer, h1 {
@@ -20,16 +18,16 @@ body {
     padding: 1rem;
   }
   
-  .card {
-    background-color: slategray;
-    text-align: center; 
-    border-radius: 10px;
-    gap: 20px;
-  }
-
   #cards {
     color: yellow;
+  }
   
+  .card {
+    background-color: slategray;
+    text-align: center;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   }
 
   img{
