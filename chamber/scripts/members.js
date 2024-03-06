@@ -1,6 +1,5 @@
 const url = 'https://github.com/Weylin76/wdd230/blob/main/chamber/data/members.json';
 const cards = document.querySelector('#cards');
-console.log('is working');
 async function loadMembers(url) {
     // TODO: Replace the URL with your actual data source
     try {
@@ -12,7 +11,6 @@ async function loadMembers(url) {
         const data = await response.json();
         // TODO: Process the data
         console.log(data);
-        console.log(url);
         
     } catch (error) {
         console.error('Fetch error:', error);
