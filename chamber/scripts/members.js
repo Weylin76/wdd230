@@ -1,5 +1,6 @@
-const url = 'https://github.com/Weylin76/wdd230/blob/main/chamber/data/members.json';
+const url = 'https://weylin76.github.io/wdd230/chamber/data/members.json';
 const cards = document.querySelector('#cards');
+
 async function loadMembers(url) {
     // TODO: Replace the URL with your actual data source
     try {
@@ -10,8 +11,22 @@ async function loadMembers(url) {
         }
         const data = await response.json();
         // TODO: Process the data
-        console.log(data);
-        
+        data.BusinessInformation.forEach(business => {
+
+        const card = document.createElement('section');
+        card.className = 'card';
+
+        const businessName = document.createElement('h2');
+        businessName.textContent = `${business.name}`
+        console.log(business.name)
+
+
+
+
+    
+
+        cards.appendChild(businessName);
+    })
     } catch (error) {
         console.error('Fetch error:', error);
     }
