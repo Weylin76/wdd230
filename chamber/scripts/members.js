@@ -1,4 +1,4 @@
-const url = 'https://weylin76.github.io/wdd230/chamber/data/members.json';
+const url = 'https://github.com/Weylin76/wdd230/blob/main/chamber/data/members.json';
 const cards = document.querySelector('#cards');
 console.log('is working');
 async function loadMembers(url) {
