@@ -63,17 +63,17 @@
             <form action="thankyou.html" method="get">
                 <fieldset>
                     <div id="left-container">
-                        <label>First Name*<input type="text" name="fname" required
+                        <label>First Name*<input type="text" id="firstName" name="fname" required
                                 title="Enter your first name"></label>
-                        <label>Last Name*<input type="text" name="lname" required title="Enter your last name"></label>
+                        <label>Last Name*<input type="text" id="lastName" name="lname" required
+                                title="Enter your last name"></label>
                         <label for="title">Title/Position
                             <input type="text" id="title" name="title" required pattern="[A-Za-z\s\-0-9]{7,}"
                                 title="Title must be at least 7 characters long and can only contain alphanumeric characters, hyphens, and spaces."></label>
-
                         <label>Email
                             <input type="email" id="email" name="email" placeholder="someone@gmail.com" required
                                 title="Enter a valid email address"></label>
-                        <label>Phone<input type="tel" name="phone" placeholder="5176512738"
+                        <label>Phone<input type="tel" id="tele" name="phone" placeholder="5176512738"
                                 title="enter a valid phone number"></label>
                         <label for="business">Business/Organization's Name
                             <input type="text" name="business" id="business" required
@@ -81,13 +81,14 @@
 
 
                         <h2>Membership Level</h2>
-                        <label class="radio"><input type="radio" name="membership" value="np" checked>Free
+                        <label class="radio"><input type="radio" id="free" name="membership" value="np" checked>Free
                             Membership</label>
-                        <label class="radio"><input type="radio" name="membership" value="bronze">Bronze
+                        <label class="radio"><input type="radio" id="bronze" name="membership" value="bronze">Bronze
                             Membership</label>
-                        <label class="radio"><input type="radio" name="membership" value="silver">Silver
+                        <label class="radio"><input type="radio" id="silver" name="membership" value="silver">Silver
                             Membership</label>
-                        <label class="radio"><input type="radio" name="membership" value="gold">Gold Membership</label>
+                        <label class="radio"><input type="radio" id="gold" name="membership" value="gold">Gold
+                            Membership</label>
 
                         <label for="business-description">Business/Organization's Description</label>
                         <textarea name="businessDescription" id="business-description" rows="4" cols="50"
