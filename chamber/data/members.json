@@ -88,5 +88,29 @@
     ,"alt":"picture of Preuss Pets"
     ,"website":"https://www.preusspets.com/"
     ,"membershipLevel":"Bronze"
-            }
+    },{
+    "id": 8,
+    "name": "Whoville Ornament Co.",
+    "address": "1000 Grinch Green Lane",
+    "city": "Whoville",
+    "state": "Michigan",
+    "zip": "48855",
+    "phone": "517-555-0101",
+    "image": "https://cathylancaster.com/products/whoville-ornament-40",
+    "alt": "picture of Whoville Ornament Co.",
+    "website": "https://www.whovilleornaments.com/",
+    "membershipLevel": "Silver"
+    },{
+    "id": 9,
+    "name": "Mount Crumpit Recycling",
+    "address": "2000 Crumpit Mountain Rd",
+    "city": "Whoville",
+    "state": "Michigan",
+    "zip": "48855",
+    "phone": "517-555-0202",
+    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRecycling_symbol&psig=AOvVaw1bvX698w_rrVsFsKSf4Ymm&ust=1710036982532000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCPDcjKmO5oQDFQAAAAAdAAAAABAF",
+    "alt": "picture of Mount Crumpit Recycling",
+    "website": "https://www.mountcrumpitrecycling.com/",
+    "membershipLevel": "Gold"
+    }
 ]}

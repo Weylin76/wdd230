@@ -15,6 +15,7 @@ async function loadMembers(url) {
 
         const card = document.createElement('section');
         card.className = 'card';
+        card.style.border = '1px solid black'
         
         //Create Busniess Name with H2 element
         const businessName = document.createElement('h2');
