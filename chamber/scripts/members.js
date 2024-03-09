@@ -19,10 +19,12 @@ async function loadMembers(url) {
         //Create Busniess Name with H2 element
         const businessName = document.createElement('h2');
         businessName.textContent = `${business.name}`
+        businessName.style.fontSize = '2rem';
 
         //Create Address information
-        const businessAddress = document.createElement('p');
+        const businessAddress = document.createElement('address');
         businessAddress.innerHTML = `${business.address} <br> ${business.city}, ${business.state} ${business.zip}`
+        businessAddress.style.fontSize = '1.5rem'
 
         //Create phone
         const businessPhone = document.createElement('p');
@@ -33,23 +35,28 @@ async function loadMembers(url) {
         businessLogo.setAttribute('src', business.image);
         businessLogo.setAttribute('alt', business.alt);
         businessLogo.setAttribute('loading', 'lazy');
-        businessLogo.setAttribute('width', '100');
+        businessLogo.setAttribute('width', '95%');
+        businessLogo.style.border = '1px solid black';
+        businessLogo.style.borderRadius = '15px'
 
-        //Create website information
-        const businessWebsite = document.createElement('p');
-        businessWebsite.textContent = `${business.website}`
+        // Create website information as a link
+        const businessWebsite = document.createElement('a');
+        businessWebsite.textContent = business.website;
+        businessWebsite.href = business.website;
+        businessWebsite.target = '_blank';
 
         //Create membership Level
         const businessMembershipLevel = document.createElement('p');
         businessMembershipLevel.textContent = `Membership level: ${business.membershipLevel}`;
         
 
-        cards.appendChild(businessLogo);
-        cards.appendChild(businessName);
-        cards.appendChild(businessAddress);
-        cards.appendChild(businessPhone);
-        cards.appendChild(businessWebsite);
-        cards.appendChild(businessMembershipLevel);
+        cards.appendChild(card);
+        card.appendChild(businessLogo);
+        card.appendChild(businessName);
+        card.appendChild(businessAddress);
+        card.appendChild(businessPhone);
+        card.appendChild(businessWebsite);
+        card.appendChild(businessMembershipLevel);
         
     })
     } catch (error) {

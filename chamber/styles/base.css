@@ -327,3 +327,27 @@ textarea{
     cursor: pointer;
     background-color: lightgreen; /* Darker shade on hover */
 }
+
+/* Directory */
+#cards {
+    margin: 1rem;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-gap: 10px;
+  }
+
+.card {
+    padding: 1rem 0;
+    background-color: var(--grinch-red);
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .card a{
+    color: white;
+    text-decoration: none;
+  }
+
+
+

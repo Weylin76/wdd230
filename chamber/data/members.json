@@ -13,17 +13,17 @@
  
     },{
     "id":2
-    ,"name":"Leonard Best Hardware"
-    ,"address":"271 E Grand River"
-    ,"city":"Laingsburg"
+    ,"name":"Professional Turf & Landscape"
+    ,"address":"2611 Abbott Road"
+    ,"city":"East Lansing"
     ,"state":"Michigan"
     ,"zip":"48848"
-    ,"phone":"517-651-5477"
-    ,"image":"https://thumbs.dreamstime.com/b/vector-logo-building-materials-store-company-201109538.jpg"
-    ,"alt":"picture of Leonard Best Hardware"
-    ,"website":"https://www.facebook.com/LeonardsHardware/"
+    ,"phone":"517-351-1884"
+    ,"image":"https://lirp.cdn-website.com/84a5c733/dms3rep/multi/opt/ProTurfLOGO-458w.jpg"
+    ,"alt":"picture of Professinal Turf & Landscape"
+    ,"website":"https://www.proturfman.com/"
     ,"membershipLevel":"Gold"
- 
+
     },{
     "id":3
     ,"name":"Local Roots Cannabis"
@@ -36,7 +36,7 @@
     ,"alt":"picture of Local Roots Cannabis"
     ,"website":"https://localrootscannabis.com/"
     ,"membershipLevel":"Gold"
-   
+
     },{
     "id":4
     ,"name":"Peacock Road Family Farm"
@@ -49,19 +49,20 @@
     ,"alt":"picture of Peacock Road Family Farm"
     ,"website":"https://www.bookmarkalpacas.com/"
     ,"membershipLevel":"Bronze"
-         
+        
     },{
     "id":5
-    ,"name":"Professional Turf & Landscape"
-    ,"address":"2611 Abbott Road"
-    ,"city":"East Lansing"
+    ,"name":"Leonard Best Hardware"
+    ,"address":"271 E Grand River"
+    ,"city":"Laingsburg"
     ,"state":"Michigan"
     ,"zip":"48848"
-    ,"phone":"517-351-1884"
-    ,"image":"https://lirp.cdn-website.com/84a5c733/dms3rep/multi/opt/ProTurfLOGO-458w.jpg"
-    ,"alt":"picture of Professinal Turf & Landscape"
-    ,"website":"https://www.proturfman.com/"
+    ,"phone":"517-651-5477"
+    ,"image":"https://thumbs.dreamstime.com/b/vector-logo-building-materials-store-company-201109538.jpg"
+    ,"alt":"picture of Leonard Best Hardware"
+    ,"website":"https://www.facebook.com/LeonardsHardware/"
     ,"membershipLevel":"Gold"
+     
         },{
     "id":6
     ,"name":"Hammond Farms"
@@ -74,6 +75,7 @@
     ,"alt":"picture of Hammond Farms"
     ,"website":"https://hammondfarms.com/"
     ,"membershipLevel":"Silver"
+    
         },{
     "id":7
     ,"name":"Preuss Pets"
