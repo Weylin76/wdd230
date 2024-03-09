@@ -33,8 +33,7 @@ async function loadMembers(url) {
         businessLogo.setAttribute('src', business.image);
         businessLogo.setAttribute('alt', business.alt);
         businessLogo.setAttribute('loading', 'lazy');
-        // businessLogo.setAttribute('width', '100');
-        // businessLogo.setAttribute('height', '100');
+        businessLogo.setAttribute('width', '100');
 
         //Create website information
         const businessWebsite = document.createElement('p');
