@@ -36,7 +36,7 @@ async function loadMembers(url) {
         businessLogo.setAttribute('loading', 'lazy');
         businessLogo.setAttribute('width', '35%');
         businessLogo.style.border = '1px solid black';
-        businessLogo.style.borderRadius = '15px'
+        businessLogo.style.borderRadius = '5px'
 
         // Create website information as a link
         const businessWebsite = document.createElement('a');
@@ -46,7 +46,7 @@ async function loadMembers(url) {
 
         //Create membership Level
         const businessMembershipLevel = document.createElement('p');
-        businessMembershipLevel.textContent = `Membership level: ${business.membershipLevel}`;
+        businessMembershipLevel.textContent = `Level: ${business.membershipLevel}`;
         
 
         cards.appendChild(card);
