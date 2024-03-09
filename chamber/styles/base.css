@@ -3,6 +3,27 @@
     --grinch-red: #FF0000;
     --pure-white: #FFFFFF;
     --cream: #F5F5DC;
+    --default-font-size: 1rem;
+    --font_size_medium: 1.5rem;
+    --font_size_double: 2rem;
+
+}
+
+/* General classes */
+.pure-white, h1, body{
+    color: var(--pure-white)
+}
+
+.font-default{
+    font-size: var(--default-font-size);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.padding-left{
+    padding-left: .5rem;
 }
 
 html {
@@ -15,7 +36,6 @@ body {
     padding: 1rem;
     box-sizing: border-box;
     background-color: var(--grinch-green);
-    color: var(--pure-white);
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -27,7 +47,7 @@ header {
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: var(--font_size_double);
 }
 
 .icon {
@@ -51,7 +71,7 @@ header h1 {
 }
 
 #mode {
-    font-size: 1rem;
+    font-size: var(--default-font-size);
     position: absolute;
     right: 3.2rem;
     top: .5rem;
@@ -77,18 +97,17 @@ header h1 {
     position: absolute;
     top: 0;
     color: black;
-    text-align: center;
 }
 
 main p {
     padding: .5rem;
-    font-size: 1.5rem;
+    font-size: var(--font_size_medium);
 }
 
 ul,
 ul li,
 footer p {
-    font-size: 1.5rem;
+    font-size: var(--font_size_medium);
 }
 
 nav {
@@ -104,13 +123,12 @@ nav a {
     color: var(--grinch-red);
     display: block;
     width: 100%;
-    font-size: 2rem;
+    font-size: var(--font_size_double);
     font-weight: bolder;
     font-family: 'Pacifico', cursive;
     text-decoration: none;
     margin-bottom: 1rem;
     padding: 0.5rem 0;
-    text-align: center;
     transition: color 0.3s ease;
 }
 
@@ -140,20 +158,14 @@ nav a:last-child {
     position: absolute;
     top: 0;
     color: black;
-    text-align: center;
 }
 
 
 h2 {
     font-family: 'Pacifico', cursive;
-    color: var(--pure-white);
     background-color: var(--bright-red);
 }
 
-p {
-    font-family: 'Amatic SC', cursive;
-    font-size: 16px;
-}
 
 #current-event,
 #weather-card,
@@ -164,8 +176,6 @@ p {
 
 footer {
     background-color: var(--grinch-red);
-    color: var(--pure-white);
-    text-align: center;
     margin: 1rem 0;
 }
 
@@ -242,8 +252,7 @@ footer img {
 
 #visit-info {
     margin: 1rem;
-    font-size: 2rem;
-    text-align: center;
+    font-size: var(--font_size_double);
     padding: .5rem;
 }
 
@@ -257,7 +266,7 @@ footer img {
 }
 
 #visit-info {
-    font-size: 2rem;
+    font-size: var(--font_size_double);
 }
 
 /* Join Page CSS */
@@ -300,13 +309,8 @@ input:required:valid {
     margin-top: 10px;
 }
 
-.membership-header h2 {
-    text-align: center;
-}
-
 .membership-tier h3 {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: var(--font_size_medium);
 }
 
 .free-plan {
@@ -332,7 +336,7 @@ input:required:valid {
     padding-left: 5px;
     margin-bottom: 15px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: var(--font_size_medium);
 }
 
 .radio input {
@@ -350,7 +354,7 @@ textarea {
     display: block;
     margin: 15px auto;
     padding: 20px 30px;
-    font-size: 1.5rem;
+    font-size: var(--font_size_medium);
     background-color: lightgray;
     transition: background-color 0.3s ease;
 }
@@ -378,7 +382,6 @@ textarea {
 .card {
     padding: 1rem 0;
     background-color: var(--grinch-red);
-    text-align: center;
     border-radius: 10px;
 }
 
@@ -417,7 +420,7 @@ textarea {
 #cards.list-view .card p,
 #cards.list-view .card address,
 #cards.list-view .card a {
-    font-size: 1rem;
+    font-size: var(--default-font-size);
     margin: 5px;
 }
 
