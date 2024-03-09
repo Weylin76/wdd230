@@ -2,8 +2,54 @@
     --tropical-sea-blue: #33C1B1; 
     --sunset-orange: #FF7043; 
     --pure-white: #FFFFFF; 
-    --sand-yellow: #F0E68C; /* Replaces cream */
+    --sand-yellow: #F0E68C;
 }
+
+/* Shared classes */
+.medium-font-size{
+    font-size: 1.5rem;
+}
+
+.large-font-size{
+    font-size: 2rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.black-border{
+    border: 1px solid black;
+}
+
+.radius{
+    border-radius: 15px;
+}
+
+.pad-left{
+    padding-left: .5rem;
+}
+
+.remove-underline{
+    text-decoration: none;
+}
+
+.margin{
+    margin: 1rem;
+}
+
+.margin-top{
+    margin-top: .5rem;
+}
+
+.padding{
+    padding: 1rem;
+}
+
+.padding-top{
+    padding-top: 1rem;
+}
+/* Shared CSS */
 
 html{
     background-color: var(--pure-white);
@@ -12,7 +58,6 @@ html{
 body {
     font-family: 'Amatic SC', sans-serif;
     position: relative; 
-    padding: 1rem;
     box-sizing: border-box;
     background-color: var(--tropical-sea-blue);
     color: var(--pure-white);
@@ -22,72 +67,43 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between; /* Push content to the edges */
+    justify-content: space-between;
     align-items: end;
 }
 
-header h1{
-    font-size: 2rem;
-}
-
-.icon{
-    max-width: 32px;
-}
-
-.material-symbols-outlined {
-    cursor: pointer;
-    position: absolute;
-    right: 0.5rem;
-    top: .5rem; 
-    margin-bottom: 1rem;
-}
-
-#menu-Btn, #close-Btn, .nav-menu-close, .close-ham-btn, .close-close-btn {
-    display: none;
-}
-
 #mode{
-    font-size: 1rem;
     position: absolute;
-    right: 3.2rem;
+    left: 1rem;
     top: .5rem; 
-    margin-bottom: 1rem;
-    padding: .25rem;
+}
+
+#mode-icon{
+    max-width: 50px;
 }
 
 nav {
-    background-color: var(--sand-yellow);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 0;
-    width: 100%;
 }
 
 nav a {
     color: var(--sunset-orange);
-    display: block;
-    width: 100%;
-    font-size: 2rem;
-    font-weight: bolder;
+    background-color: var(--sand-yellow);
     font-family: 'Pacifico', cursive;
-    text-decoration: none;
-    margin-bottom: 1rem;
-    padding: 0.5rem 0;
-    text-align: center;
-    transition: color 0.3s ease;
 }
 
 nav a:hover {
     color: var(--tropical-sea-blue);
 }
 
+.icon{
+    max-height: 64px;
+}
+
 
 footer{
-     background-color: var(--sunset-orange); 
+    background-color: var(--sunset-orange); 
     color: var(--pure-white);
-    text-align: center;
-    margin: 1rem 0; 
 }
 
 
