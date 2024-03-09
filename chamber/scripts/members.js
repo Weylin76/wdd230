@@ -20,12 +20,10 @@ async function loadMembers(url) {
         //Create Busniess Name with H2 element
         const businessName = document.createElement('h2');
         businessName.textContent = `${business.name}`
-        businessName.style.fontSize = '2rem';
 
         //Create Address information
         const businessAddress = document.createElement('address');
         businessAddress.innerHTML = `${business.address} <br> ${business.city}, ${business.state} ${business.zip}`
-        businessAddress.style.fontSize = '1.5rem'
 
         //Create phone
         const businessPhone = document.createElement('p');
@@ -36,7 +34,7 @@ async function loadMembers(url) {
         businessLogo.setAttribute('src', business.image);
         businessLogo.setAttribute('alt', business.alt);
         businessLogo.setAttribute('loading', 'lazy');
-        businessLogo.setAttribute('width', '95%');
+        businessLogo.setAttribute('width', '35%');
         businessLogo.style.border = '1px solid black';
         businessLogo.style.borderRadius = '15px'
 
@@ -58,7 +56,7 @@ async function loadMembers(url) {
         card.appendChild(businessPhone);
         card.appendChild(businessWebsite);
         card.appendChild(businessMembershipLevel);
-        
+    
     })
     } catch (error) {
         console.error('Fetch error:', error);
@@ -66,3 +64,12 @@ async function loadMembers(url) {
 }
 
 loadMembers(url)
+
+const listView = document.querySelector('.list-view');
+const cardView = document.querySelector('.grid-view');
+
+listView.addEventListener('click', () => {cards.classList.add('list-view')}, true);
+listView.addEventListener('click', () => {cards.classList.remove('grid-view')}, true);
+
+cardView.addEventListener('click', () => {cards.classList.add('grid-view')}, true)
+cardView.addEventListener('click', () => {cards.classList.remove('list-view')}, true)

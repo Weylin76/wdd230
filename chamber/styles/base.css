@@ -5,13 +5,13 @@
     --cream: #F5F5DC;
 }
 
-html{
+html {
     background-color: var(--pure-white);
 }
 
 body {
     font-family: 'Amatic SC', sans-serif;
-    position: relative; 
+    position: relative;
     padding: 1rem;
     box-sizing: border-box;
     background-color: var(--grinch-green);
@@ -26,11 +26,11 @@ header {
     align-items: end;
 }
 
-header h1{
+header h1 {
     font-size: 2rem;
 }
 
-.icon{
+.icon {
     max-width: 32px;
 }
 
@@ -38,19 +38,23 @@ header h1{
     cursor: pointer;
     position: absolute;
     right: 0.5rem;
-    top: .5rem; 
+    top: .5rem;
     margin-bottom: 1rem;
 }
 
-#menu-Btn, #close-Btn, .nav-menu-close, .close-ham-btn, .close-close-btn {
+#menu-Btn,
+#close-Btn,
+.nav-menu-close,
+.close-ham-btn,
+.close-close-btn {
     display: none;
 }
 
-#mode{
+#mode {
     font-size: 1rem;
     position: absolute;
     right: 3.2rem;
-    top: .5rem; 
+    top: .5rem;
     margin-bottom: 1rem;
     padding: .25rem;
 }
@@ -65,23 +69,25 @@ header h1{
 
 .image-container picture img {
     max-width: 100%;
-    max-height: 80vh; 
+    max-height: 80vh;
     display: block;
 }
 
 #hero {
     position: absolute;
-    top: 0; 
-    color: black; 
-    text-align: center; 
+    top: 0;
+    color: black;
+    text-align: center;
 }
 
-main p{
+main p {
     padding: .5rem;
     font-size: 1.5rem;
 }
 
-ul, ul li, footer p{
+ul,
+ul li,
+footer p {
     font-size: 1.5rem;
 }
 
@@ -126,62 +132,68 @@ nav a:last-child {
 
 .image-container picture img {
     max-width: 100%;
-    max-height: 80vh; 
+    max-height: 80vh;
     display: block;
 }
 
 #hero {
     position: absolute;
-    top: 0; 
-    color: black; 
-    text-align: center; 
+    top: 0;
+    color: black;
+    text-align: center;
 }
 
 
-h2{
+h2 {
     font-family: 'Pacifico', cursive;
     color: var(--pure-white);
     background-color: var(--bright-red);
 }
 
-p{
+p {
     font-family: 'Amatic SC', cursive;
     font-size: 16px;
 }
 
-#current-event, #weather-card, #spotlights {
+#current-event,
+#weather-card,
+#spotlights {
     border: 1px solid black;
     margin: 1rem;
 }
 
-footer{
-     background-color: var(--grinch-red); 
+footer {
+    background-color: var(--grinch-red);
     color: var(--pure-white);
     text-align: center;
-    margin: 1rem 0; 
+    margin: 1rem 0;
 }
 
-.footer-container{
-   padding: .5rem;
+.footer-container {
+    padding: .5rem;
 }
 
-footer img{
+footer img {
     max-height: 1rem;
     margin: 0 .5rem;
 }
 
-.footer-box{
+.footer-box {
     display: flex;
     justify-content: center;
 }
 
 #map-container {
     position: relative;
-    padding-bottom: 56.25%; /* For 16:9 Aspect Ratio */
+    padding-bottom: 56.25%;
+    /* For 16:9 Aspect Ratio */
     height: 0;
-    width: 90%; /* Adjust based on your layout needs */
-    margin: 1rem auto; /* Centering the map container */
-    border: 1px solid black; /* Optional, for visibility */
+    width: 90%;
+    /* Adjust based on your layout needs */
+    margin: 1rem auto;
+    /* Centering the map container */
+    border: 1px solid black;
+    /* Optional, for visibility */
 }
 
 .map-iframe {
@@ -190,7 +202,8 @@ footer img{
     left: 0;
     width: 100%;
     height: 100%;
-    border: 0; /* No border */
+    border: 0;
+    /* No border */
 }
 
 /* Discover Page CSS */
@@ -200,26 +213,34 @@ footer img{
 }
 
 .fact-item {
-    display: flex; /* Use flexbox instead of grid */
-    justify-content: space-between; /* This will create space between the text and image */
-    align-items: center; /* This will vertically center the text with the image */
-    margin-bottom: 20px; /* Adds space between each fact-item */
+    display: flex;
+    /* Use flexbox instead of grid */
+    justify-content: space-between;
+    /* This will create space between the text and image */
+    align-items: center;
+    /* This will vertically center the text with the image */
+    margin-bottom: 20px;
+    /* Adds space between each fact-item */
 }
 
 .fact-item p {
     /* Adjust the width as needed to give more space to the text or image */
-    width: 50%; /* This is an example value; adjust as needed */
-    margin: 0; /* Adjust as needed for your design */
+    width: 50%;
+    /* This is an example value; adjust as needed */
+    margin: 0;
+    /* Adjust as needed for your design */
 }
 
 .fact-item img {
-    width: 50%; /* This is an example value; adjust as needed */
-    height: auto; /* Maintains the aspect ratio */
+    width: 50%;
+    /* This is an example value; adjust as needed */
+    height: auto;
+    /* Maintains the aspect ratio */
     max-width: 600px;
 
 }
 
-#visit-info{
+#visit-info {
     margin: 1rem;
     font-size: 2rem;
     text-align: center;
@@ -227,89 +248,100 @@ footer img{
 }
 
 .img-shake {
-    width: 100%; /* Adjust the width to fit the container */
-    min-width: 200px; /* Minimum width */
-    height: auto; /* Maintain the aspect ratio */
+    width: 100%;
+    /* Adjust the width to fit the container */
+    min-width: 200px;
+    /* Minimum width */
+    height: auto;
+    /* Maintain the aspect ratio */
 }
 
-#visit-info{
+#visit-info {
     font-size: 2rem;
 }
 
 /* Join Page CSS */
 
 
-label, input, textarea{
+label,
+input,
+textarea {
     display: block;
     margin: .5rem;
     font-family: 'Courier New', Courier, monospace;
 }
 
-input{
+input {
     padding: .75rem .25rem;
 }
 
 
-input:required{
-    border-left: 6px solid red ;
+input:required {
+    border-left: 6px solid red;
 }
 
-input:required:valid{
+input:required:valid {
     border-left: 6px solid greenyellow;
 }
 
-.submitBtn{
+.submitBtn {
     margin: .5rem 2rem;
     padding: .5rem;
 }
 
 /* Join Page */
-.free-plan, .bronze-plan, .silver-plan, .gold-plan {
+.free-plan,
+.bronze-plan,
+.silver-plan,
+.gold-plan {
     color: black;
     border-radius: 10px;
     padding: .5rem;
     margin-top: 10px;
 }
 
-.membership-header h2{
+.membership-header h2 {
     text-align: center;
 }
 
-.membership-tier h3{
+.membership-tier h3 {
     font-size: 1.5rem;
     text-align: center;
 }
 
-.free-plan{
-    background-color: #F5F5DC; 
+.free-plan {
+    background-color: #F5F5DC;
 }
 
 .bronze-plan {
-    background-color: #CD7F32; /* Bronze */
+    background-color: #CD7F32;
+    /* Bronze */
 }
 
 .silver-plan {
-    background-color: #C0C0C0; /* Silver */
+    background-color: #C0C0C0;
+    /* Silver */
 }
 
 .gold-plan {
-    background-color: #FFD700; /* Gold */
+    background-color: #FFD700;
+    /* Gold */
 }
 
- .radio {
+.radio {
     padding-left: 5px;
     margin-bottom: 15px;
     cursor: pointer;
     font-size: 20px;
-} 
+}
 
 .radio input {
     cursor: pointer;
     height: 25px;
     width: 25px;
-} 
+}
 
-textarea{
+textarea {
     max-width: 300px;
 }
 
@@ -317,37 +349,102 @@ textarea{
     border-radius: 5px;
     display: block;
     margin: 15px auto;
-    padding: 20px 30px; 
+    padding: 20px 30px;
     font-size: 1.5rem;
-    background-color: lightgray; 
+    background-color: lightgray;
     transition: background-color 0.3s ease;
 }
 
 .submitBtn:hover {
     cursor: pointer;
-    background-color: lightgreen; /* Darker shade on hover */
+    background-color: lightgreen;
+    /* Darker shade on hover */
 }
 
 /* Directory */
+#icon-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
 #cards {
     margin: 1rem;
     color: white;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 10px;
-  }
+}
 
 .card {
     padding: 1rem 0;
     background-color: var(--grinch-red);
     text-align: center;
     border-radius: 10px;
-  }
+}
 
-  .card a{
+.card a {
     color: white;
     text-decoration: none;
-  }
+}
+
+#cards.list-view {
+    /* Disable grid columns for list view */
+    grid-template-columns: none;
+    /* Use flexbox for the container */
+    display: flex;
+    /* Stack items vertically */
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#cards.list-view .card {
+    /* Flex display for each card in list view */
+    display: flex;
+    /* Wrap items to next line if not enough space */
+    flex-wrap: wrap;
+    /* Padding inside each card */
+    padding: 10px;
+    /* Border to separate items */
+    border-bottom: 1px solid #ccc;
+}
+
+#cards.list-view .card img {
+    /* Hide images in list view */
+    display: none;
+}
+
+#cards.list-view .card h2,
+#cards.list-view .card p,
+#cards.list-view .card address,
+#cards.list-view .card a {
+    font-size: 1rem;
+    margin: 5px;
+}
+
+#cards.list-view .card h2{
+    font-family: "Amatic SC";
+}
+
+#cards.list-view .card br{
+    display: none;
+}
+
+#cards.list-view .card a {
+    max-width: 250px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+    text-decoration: none;
+}
+
+#cards.list-view .card p {
+    margin: 5px; 
+    padding: 0;
+}
+
+
+
 
 
 
