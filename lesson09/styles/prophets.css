@@ -6,7 +6,6 @@ body {
   
   header, main, footer, h1 {
     margin: 1rem;
-    max-width: 400px; /* Example width */
     width: 100%; /* Ensures the element takes up the width of its parent up to max-width */
     margin: .5rem auto; /* This will center the header, main, and footer blocks horizontally */
   }
@@ -19,15 +18,16 @@ body {
   }
   
   #cards {
-    color: yellow;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-gap: 10px;
   }
   
   .card {
-    background-color: slategray;
+    background-color: #000080;
     text-align: center;
     border-radius: 10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   }
 
   img{
