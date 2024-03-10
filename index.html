@@ -30,6 +30,7 @@
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/visits.js" defer></script>
     <script src="scripts/links.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 
 <body>
@@ -70,10 +71,10 @@
             <section class="card">
                 <h3 class="background-color white">Information</h3>
                 <section id="information">
-                    <div id="temp">Temp: <span>10</span></div>
-                    <div id="speed">Wind speed: <span>4</span></div>
-                    <div>Currnet conditions: <span>sunny</span></div>
-                    <div>Humidity: <span>35%</span></div>
+                    <div id="temp">Temp: <span></span></div>
+                    <div id="speed">Wind speed: <span></span></div>
+                    <div>Currnet conditions: <span id="curr-cond"></span></div>
+                    <div>Humidity: <span id="hum"></span></div>
                     <div>Windchill: <span id="windchill"></span></div>
                     <div>Page visits: <span id="visits"></span></div>
                 </section>
