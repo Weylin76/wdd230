@@ -20,43 +20,47 @@
     <link rel="stylesheet" href="styles/normalized.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <!-- <link rel="stylesheet" href="styles/larger.css"> -->
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/darkMode.js" defer></script>
-    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/hamBtn.js" defer></script>
 
 </head>
 
-<body>
-    <header>
-        <h1 class="large-font">Scoots Moped Rentals</h1>
-        <aside>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                <img class="icon" src="images/facebookicon.png" alt="facebook icon">
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                <img class="icon" src="images/linkedinicon.png" alt="LinkedIn icon">
-            </a>
-        </aside>
+<body class="padding">
+    <header class="text-center">
+        <h1>Scoots Moped Rentals</h1>
         <div>
-            <button id="menu-btn" class="material-symbols-outlined">menu</button>
-            <button id="mode">Dark Mode</button>
-            <button id="close-btn" class="material-symbols-outlined close-close-btn">close</button>
+            <button id="mode">
+                <img id="mode-icon" src="images/light-mode-icon.png" alt="Toggle Dark Mode">
+            </button>
+        </div>
+        <div>
+            <img src="images/hamburger-menu.svg" alt="Hamburger menu button icon" id="hamBtn">
         </div>
     </header>
-    <nav id="nav" class="nav-menu-close">
-        <a href="index.html" class="remove-underline">Home</a>
-        <a href="rentals.html" class="remove-underline">Rentals</a>
-        <a href="reservations.html" class="remove-underline">Reservations</a>
-        <a href="contact.html" class="remove-underline">Contact</a>
+    <nav id="nav" class="nav-menu-close large-font-size">
+        <a href="index.html" class="remove-underline radius padding black-border margin-top">Home</a>
+        <a href="rentals.html" class="remove-underline radius padding black-border margin-top">Rentals</a>
+        <a href=" reservations.html"
+            class="remove-underline radius padding black-border margin-top active">Reservations</a>
+        <a href="contact.html" class="remove-underline radius padding black-border margin-top">Contact</a>
     </nav>
     <main>
 
     </main>
-    <footer class="text-center margin padding">
-        <div class="footer-container">
+    <footer class="text-center margin padding radius">
+        <div class="footer-container padding">
             <div id="scoots-info">
                 <p>Scoots Moped Rentals | Mexico</p>
+                <aside>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <img class="icon" src="images/facebookicon.png" alt="facebook icon">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <img class="icon" src="images/linkedinicon.jpg" alt="LinkedIn icon">
+                    </a>
+                </aside>
                 <div id="my-info">
                     <p>&copy; <span id="currentYear"></span></p>
                     <p>Weylin Douglas</p>

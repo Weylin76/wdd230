@@ -49,10 +49,25 @@
 .padding-top{
     padding-top: 1rem;
 }
+
+.display-none{
+    display: none;
+}
+
+.active {
+    color: #2B2B2B; 
+    background-color: #9BDDFF;
+}
+
 /* Shared CSS */
 
 html{
     background-color: var(--pure-white);
+}
+
+h1{
+    margin-top: 3rem;
+    width: 100%;
 }
 
 body {
@@ -71,13 +86,20 @@ header {
     align-items: end;
 }
 
-#mode{
+#mode, #hamBtn{
     position: absolute;
-    left: 1rem;
     top: .5rem; 
 }
 
-#mode-icon{
+#hamBtn{
+    right: 1rem;
+}
+
+#mode{
+    left: 1rem;
+}
+
+#mode-icon, #hamBtn{
     max-width: 50px;
 }
 
