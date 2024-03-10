@@ -5,10 +5,22 @@
 
     #nav{
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     #hamBtn{
         display: none;
+    }
+
+    #logo{
+        max-width: 50px;
+        left: 78%;
+    }
+    
+    #logo p {
+        position: absolute;
+        top: 50%;
+        left: 35px;
+        width: 110px;
     }
 }

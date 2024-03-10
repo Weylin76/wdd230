@@ -75,7 +75,6 @@ body {
     position: relative; 
     box-sizing: border-box;
     background-color: var(--tropical-sea-blue);
-    color: var(--pure-white);
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -86,7 +85,7 @@ header {
     align-items: end;
 }
 
-#mode, #hamBtn{
+#mode, #hamBtn, #logo{
     position: absolute;
     top: .5rem; 
 }
@@ -97,10 +96,25 @@ header {
 
 #mode{
     left: 1rem;
+    top: 1rem;
 }
+
 
 #mode-icon, #hamBtn{
     max-width: 50px;
+}
+
+#logo{
+    max-width: 50px;
+    left: 40%;
+    transform: translateX(-40%);
+}
+
+#logo p {
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    width: 110px;
 }
 
 nav {
@@ -109,7 +123,7 @@ nav {
 }
 
 nav a {
-    color: var(--sunset-orange);
+    color: #00008B;
     background-color: var(--sand-yellow);
     font-family: 'Pacifico', cursive;
 }
@@ -122,10 +136,22 @@ nav a:hover {
     max-height: 64px;
 }
 
-
 footer{
     background-color: var(--sunset-orange); 
-    color: var(--pure-white);
+    position: relative;
+}
+
+#thumbs-up {
+    position: absolute;
+    top: .25rem;
+    left: .5rem;
+    max-width: 50px;
+}
+
+#like-container{
+    position: absolute;
+    top: .5rem;
+    left: 4rem;
 }
 
 

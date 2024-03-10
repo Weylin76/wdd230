@@ -24,19 +24,24 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/darkMode.js" defer></script>
     <script src="scripts/hamBtn.js" defer></script>
+    <script src="scripts/likes.js" defer></script>
 
 </head>
 
 <body class="padding">
-    <header class="text-center">
+    <header class="text-center header">
         <h1>Scoots Moped Rentals</h1>
         <div>
             <button id="mode">
                 <img id="mode-icon" src="images/light-mode-icon.png" alt="Toggle Dark Mode">
             </button>
         </div>
+        <div id="logo">
+            <img src="images/scooterLogo.png" alt="scooterLogo" id="logo">
+            <p>Zip through your Adventure</p>
+        </div>
         <div>
-            <img src="images/hamburger-menu.svg" alt="Hamburger menu button icon" id="hamBtn">
+            <img id="hamBtn" src="images/hamburger-menu.svg" alt="Open menu">
         </div>
     </header>
     <nav id="nav" class="nav-menu-close large-font-size">
@@ -50,6 +55,8 @@
     </main>
     <footer class="text-center margin padding radius">
         <div class="footer-container padding">
+            <img src="images/like-icon.png" alt="Thumbs up icon" id="thumbs-up">
+            <div id="like-container">Total Likes: <span id="likes"></span></div>
             <div id="scoots-info">
                 <p>Scoots Moped Rentals | Mexico</p>
                 <aside>
