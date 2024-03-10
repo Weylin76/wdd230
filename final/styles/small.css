@@ -1,0 +1,20 @@
+@media screen and (min-width: 550px){
+    h1{
+        font-size: 3rem;
+    }
+    
+    #logo{
+        max-width: 50px;
+        top: 2%;
+        left: 25%;
+    }
+    
+    #logo-container p {
+        position: absolute;
+        top: 0%;
+        left: 35%;
+        width: 300px;
+        font-size: 1.5rem;
+    }
+
+}

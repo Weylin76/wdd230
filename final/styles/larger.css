@@ -1,47 +1,43 @@
 @media screen and (min-width: 900px){
-    nav {
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding: 0.5rem 0;
-    }
+  
+h1{
+    font-size: 4rem;
+}
 
-    nav a {
-        padding: 0.5rem; 
-        margin: 0;
-        border: 1px solid var(--grinch-red);
-        border-radius: 5%;
-        animation: rotate 1s infinite alternate;
-        background-color: white;
-        flex-grow: 0; 
-        width: auto;
-    }
+#mode{
+    top: 2%;
+    left: 1.4%;
+}
 
-    .nav-menu-close{
-        display: flex;
-    }
+#logo-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align the child elements */
+    margin-left: auto; /* To align the container to the right */
+    margin-right: 5%; /* Adjust as needed, or use a fixed value in px */
+}
 
-    .material-symbols-outlined {
-        display: none;
-    }
+#logo{
+    max-width: 60px;
+    left: 88%;
+    top: 2%;
+}
 
-    #mode{
-        top: .5rem;
-        right: .5rem;
-    }
+#logo-container p {
+    width: 150px; /* Adjust if necessary */
+    text-align: center; /* Center the text if the paragraph is wider than the text */
+    margin-top: 0.5rem; /* Add some space between the logo image and the text */
+    left: 85%;
+}
 
-    header {
-        align-items: center; 
-    }
+#scooter-container img, #cozumel-container img{
+    max-width: 250px;
+    transform: translateY(30%);
+    right:20px;
+}
 
-    .icon{
-        max-width: 64px;
-    }
+#cozumel-container img{
+    left: 20px;
+}
 
-    header h1{
-        font-size: 4rem;
-    }
-
-
-
-    
 }

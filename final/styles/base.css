@@ -106,14 +106,14 @@ header {
 
 #logo{
     max-width: 50px;
-    left: 40%;
-    transform: translateX(-40%);
+    top: 1.5%;
+    left: 34%;
 }
 
-#logo p {
+#logo-container p {
     position: absolute;
-    top: 50%;
-    left: 35px;
+    top: 0%;
+    left: 50%;
     width: 110px;
 }
 
@@ -153,6 +153,25 @@ footer{
     top: .5rem;
     left: 4rem;
 }
+
+
+#visits, #visit-container{
+    position: absolute;
+    right: 1rem;
+}
+
+#visit-container{
+    top: .5rem;
+}
+
+#visits{
+    top: 1.5rem;
+}
+
+#scooter-container img, #cozumel-container img {
+    display: none;
+}
+
 
 
 

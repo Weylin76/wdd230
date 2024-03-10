@@ -19,12 +19,14 @@
     <!-- Link CSS and JS -->
     <link rel="stylesheet" href="styles/normalized.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
-    <!-- <link rel="stylesheet" href="styles/larger.css"> -->
+    <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/darkMode.js" defer></script>
     <script src="scripts/hamBtn.js" defer></script>
     <script src="scripts/likes.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
 
 </head>
 
@@ -36,7 +38,7 @@
                 <img id="mode-icon" src="images/light-mode-icon.png" alt="Toggle Dark Mode">
             </button>
         </div>
-        <div id="logo">
+        <div id="logo-container">
             <img src="images/scooterLogo.png" alt="scooterLogo" id="logo">
             <p>Zip through your Adventure</p>
         </div>
@@ -57,21 +59,33 @@
         <div class="footer-container padding">
             <img src="images/like-icon.png" alt="Thumbs up icon" id="thumbs-up">
             <div id="like-container">Total Likes: <span id="likes"></span></div>
+            <div id="visit-container">Visits: <span id="visits"></span></div>
+            <div id="scooter-container"><img src="images/cozumel-Scooter.jpg" alt="lady on scooter" id="lady-scooter"
+                    class="radius" loading="lazy">
+            </div>
+            <div id="cozumel-container"><img src="images/cozumel.jpeg" alt="picture of cozumel" id="cozumel-pic"
+                    class="radius" loading="lazy"></div>
+
             <div id="scoots-info">
-                <p>Scoots Moped Rentals | Mexico</p>
-                <aside>
-                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                        <img class="icon" src="images/facebookicon.png" alt="facebook icon">
+                <p class="medium-font-size">Scoots Moped Rentals | Mexico</p>
+                <div>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                        class="remove-underline">
+                        <img class="icon" src="images/facebookicon.png" alt="facebook icon" loading="lazy">
                     </a>
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                        <img class="icon" src="images/linkedinicon.jpg" alt="LinkedIn icon">
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                        class="remove-underline">
+                        <img class="icon remove-underline" src="images/linkedinicon.jpg" alt="LinkedIn icon"
+                            loading="lazy">
                     </a>
-                </aside>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="remove-underline">
+                        <img class="icon remove-underline" src="images/xlogo.png" alt="X icon" loading="lazy">
+                    </a>
+                </div>
                 <div id="my-info">
-                    <p>&copy; <span id="currentYear"></span></p>
-                    <p>Weylin Douglas</p>
-                    <!-- <p class="footer-box">Michigan, USA <img src="images/usa-flag.jpg" alt="USA Flag"> </p> -->
+                    <p class="large-font-size">Weylin Douglas</p>
                     <p>Last modified: <span id="lastmodification"></span></p>
+                    <p>&copy; <span id="currentYear"></span></p>
                 </div>
             </div>
     </footer>
