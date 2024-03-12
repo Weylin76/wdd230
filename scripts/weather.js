@@ -16,7 +16,7 @@ async function getWeather(url) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
-``
+
         // Extract the relevant data
         temp.textContent = `Temperature: ${data.main.temp.toFixed(0)}°F`;
         windSpeed.textContent = `Wind Speed: ${data.wind.speed.toFixed(0)} mph`;
