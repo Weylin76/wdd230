@@ -27,7 +27,7 @@ async function getWeather(url) {
         
         // Calculate wind chill
         const windChillValue = calculateWindChill(data.main.temp, data.wind.speed);
-        windChill.textContent = `${windChillValue} °F`;
+        windChill.textContent = `${windChillValue}`;
     } catch (error) {
         console.error('Fetch error:', error);
     }
