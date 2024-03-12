@@ -221,3 +221,9 @@ footer{
     padding: .5rem;
 }
 
+#weather-icon{
+    display: inline;
+}
+
+
+

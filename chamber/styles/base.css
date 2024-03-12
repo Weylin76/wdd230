@@ -382,11 +382,11 @@ textarea {
     display: none;
 }
 
-#cards.list-view .card h2,
-#cards.list-view .card p,
-#cards.list-view .card address,
-#cards.list-view .card a {
-    font-size: var(--default-font-size);
+.card h2,
+.card p,
+.card address,
+.card a {
+    font-size: var(--font_size_medium);
     margin: 5px;
 }
 
@@ -398,7 +398,7 @@ textarea {
     display: none;
 }
 
-#cards.list-view .card a {
+.card a {
     max-width: 250px; 
     white-space: nowrap;
     overflow: hidden;
@@ -411,6 +411,17 @@ textarea {
     margin: 5px; 
     padding: 0;
 }
+
+#cards.grid-view a{
+    font-size: 1rem;
+    white-space: wrap;
+}
+
+#cards.grid-view h2{
+  padding: 10px 0;
+}
+
+
 
 
 

@@ -1,8 +1,11 @@
-const url = `https://api.openweathermap.org/data/2.5/weather?q=Laingsburg,us&units=imperial&APPID=5d177bfcfd97660efa8f1485d0796cd6`
+const apiKey = '5d177bfcfd97660efa8f1485d0796cd6'
+const city = 'Laingsburg'
+const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},us&units=imperial&APPID=${apiKey}`
 
 const temp = document.querySelector('#temp');
 const windSpeed = document.querySelector('#speed');
 const currentCondition = document.querySelector('#curr-cond');
+const conditionIcon = document.querySelector('#weather-icon');
 const humidity = document.querySelector('#hum');
 const windChill = document.querySelector('#windchill');
 
@@ -13,11 +16,13 @@ async function getWeather(url) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
-
+``
         // Extract the relevant data
-        temp.textContent = `Temperature: ${data.main.temp} °F`;
-        windSpeed.textContent = `Wind Speed: ${data.wind.speed} mph`;
-        currentCondition.textContent = `Conditions: ${data.weather[0].main}`;
+        temp.textContent = `Temperature: ${data.main.temp.toFixed(0)}°F`;
+        windSpeed.textContent = `Wind Speed: ${data.wind.speed.toFixed(0)} mph`;
+        conditionIcon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+        conditionIcon.alt = `current conditions: ${data.weather[0].main}`
+        currentCondition.textContent = ` ${data.weather[0].main}`;
         humidity.textContent = `Humidity: ${data.main.humidity}%`;
         
         // Calculate wind chill

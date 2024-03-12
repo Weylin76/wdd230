@@ -27,6 +27,7 @@
     <script src="scripts/hamBtn.js" defer></script>
     <script src="scripts/likes.js" defer></script>
     <script src="scripts/visits.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 
 </head>
 
@@ -53,6 +54,24 @@
         <a href="contact.html" class="remove-underline radius padding black-border margin-top">Contact</a>
     </nav>
     <main>
+        <div id="weather-container">
+            <div>Temperature <span id="temp"></span></div>
+            <div>Humidity <span id="hum"></span></div>
+            <div id="curr-cond">
+                <img id="weather-icon" alt="Weather icon">
+                <span id="desc"></span>
+            </div>
+            <div id="3-day">
+                <img src="" alt="" id="day1-icon">
+                <span id="day1"></span>
+                <img src="" alt="" id="day2-icon">
+                <span id="day2"></span>
+                <img src="" alt="" id="day3-icon">
+                <span id="day3"></span>
+                <img src="" alt="" id="dayPMIcon">
+                <span id="dayPM"></span>
+            </div>
+        </div>
 
     </main>
     <footer class="text-center margin padding radius">

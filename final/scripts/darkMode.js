@@ -28,6 +28,9 @@ function enableDarkMode() {
     hamBtn.alt = 'Hamber button white';
     hamBtn.style.marginTop = '1rem';
     header.style.color = 'white';
+    document.querySelectorAll('main, main *').forEach(text => {
+        text.style.color = 'white';
+    });
 }
 
 function disableDarkMode() {
