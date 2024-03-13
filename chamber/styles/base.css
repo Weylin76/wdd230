@@ -421,6 +421,16 @@ textarea {
   padding: 10px 0;
 }
 
+/* Weather information */
+#day1, #day2, #day3, #curr-container{
+    display: flex;
+    display: row;
+    align-items: center;
+}
+
+#weather-card{
+    font-size: var(--font_size_medium);
+}
 
 
 

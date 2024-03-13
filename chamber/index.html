@@ -32,6 +32,7 @@
     <script src="scripts/windchill.js" defer></script>
     <script src="scripts/visits.js" defer></script>
     <script src="scripts/hero.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 
 <body class="pure_white">
@@ -79,21 +80,20 @@
                 <h2>Information</h2>
                 <div>Temp: <span id="temp"></span></div>
                 <div>Wind speed: <span id="speed"></span></div>
-                <div>Currnet conditions: <span>sunny</span></div>
+                <div id="curr-container">Currnet conditions: <img id="curr-cond"></img></div>
                 <div>Humidity: <span id="hum"></span></div>
                 <div>Windchill: <span id="windchill"></span></div>
                 <div id="mult-day">
                     <div id="day1">
-                        <span id="day1-icon">
-                        </span><span id="day1-temp"></span>
+                        <span id="day1-temp"></span><img id="day1-icon"></img>
                     </div>
                     <div id="day2">
-                        <span id="day2-icon">
-                        </span><span id="day2-temp"></span>
+                        <span id="day2-temp"></span>
+                        <img id="day2-icon"></img>
                     </div>
                     <div id="day3">
-                        <span id="day3-icon">
-                        </span><span id="day3-temp"></span>
+                        <span id="day3-temp"></span>
+                        <img id="day3-icon"></img>
                     </div>
                 </div>
                 <div>Page visits: <span id="visits"></span></div>
