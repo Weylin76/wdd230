@@ -59,9 +59,6 @@
     </nav>
     <main>
         <div class="image-wrapper content-container">
-            <!-- <picture>
-                <img id="hero" src="images/mount_crumpit_hero_full.webp" alt="picture of Mount Crumpit">
-            </picture> -->
             <div class="image-container">
                 <picture>
                     <source srcset="images/hero_small.webp" media="(max-width: 450px)">
@@ -71,7 +68,6 @@
                 </picture>
                 <p id="hero" class="text-center"></p>
             </div>
-            <!-- <button id="join">Join Now!</button> -->
             <section id="current-event" class="padding-left">
                 <h2>Events</h2>
                 <p class="font-default padding-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic,
@@ -81,11 +77,25 @@
             </section>
             <section id="weather-card" class="font-default padding-left">
                 <h2>Information</h2>
-                <div id="temp">Temp: <span>10</span></div>
-                <div id="speed">Wind speed: <span>4</span></div>
+                <div>Temp: <span id="temp"></span></div>
+                <div>Wind speed: <span id="speed"></span></div>
                 <div>Currnet conditions: <span>sunny</span></div>
-                <div>Humidity: <span>35%</span></div>
+                <div>Humidity: <span id="hum"></span></div>
                 <div>Windchill: <span id="windchill"></span></div>
+                <div id="mult-day">
+                    <div id="day1">
+                        <span id="day1-icon">
+                        </span><span id="day1-temp"></span>
+                    </div>
+                    <div id="day2">
+                        <span id="day2-icon">
+                        </span><span id="day2-temp"></span>
+                    </div>
+                    <div id="day3">
+                        <span id="day3-icon">
+                        </span><span id="day3-temp"></span>
+                    </div>
+                </div>
                 <div>Page visits: <span id="visits"></span></div>
             </section>
             <h2 id="member-heading" class="padding-left">Member Spotlight</h2>
@@ -130,13 +140,6 @@
             <div id="contact-info" class="font-default">
                 <p>email: grinch@gmail.com</p>
                 <p>(517) 651-2738</p>
-                <!-- <div id="map-container">
-                    <iframe class="map-iframe"
-                        src="
-                https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10319.223287671342!2d-123.11585523986913!3d49.71445726792257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486f9c5b3deed77%3A0x7f0dd39e7ab59885!2sMount%20Crumpit!5e0!3m2!1sen!2sus!4v1706909452831!5m2!1sen!2sus"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div> -->
             </div>
             <hr>
             <div id="my-info" class="font-default">
