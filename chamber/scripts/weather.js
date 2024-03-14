@@ -23,8 +23,6 @@ async function getForecast(url) {
         }
         const data = await response.json();
 
-        console.log(data);
-
         //Today's information
         let todaysTemp = `${data.daily[0].temp.day.toFixed(0)}°F`
         temp.textContent = todaysTemp;
@@ -46,18 +44,18 @@ async function getForecast(url) {
         day1Temp.textContent = `today's temp: ${data.daily[1].temp.day.toFixed(0)}°F`;
 
         // Day 2 forecast
-        iconCode = data.daily[1].weather[0].icon;
-        iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
-        day2Icon.src = iconUrl;
-        day2Icon.alt = data.daily[1].weather[0].description;
-        day2Temp.textContent = `Day 2 temp: ${data.daily[1].temp.day.toFixed(0)}°F`;
-
-        // Day 3 forecast
         iconCode = data.daily[2].weather[0].icon;
         iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
+        day2Icon.src = iconUrl;
+        day2Icon.alt = data.daily[2].weather[0].description;
+        day2Temp.textContent = `Day 2 temp: ${data.daily[2].temp.day.toFixed(0)}°F`;
+
+        // Day 3 forecast
+        iconCode = data.daily[3].weather[0].icon;
+        iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
         day3Icon.src = iconUrl;
-        day3Icon.alt = data.daily[2].weather[0].description;
-        day3Temp.textContent = `Day 3 temp: ${data.daily[2].temp.day.toFixed(0)}°F`;
+        day3Icon.alt = data.daily[3].weather[0].description;
+        day3Temp.textContent = `Day 3 temp: ${data.daily[3].temp.day.toFixed(0)}°F`;
 
     } catch (error) {
         console.error('Fetch error:', error);
@@ -65,3 +63,4 @@ async function getForecast(url) {
 }
 
 getForecast(url);
+

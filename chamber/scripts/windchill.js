@@ -23,3 +23,4 @@ document.addEventListener("DOMContentLoaded", function() {
     // Call updateWindChill on initial load
     updateWindChill();
 });
+
