@@ -41,7 +41,7 @@ async function getForecast(url) {
         iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
         day1Icon.src = iconUrl;
         day1Icon.alt = data.daily[1].weather[0].description;
-        day1Temp.textContent = `today's temp: ${data.daily[1].temp.day.toFixed(0)}°F`;
+        day1Temp.textContent = `today temp: ${data.daily[1].temp.day.toFixed(0)}°F`;
 
         // Day 2 forecast
         iconCode = data.daily[2].weather[0].icon;
