@@ -127,6 +127,7 @@ nav a {
     font-family: 'Pacifico', cursive;
     text-decoration: none;
     margin-bottom: 1rem;
+    margin-left: 20px;
     padding: 0.5rem 0;
     transition: color 0.3s ease;
 }
@@ -162,6 +163,14 @@ nav a:last-child {
 h2 {
     font-family: 'Pacifico', cursive;
     background-color: var(--bright-red);
+}
+
+section article h3{
+    font-size: var(--font_size_double);
+}
+
+hr{
+    margin-right: 10px;
 }
 
 #current-event,
