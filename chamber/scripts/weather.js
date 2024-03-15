@@ -41,6 +41,7 @@ async function getForecast(url) {
         iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
         day1Icon.src = iconUrl;
         day1Icon.alt = data.daily[1].weather[0].description;
+        day1Icon.loading = 'lazy';
         day1Temp.textContent = `today temp: ${data.daily[1].temp.day.toFixed(0)}°F`;
 
         // Day 2 forecast
@@ -48,6 +49,7 @@ async function getForecast(url) {
         iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
         day2Icon.src = iconUrl;
         day2Icon.alt = data.daily[2].weather[0].description;
+        day2Icon.loading = 'lazy';
         day2Temp.textContent = `Day 2 temp: ${data.daily[2].temp.day.toFixed(0)}°F`;
 
         // Day 3 forecast
@@ -55,6 +57,7 @@ async function getForecast(url) {
         iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
         day3Icon.src = iconUrl;
         day3Icon.alt = data.daily[3].weather[0].description;
+        day3Icon.loading = 'lazy';
         day3Temp.textContent = `Day 3 temp: ${data.daily[3].temp.day.toFixed(0)}°F`;
 
     } catch (error) {
