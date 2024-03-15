@@ -1,6 +1,6 @@
 const newDate = new Date().getDay();
 
-if (newDate === 1 || newDate === 2 || newDate === 4){
+if (newDate === 1 || newDate === 2 || newDate === 3){
    document.addEventListener('DOMContentLoaded', () => {
 
     //create new P tag under header
