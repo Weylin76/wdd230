@@ -29,6 +29,10 @@ html {
     background-color: var(--pure-white);
 }
 
+.active{
+    color: var(--grinch-green)
+}
+
 body {
     font-family: 'Amatic SC', sans-serif;
     position: relative;
@@ -199,22 +203,11 @@ footer img {
     justify-content: center;
 }
 
-#map-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    width: 90%;
-    margin: 1rem auto;
-    border: 1px solid black;
-}
 
-.map-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
+#map{
+    text-decoration: none;
+    color: var(--pure-white);
+    font-size: var(--font_size_double)
 }
 
 /* Discover Page CSS */
