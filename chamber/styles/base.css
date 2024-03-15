@@ -414,7 +414,6 @@ textarea {
 
 #cards.grid-view a{
     font-size: 1rem;
-    white-space: wrap;
 }
 
 #cards.grid-view h2{
@@ -424,7 +423,6 @@ textarea {
 /* Weather information */
 #day1, #day2, #day3, #curr-container{
     display: flex;
-    display: row;
     align-items: center;
 }
 
