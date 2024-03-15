@@ -29,7 +29,7 @@ if (newDate === 1 || newDate === 2 || newDate === 3){
     header.appendChild(container);
 
     //add event listener to close banner message
-    btn.addEventListener('click', (event) => {
+    btn.addEventListener('click', () => {
         container.removeChild(p);
         container.removeChild(btn);
     })
