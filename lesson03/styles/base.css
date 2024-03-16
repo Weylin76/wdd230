@@ -18,12 +18,16 @@ header{
 header img{
     margin: 1rem;
     border-radius: .5rem;
-    border: 2px solid var(--grinch-red);
+    border: 1px solid var(--pure-white);
 }
 
 header p{
     font-size: 3rem;
     font-family: 'Amatic SC', sans-serif;
+}
+
+h1{
+    font-family: cursive;
 }
 
 

@@ -90,6 +90,10 @@ main p, ul li, footer p, .fact-item p, .fact-item img, .radio, .membership-tier 
     max-width: 32px;
 }
 
+h1{
+    font-family: cursive;
+}
+
 .material-symbols-outlined {
     cursor: pointer;
     position: absolute;
@@ -416,3 +420,4 @@ figcaption{
 #spotlights img{
     max-width: 100px;
 }
+
