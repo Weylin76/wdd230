@@ -407,3 +407,7 @@ figcaption{
 #page-visits{
     padding: 0 0 10px 40px;
 }
+
+#spotlights img{
+    max-width: 100px;
+}
