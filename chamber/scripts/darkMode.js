@@ -1,57 +1,48 @@
 const btn = document.querySelector('#mode');
-let isDarkMode = false; // Flag to track whether dark mode is currently enabled
+
+// Check the stored value to determine if dark mode is enabled or not
+let isDarkMode = localStorage.getItem('isDarkMode') === 'true'; 
+
+// Apply dark mode if it was enabled previously
+if (isDarkMode) {
+    enableDarkMode();
+} else {
+    disableDarkMode();
+}
 
 btn.addEventListener('click', () => {
-    if (!isDarkMode) {
-        // Change to dark mode
-        document.querySelector('html').style.backgroundColor = '#2B2B2B';
-        document.body.style.backgroundColor = 'black';
-        document.querySelector('.footer-container').style.backgroundColor = 'darkgray';
-        
-        //Loop through each section and set its border color
-        document.querySelectorAll('section').forEach(section => {
-            section.style.borderColor = 'white';
-        });
-
-        //Loop through each article and set its border color
-        document.querySelectorAll('article').forEach(article => {
-            article.style.borderColor = 'white';
-        })
-
-        //Change all footer font to black and bold
-        document.querySelector('.footer-container').style.color = 'black';
-        document.querySelectorAll('.footer-container').forEach(element => {
-            element.style.fontWeight = '900';
-        });
-        
-        //Change button to read Light Mode
-        btn.textContent = 'Light Mode';
-        isDarkMode = true; // Update flag
-
+    isDarkMode = !isDarkMode; 
+    localStorage.setItem('isDarkMode', isDarkMode.toString());
+    if (isDarkMode) {
+        enableDarkMode();
     } else {
-        // If already in dark mode, revert to original colors
-        document.querySelector('html').style.backgroundColor = '';
-        document.body.style.backgroundColor = ''; //the original color 
-        document.querySelector('.footer-container').style.backgroundColor = ''; //the original color
-        
-        //Loop through each section and revert its border color
-        document.querySelectorAll('section').forEach(section => {
-            section.style.borderColor = ''; // the original border color 
-        });
-        
-        //Loop through each section and revert its border color
-        document.querySelectorAll('article').forEach(article => {
-            article.style.borderColor = ''; //the original border color 
-        })
-
-        //revert its footer font to white and reset font weight
-        document.querySelector('.footer-container').style.color = '';
-        document.querySelectorAll('.footer-container').forEach(element => {
-            element.style.fontWeight = '';
-        });
-
-         //Change button to read Dark Mode
-        btn.textContent = 'Dark Mode';
-        isDarkMode = false; // Update flag
+        disableDarkMode();
     }
 });
+
+function enableDarkMode() {
+    document.querySelector('html').style.backgroundColor = '#2B2B2B';
+    document.body.style.backgroundColor = 'black';
+    document.querySelector('.footer-container').style.backgroundColor = 'darkgray';
+    document.querySelectorAll('section').forEach(section => section.style.borderColor = 'white');
+    document.querySelectorAll('article').forEach(article => article.style.borderColor = 'white');
+    document.querySelectorAll('.footer-container').forEach(element => {
+        element.style.color = 'black';
+        element.style.fontWeight = '900';
+    });
+    btn.textContent = 'Light Mode';
+}
+
+function disableDarkMode() {
+    document.querySelector('html').style.backgroundColor = '';
+    document.body.style.backgroundColor = '';
+    document.querySelector('.footer-container').style.backgroundColor = '';
+    document.querySelectorAll('section').forEach(section => section.style.borderColor = '');
+    document.querySelectorAll('article').forEach(article => article.style.borderColor = '');
+    document.querySelectorAll('.footer-container').forEach(element => {
+        element.style.color = '';
+        element.style.fontWeight = '';
+    });
+    btn.textContent = 'Dark Mode';
+}
+
