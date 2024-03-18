@@ -136,6 +136,28 @@ nav a:hover {
     max-height: 64px;
 }
 
+.image-container {
+    width: 100%; /* Adjust the width as needed */
+    text-align: center; /* Center the image horizontally */
+    position: relative;
+}
+
+.image-container img {
+    display: block; /* Ensure the image behaves as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%;
+}
+
+.image-container button{
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(0, 206, 255, 0.25); /* 50% transparent black */
+}
+
 footer{
     background-color: var(--sunset-orange); 
     position: relative;
@@ -172,6 +194,23 @@ footer{
 #scooter-container img, #cozumel-container img {
     display: none;
 }
+
+.footer a{
+    color: black;
+}
+
+
+/* Rental table data */
+#rental-table{
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+text-align: center; 
+}
+td{
+    text-align: center;
+}
+
 
 
 

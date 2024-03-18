@@ -24,7 +24,7 @@ function enableDarkMode() {
     document.body.style.backgroundColor = 'black';
     modeIcon.src = 'images/dark-mode-icon.png';
     modeIcon.alt = 'Toggle Light Mode';
-    hamBtn.src = 'images/ham-white.png';
+    hamBtn.src = 'images/ham-white-opt.jpg';
     hamBtn.alt = 'Hamber button white';
     hamBtn.style.marginTop = '1rem';
     header.style.color = 'white';
@@ -37,7 +37,7 @@ function disableDarkMode() {
     document.querySelector('html').style.backgroundColor = '';
     document.body.style.backgroundColor = '';
     document.querySelector('.footer-container').style.backgroundColor = '';
-    modeIcon.src = 'images/light-mode-icon.png';
+    modeIcon.src = 'images/light-mode-icon.jpg';
     modeIcon.alt = 'Toggle Dark Mode';
     hamBtn.src = 'images/hamburger-menu.svg';
     hamBtn.alt = 'Hamber button black';
