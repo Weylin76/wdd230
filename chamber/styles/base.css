@@ -319,6 +319,26 @@ textarea {
 }
 
 /* Directory */
+.card a {
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block; 
+    margin: 5px;
+    max-width: 250px; 
+    white-space: nowrap;
+}
+
+#cards.list-view .card a {
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+#cards.grid-view .card a {
+    font-size: var(--default-font-size);
+}
+
 #cards {
     margin: 1rem;
     color: white;
@@ -327,15 +347,8 @@ textarea {
     grid-gap: 10px;
 }
 
-.card {
-    padding: 1rem 0;
-    background-color: var(--grinch-red);
-    border-radius: 10px;
-}
-
-.card a {
-    color: white;
-    text-decoration: none;
+#cards.grid-view h2 {
+    padding: 10px 0;
 }
 
 #cards.list-view {
@@ -352,21 +365,8 @@ textarea {
     border-bottom: 1px solid #ccc;
 }
 
-.card h2, .card p, .card address, .card a {
+.card h2, .card p, .card address {
     margin: 5px;
-}
-
-#cards.list-view .card h2{
-    font-family: "Amatic SC";
-}
-
-.card a {
-    max-width: 250px; 
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: white;
-    text-decoration: none;
 }
 
 #cards.list-view .card p {
@@ -374,13 +374,10 @@ textarea {
     padding: 0;
 }
 
-#cards.grid-view a{
-    font-size: var(--default-font-size);
-    white-space: wrap;
-}
-
-#cards.grid-view h2{
-  padding: 10px 0;
+.card {
+    padding: 1rem 0;
+    background-color: var(--grinch-red);
+    border-radius: 10px;
 }
 
 /* Weather information */
