@@ -33,70 +33,70 @@
 </head>
 
 <body class="padding">
-    <header class="text-center header">
-        <h1>Scoots Moped Rentals</h1>
-        <div>
+    <!-- Sidebar navigation menu -->
+    <nav id="sidebar" class="nav-menu">
+        <button id="closeBtn" aria-label="Close menu">X</button>
+        <!-- Navigation links -->
+        <a href="index.html">Home</a>
+        <a href="rentals.html">Rentals</a>
+        <a href="reservations.html" class="active">Reservations</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <header>
+            <h1>Scoots Moped Rentals</h1>
             <button id="mode">
                 <img id="mode-icon" src="images/light-mode-icon.jpg" alt="Toggle Dark Mode">
             </button>
-        </div>
-        <div id="logo-container">
-            <img src="images/scooterLogo-opt.jpg" alt="scooterLogo" id="logo">
-            <p>Zip through your Adventure</p>
-        </div>
-        <div>
-            <img id="hamBtn" src="images/hamburger-menu.svg" alt="Open menu">
-        </div>
-    </header>
-    <nav id="nav" class="nav-menu-close large-font-size">
-        <a href="index.html" class="remove-underline radius padding black-border margin-top">Home</a>
-        <a href="rentals.html" class="remove-underline radius padding black-border margin-top">Rentals</a>
-        <a href=" reservations.html"
-            class="remove-underline radius padding black-border margin-top active">Reservations</a>
-        <a href="contact.html" class="remove-underline radius padding black-border margin-top">Contact</a>
-    </nav>
-    <main>
-
-    </main>
-    <footer class="text-center margin padding radius">
-        <div class="footer-container padding">
-            <img src="images/like-icon.png" alt="Thumbs up icon" id="thumbs-up">
-            <div id="like-container">Total Likes: <span id="likes"></span></div>
-            <div id="scooter-container"><img src="images/cozumel-Scooter.jpg" alt="lady on scooter" id="lady-scooter"
-                    class="radius" loading="lazy">
+            <div id="logo-container">
+                <img src="images/scooterLogo-opt.jpg" alt="scooterLogo" id="logo">
+                <p>Zip through your Adventure</p>
             </div>
-            <div id="cozumel-container"><img src="images/cozumel-opt.jpg" alt="picture of cozumel" id="cozumel-pic"
-                    class="radius" loading="lazy"></div>
+            <div id="hamBtn" aria-label="Open menu">☰</div>
+        </header>
+        </main>
+        <footer class="text-center margin padding radius">
+            <div class="footer-container padding">
+                <img src="images/like-icon.png" alt="Thumbs up icon" id="thumbs-up">
+                <div id="like-container">Total Likes: <span id="likes"></span></div>
+                <div id="scooter-container"><img src="images/cozumel-Scooter.jpg" alt="lady on scooter"
+                        id="lady-scooter" class="radius" loading="lazy">
+                </div>
+                <div id="cozumel-container"><img src="images/cozumel-opt.jpg" alt="picture of cozumel" id="cozumel-pic"
+                        class="radius" loading="lazy"></div>
 
-            <div id="scoots-info">
-                <p class="medium-font-size">Scoots Moped Rentals | Mexico</p>
-                <div>
-                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
-                        class="remove-underline">
-                        <img class="icon" src="images/facebookicon.png" alt="facebook icon" loading="lazy">
-                    </a>
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
-                        class="remove-underline">
-                        <img class="icon remove-underline" src="images/linkedinicon-opt.jpg" alt="LinkedIn icon"
-                            loading="lazy">
-                    </a>
-                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="remove-underline">
-                        <img class="icon remove-underline" src="images/xlogo.png" alt="X icon" loading="lazy">
-                    </a>
+                <div id="scoots-info">
+                    <p class="medium-font-size">Scoots Moped Rentals | Mexico</p>
+                    <div>
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                            class="remove-underline">
+                            <img class="icon" src="images/facebookicon.png" alt="facebook icon" loading="lazy">
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                            class="remove-underline">
+                            <img class="icon remove-underline" src="images/linkedinicon-opt.jpg" alt="LinkedIn icon"
+                                loading="lazy">
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
+                            class="remove-underline">
+                            <img class="icon remove-underline" src="images/xlogo.png" alt="X icon" loading="lazy">
+                        </a>
+                    </div>
+                    <div id="my-info">
+                        <p class="large-font-size">Weylin Douglas</p>
+                        <p>Last modified: <span id="lastmodification"></span></p>
+                        <p>&copy; <span id="currentYear"></span></p>
+                    </div>
+                    <div class="footer">
+                        <a href="https://www.google.com/maps/place/Cozumel/@20.4255199,-87.0284159,11.25z/data=!4m6!3m5!1s0x8f4ef8efb0d19327:0x342ebcae5c018bfc!8m2!3d20.4229839!4d-86.9223432!16zL20vMDFibmQ3?entry=tts"
+                            target="_blank" id="map" loading="lazy" class="remove-underline">
+                            📍 Location Map
+                        </a>
+                    </div>
                 </div>
-                <div id="my-info">
-                    <p class="large-font-size">Weylin Douglas</p>
-                    <p>Last modified: <span id="lastmodification"></span></p>
-                    <p>&copy; <span id="currentYear"></span></p>
-                </div>
-                <div class="footer">
-                    <a href="https://www.google.com/maps/place/Cozumel/@20.4255199,-87.0284159,11.25z/data=!4m6!3m5!1s0x8f4ef8efb0d19327:0x342ebcae5c018bfc!8m2!3d20.4229839!4d-86.9223432!16zL20vMDFibmQ3?entry=tts"
-                        target="_blank" id="map" loading="lazy" class="remove-underline">
-                        📍 Location Map
-                    </a>
-                </div>
-            </div>
-    </footer>
+        </footer>
 </body>
 
 </html>

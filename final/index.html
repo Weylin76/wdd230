@@ -4,20 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 230 - Final Project (Scoots) by Weylin Douglas.  Explore Cozumel, Mexico with Scoots - your go-to for hassle-free 
-        moped rentals. Discover scenic routes and vibrant streets. Start your adventure now!">
+    <meta name="description"
+        content="Explore Cozumel, Mexico with Scoots - your go-to for hassle-free moped rentals. Discover scenic routes and vibrant streets. Start your adventure now!">
     <meta name="author" content="Weylin Douglas">
     <title>Scoots Rentals</title>
-
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Scoots Motorcycle Rentals">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://weylin76.github.io/">
-
-    <!-- Link fonts and Icons -->
-
-
-    <!-- Link CSS and JS -->
     <link rel="stylesheet" href="styles/normalized.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -29,96 +19,63 @@
     <script src="scripts/likes.js" defer></script>
     <script src="scripts/visits.js" defer></script>
     <script src="scripts/weather.js" defer></script>
-
 </head>
 
 <body class="padding">
-    <header class="text-center header">
-        <h1>Scoots Moped Rentals</h1>
-        <div>
+    <!-- Sidebar navigation menu -->
+    <nav id="sidebar" class="nav-menu">
+        <button id="closeBtn" aria-label="Close menu">X</button>
+        <!-- Navigation links -->
+        <a href="index.html" class="active">Home</a>
+        <a href="rentals.html">Rentals</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <header>
+            <h1>Scoots Moped Rentals</h1>
             <button id="mode">
                 <img id="mode-icon" src="images/light-mode-icon.jpg" alt="Toggle Dark Mode">
             </button>
-        </div>
-        <div id="logo-container">
-            <img src="images/scooterLogo-opt.jpg" alt="scooterLogo" id="logo">
-            <p>Zip through your Adventure</p>
-        </div>
-        <div>
-            <img id="hamBtn" src="images/hamburger-menu.svg" alt="Open menu">
-        </div>
-    </header>
-    <nav id="nav" class="nav-menu-close large-font-size">
-        <a href="index.html" class="remove-underline radius padding black-border margin-top active">Home</a>
-        <a href="rentals.html" class="remove-underline radius padding black-border margin-top">Rentals</a>
-        <a href=" reservations.html" class="remove-underline radius padding black-border margin-top">Reservations</a>
-        <a href="contact.html" class="remove-underline radius padding black-border margin-top">Contact</a>
-    </nav>
-    <main>
-        <div id="weather-container">
-            <div>Temperature <span id="temp"></span></div>
-            <div>Humidity <span id="hum"></span></div>
-            <div id="curr-cond">
-                <img id="weather-icon" alt="Weather icon">
-                <span id="desc"></span>
+            <div id="logo-container">
+                <img src="images/scooterLogo-opt.jpg" alt="scooterLogo" id="logo">
+                <p>Zip through your Adventure</p>
             </div>
-            <div id="3-day">
-                <img src="" alt="" id="day1-icon">
-                <span id="day1"></span>
-                <img src="" alt="" id="day2-icon">
-                <span id="day2"></span>
-                <img src="" alt="" id="day3-icon">
-                <span id="day3"></span>
-                <img src="" alt="" id="dayPMIcon">
-                <span id="dayPM"></span>
-            </div>
-        </div>
+            <div id="hamBtn" aria-label="Open menu">☰</div>
+        </header>
+
         <div class="image-container">
             <img src="images/dock-opt.jpg" alt="picture of dock area">
-            <button class="padding">Start your moped journey today!</button>
+            <button>Start your moped journey today!</button>
         </div>
 
-    </main>
-    <footer class="text-center margin padding radius">
-        <div class="footer-container padding">
-            <img src="images/like-icon.png" alt="Thumbs up icon" id="thumbs-up">
-            <div id="like-container">Total Likes: <span id="likes"></span></div>
-            <div id="visit-container">Visits: <span id="visits"></span></div>
-            <div id="scooter-container"><img src="images/cozumel-Scooter.jpg" alt="lady on scooter" id="lady-scooter"
-                    class="radius" loading="lazy">
-            </div>
-            <div id="cozumel-container"><img src="images/cozumel-opt.jpg" alt="picture of cozumel" id="cozumel-pic"
-                    class="radius" loading="lazy"></div>
 
-            <div id="scoots-info">
-                <p class="medium-font-size">Scoots Moped Rentals | Mexico</p>
-                <div>
-                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
-                        class="remove-underline">
-                        <img class="icon" src="images/facebookicon.png" alt="facebook icon" loading="lazy">
-                    </a>
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
-                        class="remove-underline">
-                        <img class="icon remove-underline" src="images/linkedinicon-opt.jpg" alt="LinkedIn icon"
-                            loading="lazy">
-                    </a>
-                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="remove-underline">
-                        <img class="icon remove-underline" src="images/xlogo.png" alt="X icon" loading="lazy">
-                    </a>
-                </div>
-                <div id="my-info">
-                    <p class="large-font-size">Weylin Douglas</p>
-                    <p>Last modified: <span id="lastmodification"></span></p>
-                    <p>&copy; <span id="currentYear"></span></p>
-                </div>
-                <div class="footer">
-                    <a href="https://www.google.com/maps/place/Cozumel/@20.4255199,-87.0284159,11.25z/data=!4m6!3m5!1s0x8f4ef8efb0d19327:0x342ebcae5c018bfc!8m2!3d20.4229839!4d-86.9223432!16zL20vMDFibmQ3?entry=tts"
-                        target="_blank" id="map" loading="lazy" class="remove-underline">
-                        📍 Location Map
-                    </a>
-                </div>
-            </div>
-    </footer>
+        <footer class="text-center">
+            <img src="images/like-icon.png" alt="Thumbs up icon" id="thumbs-up">
+            <p>Total Likes: <span id="likes"></span></p>
+            <p>Visits: <span id="visits"></span></p>
+            <img src="images/cozumel-Scooter.jpg" alt="lady on scooter" class="radius">
+            <img src="images/cozumel-opt.jpg" alt="picture of cozumel" class="radius">
+            <p>Scoots Moped Rentals | Mexico</p>
+            <a href="https://www.facebook.com" target="_blank">
+                <img class="icon" src="images/facebookicon.png" alt="facebook icon">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img class="icon" src="images/linkedinicon-opt.jpg" alt="LinkedIn icon">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img class="icon" src="images/xlogo.png" alt="X icon">
+            </a>
+            <p class="large-font-size">Weylin Douglas</p>
+            <p>Last modified: <span id="lastmodification"></span></p>
+            <p>&copy; <span id="currentYear"></span></p>
+            <a href="https://www.google.com/maps/place/Cozumel" target="_blank" id="map">
+                📍 Location Map
+            </a>
+        </footer>
+    </div>
 </body>
 
 </html>

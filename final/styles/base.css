@@ -84,7 +84,7 @@ header {
     justify-content: space-between;
     align-items: end;
 }
-
+ 
 #mode, #hamBtn, #logo{
     position: absolute;
     top: .5rem; 
@@ -92,6 +92,78 @@ header {
 
 #hamBtn{
     right: 1rem;
+}
+
+/* Sidebar CSS */
+#sidebar {
+    display: block;
+    position: fixed; /* Keep fixed to avoid scrolling with the content */
+    top: 0; /* Align with the top of the viewport or the header */
+    width: 250px; /* Width of the sidebar - adjust as necessary */
+    height: 100%; /* Full height */
+    background:  rgba(240, 240, 240, 0.7);
+    color: white; /* Text color inside the sidebar */
+    padding: 1em; /* Padding inside the sidebar */
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    z-index: 2; /* Adjusted to be above the images */
+}
+
+img {
+    position: relative; /* Add positioning to apply z-index */
+    z-index: 1; /* Lower z-index so images are under the sidebar */
+}
+
+/* CSS for when the sidebar is active/visible */
+#sidebar.active {
+    transform: translateX(calc(0px)); /* Brings the sidebar into view */
+}
+
+/* Main content CSS */
+.main-content {
+    position: relative; /* Position the main content to act as an anchor for the sidebar */
+    padding-left: 0px; /* Add padding to accommodate the width of the sidebar */
+}
+
+/* Style for your navigation links */
+.nav-menu a {
+    display: block;
+    color: white; /* Adjust color for readability */
+    padding: 10px;
+    text-decoration: none;
+    /* Additional styles */
+}
+
+#hamBtn {
+    z-index: 1; /* Above the sidebar */
+    display: none; /* Hidden by default since the sidebar is visible */
+    cursor: pointer;
+    color: black;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px; /* Adjust size as needed */
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.nav-menu-open {
+    left: 0; /* When open, the sidebar moves into view */
+}
+
+/* Update the styles for your links if necessary */
+.nav-link {
+    display: block;
+    color: white; /* Adjust color for readability */
+    padding: 10px;
+    text-decoration: none;
+    /* Additional styles */
 }
 
 #mode{
@@ -117,11 +189,6 @@ header {
     width: 110px;
 }
 
-nav {
-    display: flex;
-    flex-direction: column;
-}
-
 nav a {
     color: #00008B;
     background-color: var(--sand-yellow);
@@ -137,14 +204,14 @@ nav a:hover {
 }
 
 .image-container {
-    width: 100%; /* Adjust the width as needed */
-    text-align: center; /* Center the image horizontally */
+    width: 100%;
+    text-align: center; 
     position: relative;
 }
 
 .image-container img {
-    display: block; /* Ensure the image behaves as a block element */
-    margin: 0 auto; /* Center the image horizontally */
+    display: block;
+    margin: 0 auto; 
     max-width: 100%;
 }
 
