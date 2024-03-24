@@ -97,35 +97,34 @@ header {
     font-size: 3rem;
 }
 
-/* Sidebar CSS */
+/* Main content */
+.main-content {
+    position: relative;
+}
+
+/* Sidebar */
 #sidebar {
     display: block;
-    position: fixed; /* Keep fixed to avoid scrolling with the content */
-    top: 0; /* Align with the top of the viewport or the header */
-    width: 350px; /* Width of the sidebar - adjust as necessary */
-    height: 100%; /* Full height */
+    position: fixed; 
+    top: 0;
+    width: 350px;
+    height: 100%;
     background:  rgba(0, 0, 0, 0.8);
-    color: white; /* Text color inside the sidebar */
-    padding: 1em; /* Padding inside the sidebar */
+    color: white;
+    padding: 1em; 
     box-sizing: border-box;
     transition: transform 0.3s ease;
-    z-index: 2; /* Adjusted to be above the images */
+    z-index: 2;
 }
 
 img {
-    position: relative; /* Add positioning to apply z-index */
-    z-index: 1; /* Lower z-index so images are under the sidebar */
+    position: relative;
+    z-index: 1;
 }
 
 /* CSS for when the sidebar is active/visible */
 #sidebar.active {
     transform: translateX(calc(0px)); /* Brings the sidebar into view */
-}
-
-/* Main content CSS */
-.main-content {
-    position: relative; /* Position the main content to act as an anchor for the sidebar */
-    padding-left: 0px; /* Add padding to accommodate the width of the sidebar */
 }
 
 /* Style for your navigation links */
@@ -135,7 +134,12 @@ img {
     padding: 10px;
     text-decoration: none;
     font-size: 3rem;
-    /* Additional styles */
+    background-color: var(--tropical-sea-blue);
+    font-family: 'Pacifico', cursive;
+}
+
+nav a:hover {
+    color: var(--sand-yellow);
 }
 
 #hamBtn {
@@ -145,27 +149,16 @@ img {
     color: black;
 }
 
-
 #mode{
     right: .25rem;
     top: .25rem;
 }
 
-
 #mode-icon, #hamBtn{
     max-width: 50px;
 }
 
-nav a {
-    color: #00008B;
-    background-color: var(--tropical-sea-blue);
-    font-family: 'Pacifico', cursive;
-}
-
-nav a:hover {
-    color: var(--sand-yellow);
-}
-
+/* Social media icons */
 .icon{
     max-height: 64px;
 }
@@ -211,7 +204,6 @@ footer{
     left: 4rem;
 }
 
-
 #visits, #visit-container{
     position: absolute;
     right: 1rem;
@@ -233,7 +225,6 @@ footer{
 .footer a{
     color: black;
 }
-
 
 /* Rental table data */
 #rental-table{

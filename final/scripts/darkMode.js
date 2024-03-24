@@ -40,5 +40,8 @@ function disableDarkMode() {
     hamBtn.textContent = '☰'; // Reset button text content
     hamBtn.style.color = ''; // Reset button color
     header.style.color = '';
+    document.querySelectorAll('.main-content, .main-content *').forEach(text => {
+        text.style.color = 'black';
+    });
 }
 
