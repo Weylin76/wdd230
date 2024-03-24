@@ -1,34 +1,6 @@
 @media screen and (min-width: 900px){
   
-h1{
-    font-size: 4rem;
-}
 
-#mode{
-    top: 2%;
-    left: 1.4%;
-}
-
-#logo-container {
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center-align the child elements */
-    margin-left: auto; /* To align the container to the right */
-    margin-right: 5%; /* Adjust as needed, or use a fixed value in px */
-}
-
-#logo{
-    max-width: 60px;
-    left: 88%;
-    top: 2%;
-}
-
-#logo-container p {
-    width: 150px; /* Adjust if necessary */
-    text-align: center; /* Center the text if the paragraph is wider than the text */
-    margin-top: 0.5rem; /* Add some space between the logo image and the text */
-    left: 85%;
-}
 
 #scooter-container img, #cozumel-container img{
     max-width: 250px;

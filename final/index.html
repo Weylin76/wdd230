@@ -35,23 +35,19 @@
     <!-- Main content -->
     <div class="main-content">
         <header>
-            <h1>Scoots Moped Rentals</h1>
             <button id="mode">
                 <img id="mode-icon" src="images/light-mode-icon.jpg" alt="Toggle Dark Mode">
             </button>
-            <div id="logo-container">
-                <img src="images/scooterLogo-opt.jpg" alt="scooterLogo" id="logo">
-                <p>Zip through your Adventure</p>
-            </div>
             <div id="hamBtn" aria-label="Open menu">☰</div>
         </header>
+        <main>
+            <h1>Scoots Moped Rentals</h1>
+            <div class="image-container">
+                <img src="images/dock-opt.jpg" alt="picture of dock area">
+                <button>Start your moped journey today!</button>
+            </div>
 
-        <div class="image-container">
-            <img src="images/dock-opt.jpg" alt="picture of dock area">
-            <button>Start your moped journey today!</button>
-        </div>
-
-
+        </main>
         <footer class="text-center">
             <img src="images/like-icon.png" alt="Thumbs up icon" id="thumbs-up">
             <p>Total Likes: <span id="likes"></span></p>
@@ -59,19 +55,22 @@
             <img src="images/cozumel-Scooter.jpg" alt="lady on scooter" class="radius">
             <img src="images/cozumel-opt.jpg" alt="picture of cozumel" class="radius">
             <p>Scoots Moped Rentals | Mexico</p>
-            <a href="https://www.facebook.com" target="_blank">
-                <img class="icon" src="images/facebookicon.png" alt="facebook icon">
-            </a>
-            <a href="https://www.linkedin.com" target="_blank">
-                <img class="icon" src="images/linkedinicon-opt.jpg" alt="LinkedIn icon">
-            </a>
-            <a href="https://twitter.com/" target="_blank">
-                <img class="icon" src="images/xlogo.png" alt="X icon">
-            </a>
+            <div>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="remove-underline">
+                    <img class="icon" src="images/facebookicon.png" alt="facebook icon" loading="lazy">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="remove-underline">
+                    <img class="icon remove-underline" src="images/linkedinicon-opt.jpg" alt="LinkedIn icon"
+                        loading="lazy">
+                </a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="remove-underline">
+                    <img class="icon remove-underline" src="images/xlogo.png" alt="X icon" loading="lazy">
+                </a>
+            </div>
             <p class="large-font-size">Weylin Douglas</p>
             <p>Last modified: <span id="lastmodification"></span></p>
             <p>&copy; <span id="currentYear"></span></p>
-            <a href="https://www.google.com/maps/place/Cozumel" target="_blank" id="map">
+            <a href="https://www.google.com/maps/place/Cozumel" target="_blank" id="map" class="remove-underline">
                 📍 Location Map
             </a>
         </footer>

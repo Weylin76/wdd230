@@ -32,6 +32,8 @@
 
 .remove-underline{
     text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
 }
 
 .margin{
@@ -66,8 +68,8 @@ html{
 }
 
 h1{
-    margin-top: 3rem;
-    width: 100%;
+    text-align: center;
+    margin-top: 50px;
 }
 
 body {
@@ -85,13 +87,13 @@ header {
     align-items: end;
 }
  
-#mode, #hamBtn, #logo{
+#mode, #hamBtn{
     position: absolute;
-    top: .5rem; 
+    top: .25rem; 
 }
 
 #hamBtn{
-    right: 1rem;
+    left: 1rem;
     font-size: 3rem;
 }
 
@@ -137,58 +139,21 @@ img {
 }
 
 #hamBtn {
-    z-index: 1; /* Above the sidebar */
-    display: none; /* Hidden by default since the sidebar is visible */
+    z-index: 1; 
+    display: none; 
     cursor: pointer;
     color: black;
 }
 
-#closeBtn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 24px; /* Adjust size as needed */
-    padding: 0.5em;
-    cursor: pointer;
-}
-
-.nav-menu-open {
-    left: 0; /* When open, the sidebar moves into view */
-}
-
-/* Update the styles for your links if necessary */
-.nav-link {
-    display: block;
-    color: white; /* Adjust color for readability */
-    padding: 10px;
-    text-decoration: none;
-    /* Additional styles */
-}
 
 #mode{
-    left: 1rem;
-    top: 1rem;
+    right: .25rem;
+    top: .25rem;
 }
 
 
 #mode-icon, #hamBtn{
     max-width: 50px;
-}
-
-#logo{
-    max-width: 50px;
-    top: 1.5%;
-    left: 34%;
-}
-
-#logo-container p {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    width: 110px;
 }
 
 nav a {
@@ -224,7 +189,8 @@ nav a:hover {
     transform: translate(-50%, -50%); 
     text-align: center;
     border-radius: 10px;
-    background-color: rgba(0, 206, 255, 0.25); /* 50% transparent black */
+    background-color: rgba(0, 206, 255, 0.25); 
+    z-index: 1;
 }
 
 footer{
