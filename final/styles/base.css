@@ -99,9 +99,9 @@ header {
     display: block;
     position: fixed; /* Keep fixed to avoid scrolling with the content */
     top: 0; /* Align with the top of the viewport or the header */
-    width: 250px; /* Width of the sidebar - adjust as necessary */
+    width: 350px; /* Width of the sidebar - adjust as necessary */
     height: 100%; /* Full height */
-    background:  rgba(240, 240, 240, 0.7);
+    background:  rgba(0, 0, 0, 0.8);
     color: white; /* Text color inside the sidebar */
     padding: 1em; /* Padding inside the sidebar */
     box-sizing: border-box;
@@ -131,6 +131,7 @@ img {
     color: white; /* Adjust color for readability */
     padding: 10px;
     text-decoration: none;
+    font-size: 3rem;
     /* Additional styles */
 }
 
@@ -191,7 +192,7 @@ img {
 
 nav a {
     color: #00008B;
-    background-color: var(--sand-yellow);
+    background-color: var(--tropical-sea-blue);
     font-family: 'Pacifico', cursive;
 }
 
