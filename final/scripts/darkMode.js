@@ -1,7 +1,7 @@
 const btn = document.querySelector('#mode');
 const modeIcon = document.querySelector('#mode-icon');
 const hamBtn = document.querySelector('#hamBtn');
-const header = document.querySelector('.header');
+const header = document.querySelector('header');
 
 let isDarkMode = localStorage.getItem('isDarkMode') === 'true';
 
@@ -24,11 +24,10 @@ function enableDarkMode() {
     document.body.style.backgroundColor = 'black';
     modeIcon.src = 'images/dark-mode-icon.png';
     modeIcon.alt = 'Toggle Light Mode';
-    hamBtn.src = 'images/ham-white-opt.jpg';
-    hamBtn.alt = 'Hamber button white';
-    hamBtn.style.marginTop = '1rem';
+    hamBtn.textContent = '☰'; // Change text content instead of src for button
+    hamBtn.style.color = 'white'; // Change button color
     header.style.color = 'white';
-    document.querySelectorAll('main, main *').forEach(text => {
+    document.querySelectorAll('.main-content, .main-content *').forEach(text => {
         text.style.color = 'white';
     });
 }
@@ -36,12 +35,10 @@ function enableDarkMode() {
 function disableDarkMode() {
     document.querySelector('html').style.backgroundColor = '';
     document.body.style.backgroundColor = '';
-    document.querySelector('.footer-container').style.backgroundColor = '';
     modeIcon.src = 'images/light-mode-icon.jpg';
     modeIcon.alt = 'Toggle Dark Mode';
-    hamBtn.src = 'images/hamburger-menu.svg';
-    hamBtn.alt = 'Hamber button black';
-    hamBtn.style.marginTop = '';
+    hamBtn.textContent = '☰'; // Reset button text content
+    hamBtn.style.color = ''; // Reset button color
     header.style.color = '';
 }
 
