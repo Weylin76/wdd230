@@ -65,10 +65,10 @@ async function getForecast(forecastUrl) {
         day1.textContent = `Tomorrow temp: ${forecastData.daily[0].temp.day.toFixed(0)}°F`
         day2Icon.src = iconUrl;
         day2Icon.alt = forecastData.daily[0].weather[0].description;
-        day2.textContent = `Tomorrow temp: ${forecastData.daily[1].temp.day.toFixed(0)}°F`
+        day2.textContent = `Day 2 temp: ${forecastData.daily[1].temp.day.toFixed(0)}°F`
         day3Icon.src = iconUrl;
         day3Icon.alt = forecastData.daily[0].weather[0].description;
-        day3.textContent = `Tomorrow temp: ${forecastData.daily[2].temp.day.toFixed(0)}°F`
+        day3.textContent = `Day 3 temp: ${forecastData.daily[2].temp.day.toFixed(0)}°F`
 
     } catch (error) {
         console.error('Fetch error:', error);

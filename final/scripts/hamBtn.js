@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
         showSidebar(); // Shows the sidebar when the hamburger button is clicked
     });
 
-    // By default, the sidebar is shown and the hamburger menu is hidden
-    sidebar.style.display = 'block'; // Ensure the sidebar is shown
-    hamBtn.style.display = 'none'; // Ensure the hamburger button is hidden
+    // By default, the hamburger menu is shown and the sidebar menu is hidden
+    sidebar.style.display = 'none';
+    hamBtn.style.display = 'block';
 });
 
 

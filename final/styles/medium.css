@@ -1,6 +1,19 @@
 @media screen and (min-width: 700px){
 
+   #rental-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 
+    #rental-container > div {
+        margin-right: 10px;
+        min-height: 300px;
+    }
+    
+    #rental-container > div:last-child {
+        margin-right: 0;
+    }
 
     footer {
         position: relative;

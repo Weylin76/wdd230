@@ -2,6 +2,7 @@ const btn = document.querySelector('#mode');
 const modeIcon = document.querySelector('#mode-icon');
 const hamBtn = document.querySelector('#hamBtn');
 const header = document.querySelector('header');
+const heroBtn = document.querySelector('#hero-btn');
 
 let isDarkMode = localStorage.getItem('isDarkMode') === 'true';
 
@@ -30,6 +31,10 @@ function enableDarkMode() {
     document.querySelectorAll('.main-content, .main-content *').forEach(text => {
         text.style.color = 'white';
     });
+    document.querySelectorAll('footer *').forEach(text => {
+        text.style.color = 'black';
+    });
+    heroBtn.style.color = 'black';
 }
 
 function disableDarkMode() {

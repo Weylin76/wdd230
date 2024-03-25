@@ -42,13 +42,41 @@
         </header>
         <main>
             <h1>Scoots Moped Rentals</h1>
+            <div id="weather-container" class="black-border">
+                <div>Current Temp:
+                    <span id="temp"></span>
+                </div>
+                <div>Humunity:
+                    <span id="hum"></span>
+                </div>
+                <div>
+                    <img id="weather-icon" alt="Weather Icon">
+                </div>
+                <div>Current Conditions:
+                    <span id="desc"></span>
+                </div>
+            </div>
+
+            <div id="forecast-container" class="black-border">
+                <div id="day1">
+                    <img id="day1-icon" alt="Day 1 Weather Icon">
+                </div>
+                <div id="day2">
+                    <img id="day2-icon" alt="Day 2 Weather Icon">
+                </div>
+                <div id="day3">
+                    <img id="day3-icon" alt="Day 3 Weather Icon">
+                </div>
+            </div>
+
             <div class="image-container">
                 <img src="images/dock-opt.jpg" alt="picture of dock area">
-                <button>Start your moped journey today!</button>
+                <button id="hero-btn">Start your moped journey today!</button>
             </div>
-            <div id="retenal-container">
-                <div id="scooter-info">
-                    <img src="images/metro_scooter.png" alt="Honda Metro Scooter">
+
+            <div id="rental-container">
+                <div id="scooter-info" class="black-border">
+                    <img src="images/metro_scooter.png" alt="Honda Metro Scooter" class="rental-imgs">
                     <p>Starting price: $20</p>
                     <ul>Models
                         <li>Honda Metro</li>
@@ -56,28 +84,29 @@
                         <li>Honda PCX150</li>
                     </ul>
                 </div>
-                <div id="atv-info">
-                    <img src="images/pioneer_atv.webp" alt="Honda Pinoeer ATV">
+                <div id="atv-info" class="black-border">
+                    <img src="images/pioneer_atv.webp" alt="Honda Pinoeer ATV" class="rental-imgs">
                     <p>Starting price: $50</p>
                     <ul>Models
                         <li>Honda Pioneer ATV</li>
                     </ul>
                 </div>
-                <div id="jeep-info"></div>
-                <img src="images/jeep_wrangler_2_door.webp" alt="two door Jeep Wrangler">
-                <p>Starting price: $70</p>
-                <ul>Models
-                    <li>Jeep Wrangler 2 door</li>
-                    <li>Jeep Wrangler 4 door</li>
-                </ul>
+                <div id="jeep-info" class="black-border">
+                    <img src="images/jeep_wrangler_2_door.webp" alt="two door Jeep Wrangler" class="rental-imgs">
+                    <p>Starting price: $70</p>
+                    <ul>Models
+                        <li>Jeep Wrangler 2 door</li>
+                        <li>Jeep Wrangler 4 door</li>
+                    </ul>
+                </div>
             </div>
         </main>
-        <footer class="text-center">
+        <footer class="text-center footer">
             <img src="images/like-icon.png" alt="Thumbs up icon" id="thumbs-up">
             <p>Total Likes: <span id="likes"></span></p>
             <p>Visits: <span id="visits"></span></p>
-            <img src="images/cozumel-Scooter.jpg" alt="lady on scooter" class="radius">
-            <img src="images/cozumel-opt.jpg" alt="picture of cozumel" class="radius">
+            <img src="images/cozumel-Scooter.jpg" alt="lady on scooter" class="radius footer-imgs">
+            <img src="images/cozumel-opt.jpg" alt="picture of cozumel" class="radius footer-imgs">
             <p>Scoots Moped Rentals | Mexico</p>
             <div>
                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="remove-underline">
