@@ -54,8 +54,6 @@ async function getForecast(forecastUrl) {
         }
         const forecastData = await response.json();
 
-        console.log(forecastData);
-
         const iconCode = forecastData.daily[0].weather[0].icon; 
         const iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
         
