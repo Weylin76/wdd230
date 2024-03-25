@@ -1,35 +1,36 @@
+const url = 'https://weylin76.github.io/wdd230/final/data/rental.json'; 
+
 async function populateTable() {
   try {
-    // Fetch the JSON data from the file
-    const response = await fetch('data/rental.json'); // Make sure the path is correct
-    const data = await response.json();
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const rentals = await response.json();
 
-    // Get the tbody element where we will insert rows, not the entire table
     const tableBody = document.querySelector('#rentalTable tbody');
-    tableBody.innerHTML = ''; // Clear existing table data
-
-    // Iterate over each rental item and create table rows
-    data.forEach(item => {
+    tableBody.innerHTML = '';
+    
+    rentals.forEach(rental => {
       const row = tableBody.insertRow();
-      
-      // Insert cells and set their text content
+
       const rentalTypeCell = row.insertCell();
-      rentalTypeCell.textContent = item.RentalType;
+      rentalTypeCell.textContent = rental.RentalType;
 
       const maxPersonsCell = row.insertCell();
-      maxPersonsCell.textContent = item.MaxPersons;
+      maxPersonsCell.textContent = rental.MaxPersons;
 
       const reservationHalfDayCell = row.insertCell();
-      reservationHalfDayCell.textContent = `$${item.Reservation.HalfDay}`;
+      reservationHalfDayCell.textContent = `$${rental.Reservation.HalfDay}`;
 
       const reservationFullDayCell = row.insertCell();
-      reservationFullDayCell.textContent = `$${item.Reservation.FullDay}`;
+      reservationFullDayCell.textContent = `$${rental.Reservation.FullDay}`;
 
       const walkInHalfDayCell = row.insertCell();
-      walkInHalfDayCell.textContent = `$${item.WalkIn.HalfDay}`;
+      walkInHalfDayCell.textContent = `$${rental.WalkIn.HalfDay}`;
 
       const walkInFullDayCell = row.insertCell();
-      walkInFullDayCell.textContent = `$${item.WalkIn.FullDay}`;
+      walkInFullDayCell.textContent = `$${rental.WalkIn.FullDay}`;
     });
 
   } catch (error) {
@@ -37,5 +38,4 @@ async function populateTable() {
   }
 }
 
-// Call the function to populate the table on window load
 window.addEventListener('load', populateTable);
