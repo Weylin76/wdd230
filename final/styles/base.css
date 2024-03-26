@@ -189,7 +189,7 @@ nav a:hover {
 }
 
 /* Rental container */
-#rental-container {
+#rental-container, #rental-page-container {
     display: flex;
     flex-direction: column; /* Arrange items vertically */
     align-items: center; /* Center items horizontally */
@@ -202,12 +202,26 @@ nav a:hover {
     margin-top: 10px;
 }
 
-.rental-imgs {
+.rental-imgs, #rental-page-container > div > img {
     display: block; 
     width: 200px; 
     height: auto; 
     margin-left: auto; 
     margin-right: auto;
+}
+
+#rental-container > div, #rental-page-container > div{
+    background-color: var(--sand-yellow);
+    padding: 1rem;
+}
+
+.dark-mode {
+    background-color: #2B2B2B; 
+}
+
+.dark-mode #rental-container > div, 
+.dark-mode #rental-page-container > div {
+    background-color: #212121;
 }
 
 ul {
@@ -220,11 +234,29 @@ ul li {
     text-align: left;
 }
 
-#rental-container > * > * {
+#rental-container > * > *, #rental-page-container > * > {
     margin: 10px;
     padding: 10px;
     text-align: center;
 }
+
+.Reserve{
+    font-size: 1.5rem;
+    background-color: lightskyblue;
+    padding: .5rem;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+/* Rental table data */
+#rental-table{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+    }
+    td{
+        text-align: center;
+    }
 
 /* Social media icons */
 .icon{
@@ -262,16 +294,20 @@ footer{
     color: black;
 }
 
-/* Rental table data */
-#rental-table{
-width: 100%;
-margin-left: auto;
-margin-right: auto;
-text-align: center; 
+.dark-mode {
+    background-color: #2B2B2B;
+    color: white;
 }
-td{
-    text-align: center;
+
+.dark-mode header,
+.dark-mode footer,
+.dark-mode .heroBtn,
+.dark-mode .reserveBtn {
+    color: black;
 }
+
+
+
 
 
 
