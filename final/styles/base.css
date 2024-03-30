@@ -56,6 +56,10 @@
     display: none;
 }
 
+.display-block{
+    display: block;
+}
+
 .active {
     color: #2B2B2B; 
     background-color: #9BDDFF;
@@ -304,6 +308,15 @@ footer{
 .dark-mode .heroBtn,
 .dark-mode .reserveBtn {
     color: black;
+}
+
+/* Reservation Page */
+#form-container{
+    margin: 1rem;
+}
+
+#atv-fun{
+    display: none;
 }
 
 
