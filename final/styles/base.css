@@ -319,6 +319,15 @@ footer{
     display: none;
 }
 
+/* contact page */
+.iframe {
+    margin: 1rem auto;
+    display: block;
+}
+
+.iframe-container{
+    text-align: center;
+}
 
 
 
