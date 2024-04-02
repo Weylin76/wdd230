@@ -203,6 +203,7 @@ nav a:hover {
     margin: 10px;
     padding: 10px;
     text-align: center;
+    gap: 10px;
 }
 
 #rental-container > div {
@@ -215,6 +216,32 @@ nav a:hover {
     height: auto; 
     margin-left: auto; 
     margin-right: auto;
+}
+
+#rentalType {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    padding: 10px; /* Add padding to make the select box taller */
+    width: 100%; /* To make the select box full width */
+    box-sizing: border-box; /* To include padding in the width */
+}
+
+input{
+    font-size: 2rem;
+}
+
+input[type="radio"] {
+    transform: scale(2.5); /* This will make the radio button 50% larger than normal */
+    margin: 10px;
+    padding: 10px;
+  }
+  
+textarea{
+    padding: 1rem;
+}
+
+#rentalType option {
+    font-size: 2em; /* This increases the font size of the options */
+    padding: 10px; /* This adds padding inside each option */
 }
 
 #rental-container > div, #rental-page-container > div{
@@ -323,6 +350,7 @@ footer{
 /* Reservation Page */
 #form-container{
     margin: 1rem;
+    text-align: left;
 }
 
 #atv-fun{
@@ -343,22 +371,66 @@ form{
     margin: 0 auto;
 }
 
-/* form > *{
-    display: block;
-    text-align: center;
-    margin: 10px auto;
-} */
-
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 80%; /* or any other percentage */
+  width: 80%; 
   display: block;
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
 }
 
+#page-container {
+    width: 100%; /* Adjust this as needed */
+}
+
+#form-container {
+    width: 100%; /* Or set a max-width if you want the form to be narrower */
+    margin: auto;
+}
+
+.display-block {
+    display: block; /* Makes the element take the full width */
+    margin-bottom: 5px; /* Adds some space below the label */
+    text-align: left; /* Aligns the text to the left */
+}
+
+#form-container input[type="text"],
+#form-container input[type="email"],
+#form-container input[type="tel"],
+#form-container select,
+#form-container textarea {
+    width: 100%; /* Makes the input take the full width of the form */
+    box-sizing: border-box; /* Ensures padding and borders are included in the width */
+    margin-bottom: 10px ; /* Adds some space below the input */
+}
+
+#duration,
+#location {
+    text-align: left;
+}
+
+/* Align the radio buttons and their labels to the left */
+#duration label,
+#location label {
+    margin-right: 10px;
+}
+
+#duration input[type="radio"],
+#location input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Special Accommodations/Comments label */
+#comments-label {
+    display: block; 
+    text-align: left;
+}
+
+#rental-agreement{
+    margin-left: 1rem;
+}
 
 
 
