@@ -281,6 +281,27 @@ ul li {
     text-align: center;
 }
 
+#secure-rental{
+    display: inline-block; 
+    margin-bottom: 1rem;
+    padding: 10px 100px; 
+    background-color: navy; 
+    color: #ffffff;
+    font-weight: bold; 
+    text-align: center; 
+    text-decoration: none; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+#secure-rental:hover{
+    background-color: #0056b3;
+    text-decoration: none; 
+    color: #ffffff; 
+}
+
 .Reserve{
     font-size: 1.5rem;
     background-color: lightskyblue;
@@ -414,7 +435,7 @@ textarea {
 /* Align the radio buttons and their labels to the left */
 #duration label,
 #location label {
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 #duration input[type="radio"],
