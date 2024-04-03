@@ -456,10 +456,15 @@ textarea {
 /* Modal dialog */
 #myModal{
     background-color: var(--sand-yellow);
+    top: 0; 
+    margin: 0;
+    left: 40%;
 }
 
-
-
+/* Dimmed background color */
+#myModal::backdrop {
+    background-color: rgba(0,0,0,0.4); 
+  }
 
 
 
