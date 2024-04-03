@@ -4,6 +4,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const humidity = document.querySelector('#hum');
     const weatherIcon = document.querySelector('#weather-icon'); 
     const weatherDesc = document.querySelector('#desc');
+    const maxTemp = document.querySelector('#maxTemp');
+    const modal = document.getElementById("myModal");
+
+//Show Modal by default
+modal.showModal();
+
+//Button that closes the modal
+const closeModal = document.getElementById("closeModal");
+
+// close modal on click
+closeModal.onclick = function() {
+  modal.close();
+}
     
     const url = `https://api.openweathermap.org/data/2.5/weather?q=Cozumel,MX&units=imperial&APPID=5d177bfcfd97660efa8f1485d0796cd6`;
 
@@ -15,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             const data = await response.json();
-
+           
             temp.textContent = `${data.main.temp.toFixed(0)}°F`;
             humidity.textContent = `${data.main.humidity.toFixed(0)}%`;
             const iconCode = data.weather[0].icon; 
@@ -53,6 +66,7 @@ async function getForecast(forecastUrl) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const forecastData = await response.json();
+        maxTemp.textContent = forecastData.daily[0].temp.max;
 
         const iconCode = forecastData.daily[0].weather[0].icon; 
         const iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
