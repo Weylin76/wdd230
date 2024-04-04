@@ -4,9 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const weatherIcon = document.querySelector('#weather-icon'); 
     const weatherDesc = document.querySelector('#desc');
     const modal = document.getElementById("myModal");
-    const day1 = document.querySelector('#day1');
-    const tomorrowDesc = document.querySelector("#tomDesc")
-    const day1Icon = document.querySelector('#day1-icon');
     const maxTemp = document.querySelector('#maxTemp');
 
     // Show Modal by default
@@ -48,8 +45,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const lon = -86.9223; // Longitude for Cozumel
     const apiKey = '5d177bfcfd97660efa8f1485d0796cd6';
     const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
-
-    const temp3pm = document.querySelector('#temp3pm'); // Make sure you have this element in your HTML
+    const temp3pm = document.querySelector('#temp3pm'); 
+    const tomorrowDesc = document.querySelector("#tomDesc")
+    const day1Icon = document.querySelector('#day1-icon');
 
     async function getForecast(forecastUrl) {
         try {
@@ -72,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (forecast) {
                 temp3pm.textContent = `${forecast.main.temp.toFixed(0)}°F`;
+                tomorrowDesc.textContent = forecast.weather[0].description;
                 const iconCode = forecast.weather[0].icon;
                 const iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`;
                 day1Icon.src = iconUrl;
