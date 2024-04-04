@@ -41,4 +41,10 @@
         max-width: 400px;
         height: auto;
     }
+
+    #weather-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }

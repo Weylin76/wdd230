@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             if (forecast) {
-                temp3pm.textContent = `${forecast.main.temp.toFixed(0)}°F`;
+                temp3pm.textContent = `Tomorrow Temp (3pm): ${forecast.main.temp.toFixed(0)}°F`;
                 tomorrowDesc.textContent = forecast.weather[0].description;
                 const iconCode = forecast.weather[0].icon;
                 const iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`;

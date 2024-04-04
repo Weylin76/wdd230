@@ -49,24 +49,28 @@
 
             <h1>Scoots Moped Rentals</h1>
             <div id="weather-container">
-                <div>Current Temp:
-                    <span id="temp"></span>
+                <div id="current-weather">
+                    <div>Current Temp:
+                        <span id="temp"></span>
+                    </div>
+                    <div>Humunity:
+                        <span id="hum"></span>
+                    </div>
+                    <div>Current Conditions:
+                        <span id="desc"></span>
+                        <div>
+                            <img id="weather-icon" alt="Weather Icon">
+                        </div>
+                    </div><br><br>
                 </div>
-                <div>Humunity:
-                    <span id="hum"></span>
-                </div>
-                <div>Current Conditions:
-                    <span id="desc"></span>
+                <div id="future-weather">
                     <div>
-                        <img id="weather-icon" alt="Weather Icon">
+                        <div><span id="temp3pm"></span></div>
+                        <div>Tommorrow's conditions:
+                            <span id="tomDesc"></span>
+                        </div>
+                        <img id="day1-icon" alt="Day 1 Weather Icon">
                     </div>
-                </div><br><br>
-                <div>
-                    <div><span id="temp3pm"></span></div>
-                    <div>Tommorrow's conditions:
-                        <span id="tomDesc"></span>
-                    </div>
-                    <img id="day1-icon" alt="Day 1 Weather Icon">
                 </div>
             </div>
             <div class="image-container">
@@ -109,33 +113,34 @@
                 <p class="text-center"><strong>Hours of Operation:</strong> Monday - Sunday, 9 AM to 7 PM</p>
                 <p class="text-center"><strong>Email:</strong> contact@scootsmoped.com</p>
             </div>
-    </div>
-    </main>
-    <footer class="text-center footer">
-        <img src="images/like-icon.png" alt="Thumbs up icon" id="thumbs-up">
-        <p>Total Likes: <span id="likes"></span></p>
-        <p>Visits: <span id="visits"></span></p>
-        <img src="images/cozumel-Scooter.jpg" alt="lady on scooter" class="radius footer-imgs">
-        <img src="images/cozumel-opt.jpg" alt="picture of cozumel" class="radius footer-imgs">
-        <p>Scoots Moped Rentals | Mexico</p>
-        <div>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="remove-underline">
-                <img class="icon" src="images/facebookicon.png" alt="facebook icon" loading="lazy">
+
+        </main>
+        <footer class="text-center footer">
+            <img src="images/like-icon.png" alt="Thumbs up icon" id="thumbs-up">
+            <p>Total Likes: <span id="likes"></span></p>
+            <p>Visits: <span id="visits"></span></p>
+            <img src="images/cozumel-Scooter.jpg" alt="lady on scooter" class="radius footer-imgs">
+            <img src="images/cozumel-opt.jpg" alt="picture of cozumel" class="radius footer-imgs">
+            <p>Scoots Moped Rentals | Mexico</p>
+            <div>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="remove-underline">
+                    <img class="icon" src="images/facebookicon.png" alt="facebook icon" loading="lazy">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="remove-underline">
+                    <img class="icon remove-underline" src="images/linkedinicon-opt.jpg" alt="LinkedIn icon"
+                        loading="lazy">
+                </a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="remove-underline">
+                    <img class="icon remove-underline" src="images/xlogo.png" alt="X icon" loading="lazy">
+                </a>
+            </div>
+            <p class="large-font-size">Weylin Douglas</p>
+            <p>Last modified: <span id="lastmodification"></span></p>
+            <p>&copy; <span id="currentYear"></span></p>
+            <a href="https://www.google.com/maps/place/Cozumel" target="_blank" id="map" class="remove-underline">
+                📍 Location Map
             </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="remove-underline">
-                <img class="icon remove-underline" src="images/linkedinicon-opt.jpg" alt="LinkedIn icon" loading="lazy">
-            </a>
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="remove-underline">
-                <img class="icon remove-underline" src="images/xlogo.png" alt="X icon" loading="lazy">
-            </a>
-        </div>
-        <p class="large-font-size">Weylin Douglas</p>
-        <p>Last modified: <span id="lastmodification"></span></p>
-        <p>&copy; <span id="currentYear"></span></p>
-        <a href="https://www.google.com/maps/place/Cozumel" target="_blank" id="map" class="remove-underline">
-            📍 Location Map
-        </a>
-    </footer>
+        </footer>
 
 </body>
 
