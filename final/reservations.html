@@ -51,86 +51,88 @@
             </button>
             <div id="hamBtn" aria-label="Open menu">☰</div>
         </header>
-        <h1>Scoots Moped Rentals</h1>
-        <div id="page-container">
-            <form id="form-container">
+        <main>
+            <h1>Scoots Moped Rentals</h1>
+            <div id="page-container">
+                <form id="form-container">
 
-                <label for="firstName" class="display-block">First Name* </label>
-                <input type="text" id="firstName" name="fname" title="Please enter your first name." required><br><br>
+                    <label for="firstName" class="display-block">First Name* </label>
+                    <input type="text" id="firstName" name="fname" title="Please enter your first name."
+                        required><br><br>
 
-                <label for="lastName" class="display-block">Last Name*</label>
-                <input type="text" id="lastName" name="lname" title="Please enter your last name." required><br><br>
+                    <label for="lastName" class="display-block">Last Name*</label>
+                    <input type="text" id="lastName" name="lname" title="Please enter your last name." required><br><br>
 
-                <label for="email" class="display-block">Email</label>
-                <input type="email" id="email" name="email" placeholder="someone@gmail.com" required
-                    title="Enter a valid email address"><br><br>
+                    <label for="email" class="display-block">Email</label>
+                    <input type="email" id="email" name="email" placeholder="someone@gmail.com" required
+                        title="Enter a valid email address"><br><br>
 
-                <label for="phone" class="display-block">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder="5176512738"
-                    title="Enter a valid phone number"><br><br>
+                    <label for="phone" class="display-block">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="5176512738"
+                        title="Enter a valid phone number"><br><br>
 
-                <label for="state-country" class="display-block">Home State/Country:</label>
-                <input type="text" id="state-country" name="state-country" required><br><br>
+                    <label for="state-country" class="display-block">Home State/Country:</label>
+                    <input type="text" id="state-country" name="state-country" required><br><br>
 
-                <label for="cruise-line" class="display-block">Cruise Line (if applicable):</label>
-                <input type="text" id="cruise-line" name="cruise-line"><br><br>
+                    <label for="cruise-line" class="display-block">Cruise Line (if applicable):</label>
+                    <input type="text" id="cruise-line" name="cruise-line"><br><br>
 
-                <label for="rental-date" class="display-block">Rental Date*</label>
-                <input type="date" id="rental-date" name="rental-date" required><br><br>
+                    <label for="rental-date" class="display-block">Rental Date*</label>
+                    <input type="date" id="rental-date" name="rental-date" required><br><br>
 
-                <label for="rentalType" class="display-block">Rental Type:</label>
-                <select id="rentalType" name="rentalType" required>
-                    <option value="">Select a rental type...</option>
-                    <option value="honda_metro_scooter">Honda Metro Scooter</option>
-                    <option value="honda_dio_scooter">Honda Dio Scooter</option>
-                    <option value="honda_pcx150_scooter">Honda PCX150 Scooter</option>
-                    <option value="honda_pioneer_atv">Honda Pioneer ATV</option>
-                    <option value="jeep_wrangler_4_door_ac">Jeep Wrangler - 4 door with a/c</option>
-                    <option value="jeep_wrangler_2_door">Jeep Wrangler - 2 door</option>
-                </select><br><br>
+                    <label for="rentalType" class="display-block">Rental Type:</label>
+                    <select id="rentalType" name="rentalType" required>
+                        <option value="">Select a rental type...</option>
+                        <option value="honda_metro_scooter">Honda Metro Scooter</option>
+                        <option value="honda_dio_scooter">Honda Dio Scooter</option>
+                        <option value="honda_pcx150_scooter">Honda PCX150 Scooter</option>
+                        <option value="honda_pioneer_atv">Honda Pioneer ATV</option>
+                        <option value="jeep_wrangler_4_door_ac">Jeep Wrangler - 4 door with a/c</option>
+                        <option value="jeep_wrangler_2_door">Jeep Wrangler - 2 door</option>
+                    </select><br><br>
 
-                <label for="duration" class="display-block">Rental Duration:</label>
-                <div id="duration">
-                    <input type="radio" id="halfDay" name="rentalDuration" value="halfDay" required>
-                    <label for="halfDay">Half Day</label>
+                    <label class="display-block">Rental Duration:</label>
+                    <div id="duration">
+                        <input type="radio" id="halfDay" name="rentalDuration" value="halfDay" required>
+                        <label for="halfDay">Half Day</label>
 
-                    <input type="radio" id="fullDay" name="rentalDuration" value="fullDay" required>
-                    <label for="fullDay">Full Day</label>
-                </div><br>
+                        <input type="radio" id="fullDay" name="rentalDuration" value="fullDay" required>
+                        <label for="fullDay">Full Day</label>
+                    </div><br>
 
-                <label for="location" class="display-block">Rental Location:</label>
-                <div id="location">
-                    <input type="radio" id="playa" name="rentallocation" value="Playa del Carmen" required>
-                    <label for="playa">Playa del Carmen</label>
+                    <label class="display-block">Rental Location:</label>
+                    <div id="location">
+                        <input type="radio" id="playa" name="rentallocation" value="Playa del Carmen" required>
+                        <label for="playa">Playa del Carmen</label>
 
-                    <input type="radio" id="Puerta" name="rentallocation" value="Puerta Maya" required>
-                    <label for="Puerta">Puerta Maya</label>
-                </div><br>
+                        <input type="radio" id="Puerta" name="rentallocation" value="Puerta Maya" required>
+                        <label for="Puerta">Puerta Maya</label>
+                    </div><br>
 
-                <label for="comments" class="display-block">Special Accommodations/Comments:</label><br>
-                <textarea id="comments" name="comments" rows="4" cols="30"
-                    placeholder="Any special needs or requests, including drop-off location"></textarea><br>
-                <a href="thankyou.html" id="secure-rental">Secure your Rental</a>
-            </form>
+                    <label for="comments" class="display-block">Special Accommodations/Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="30"
+                        placeholder="Any special needs or requests, including drop-off location"></textarea><br>
+                    <a href="thankyou.html" id="secure-rental">Secure your Rental</a>
+                </form>
 
-            <div id="rental-agreement">
-                <p><strong>Rental Agreement Citeria</strong></p>
-                <ul>
-                    <li>A $50 security deposit is required to confirm reservations.</li>
-                    <li>A valid drivers license is required in hand at the time of rental.</li>
-                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
-                    <li>Fuel charge is not included.</li>
-                    <li>Unlimited mileage.</li>
-                    <li>Liability insurance is included.</li>
-                    <li>Damage insurance is available for purchase.</li>
-                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
-                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
-                    <li>Rentals may be returned to either physical location.</li>
-                </ul>
-                <img id="atv-fun" class="radius black-border" src="images/cozunel-atv-fun.jpg"
-                    alt="People on ATV having fun!" loading="lazy">
+                <div id="rental-agreement">
+                    <p><strong>Rental Agreement Citeria</strong></p>
+                    <ul>
+                        <li>A $50 security deposit is required to confirm reservations.</li>
+                        <li>A valid drivers license is required in hand at the time of rental.</li>
+                        <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                        <li>Fuel charge is not included.</li>
+                        <li>Unlimited mileage.</li>
+                        <li>Liability insurance is included.</li>
+                        <li>Damage insurance is available for purchase.</li>
+                        <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                        <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                        <li>Rentals may be returned to either physical location.</li>
+                    </ul>
+                    <img id="atv-fun" class="radius black-border" src="images/cozunel-atv-fun.jpg"
+                        alt="People on ATV having fun!" loading="lazy">
+                </div>
             </div>
-        </div>
         </main>
         <footer class="text-center footer">
             <img src="images/like-icon.png" alt="Thumbs up icon" id="thumbs-up">
@@ -157,6 +159,7 @@
                 📍 Location Map
             </a>
         </footer>
+    </div>
 </body>
 
 </html>

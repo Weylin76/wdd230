@@ -256,6 +256,15 @@ textarea{
     margin-bottom: 1rem;
 }
 
+.table-bordered {
+    border-collapse: collapse;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid black;
+}
+
 .dark-mode {
     background-color: #2B2B2B; 
 }
