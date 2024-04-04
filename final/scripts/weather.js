@@ -59,10 +59,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             const forecastData = await response.json();
 
-            // Get tomorrow's date and set time to 15:00 (3 pm)
+            // Get tomorrow at 3pm
             let tomorrow = new Date();
             tomorrow.setDate(tomorrow.getDate() + 1);
-            tomorrow.setHours(15, 0, 0, 0); // 15:00 or 3 pm
+            tomorrow.setHours(15, 0, 0, 0);
 
             // Find the forecast closest to tomorrow 3 pm
             const forecast = forecastData.list.find(f => {
