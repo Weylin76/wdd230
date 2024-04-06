@@ -13,6 +13,16 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Link fonts and Icons -->
+    <link rel="icon" href="images/favIcon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <!-- JS scripts -->
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/darkMode.js" defer></script>
     <script src="scripts/hamBtn.js" defer></script>
@@ -73,11 +83,12 @@
                     </div>
                 </div>
             </div>
-            <div class="image-container">
-                <img src="images/dock-opt.jpg" alt="picture of dock area">
+            <picture class="image-container">
+                <source srcset="images/dock_small_view.jpg" media="(max-width: 450px)">
+                <source srcset="images/dock_med_view.jpg" media="(max-width: 750px)">
+                <img src="images/dock-opt.jpg" alt="Dock area">
                 <a href="reservations.html" id="hero-btn">Click to Book Now!</a>
-            </div>
-
+            </picture>
             <div id="rental-container">
                 <div id="scooter-info" class="black-border">
                     <img src="images/honda_metro.webp" alt="Honda Metro Scooter" class="rental-imgs">
@@ -91,7 +102,7 @@
                     <button class="reserve">Reserve Now!</button>
                 </div>
                 <div id="atv-info" class="black-border">
-                    <img src="images/pioneer_atv.webp" alt="Honda Pinoeer ATV" class="rental-imgs">
+                    <img src="images/pioneer_atv.webp" alt="Honda Pioneer ATV" class="rental-imgs">
                     <p>Starting price: $50</p>
                     <p>Models</p>
                     <ul>
@@ -100,7 +111,7 @@
                     <button class="reserve">Reserve Now!</button>
                 </div>
                 <div id="jeep-info" class="black-border">
-                    <img src="images/jeep_wrangler_2_door.webp" alt="two door Jeep Wrangler" class="rental-imgs">
+                    <img src="images/jeep_wrangler_2_door.webp" alt="Two-door Jeep Wrangler" class="rental-imgs">
                     <p>Starting price: $70</p>
                     <p>Models</p>
                     <ul>

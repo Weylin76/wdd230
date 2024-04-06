@@ -16,7 +16,12 @@
     <meta property="og:url" content="https://weylin76.github.io/">
 
     <!-- Link fonts and Icons -->
-
+    <link rel="icon" href="images/favIcon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
 
     <!-- Link CSS and JS -->
     <link rel="stylesheet" href="styles/normalized.css">
@@ -28,7 +33,6 @@
     <script src="scripts/darkMode.js" defer></script>
     <script src="scripts/hamBtn.js" defer></script>
     <script src="scripts/likes.js" defer></script>
-    <script src="scripts/visits.js" defer></script>
 
 </head>
 
@@ -65,11 +69,13 @@
 
                     <label for="email" class="display-block">Email</label>
                     <input type="email" id="email" name="email" placeholder="someone@gmail.com" required
-                        title="Enter a valid email address"><br><br>
+                        title="Enter a valid email address"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"><br><br>
 
                     <label for="phone" class="display-block">Phone</label>
                     <input type="tel" id="phone" name="phone" placeholder="5176512738"
-                        title="Enter a valid phone number"><br><br>
+                        title="Enter a valid phone number" pattern="\d{3}[-.\s]?\d{3}[-.\s]?\d{4}"><br><br>
+
 
                     <label for="state-country" class="display-block">Home State/Country:</label>
                     <input type="text" id="state-country" name="state-country" required><br><br>
@@ -116,7 +122,7 @@
                 </form>
 
                 <div id="rental-agreement">
-                    <p><strong>Rental Agreement Citeria</strong></p>
+                    <p><strong>Rental Agreement Criteria</strong></p>
                     <ul>
                         <li>A $50 security deposit is required to confirm reservations.</li>
                         <li>A valid drivers license is required in hand at the time of rental.</li>

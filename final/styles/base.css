@@ -6,58 +6,56 @@
 }
 
 /* Shared classes */
-.medium-font-size{
+.medium-font-size {
     font-size: 1.5rem;
 }
 
-.large-font-size{
+.large-font-size {
     font-size: 2rem;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-.black-border{
+.black-border {
     border: 1px solid black;
 }
 
-.radius{
+.radius {
     border-radius: 15px;
 }
 
-.pad-left{
+.pad-left {
     padding-left: .5rem;
 }
 
-.remove-underline{
+.remove-underline {
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
 }
 
-.margin{
+.margin {
     margin: 1rem;
 }
 
-.margin-top{
+.margin-top {
     margin-top: .5rem;
 }
 
-.padding{
+.padding, .padding-top {
     padding: 1rem;
 }
 
-.padding-top{
-    padding-top: 1rem;
-}
-
-.display-none{
+.display-none, #atv-fun {
     display: none;
 }
 
-.display-block{
-    display: block;
+.display-block {
+    display: block; 
+    margin-bottom: 5px;
+    text-align: left;
 }
 
 .active {
@@ -67,13 +65,14 @@
 
 /* Shared CSS */
 
-html{
+html {
     background-color: var(--pure-white);
 }
 
-h1{
+h1 {
     text-align: center;
     margin-top: 50px;
+    font-family: "Merriweather", serif;
 }
 
 body {
@@ -83,6 +82,7 @@ body {
     background-color: var(--tropical-sea-blue);
     max-width: 1200px;
     margin: 0 auto;
+    font-family: "Quicksand", sans-serif;
 }
 
 header {
@@ -91,12 +91,12 @@ header {
     align-items: end;
 }
  
-#mode, #hamBtn{
+#mode, #hamBtn {
     position: absolute;
     top: .25rem; 
 }
 
-#hamBtn{
+#hamBtn {
     left: 1rem;
     font-size: 3rem;
 }
@@ -126,9 +126,9 @@ img {
     z-index: 1;
 }
 
-/* CSS for when the sidebar is active/visible */
+/* idebar*/
 #sidebar.active {
-    transform: translateX(calc(0px)); /* Brings the sidebar into view */
+    transform: translateX(calc(0px)); 
 }
 
 /* Style for your navigation links */
@@ -153,17 +153,17 @@ nav a:hover {
     color: black;
 }
 
-#mode{
+#mode {
     right: .25rem;
     top: .25rem;
 }
 
-#mode-icon, #hamBtn{
+#mode-icon, #hamBtn {
     max-width: 50px;
 }
 
 /* Weather Information */
-#weather-container, #forecast-container{
+#weather-container, #forecast-container {
     text-align: center;
     padding: 1rem;
 }
@@ -181,7 +181,7 @@ nav a:hover {
     max-width: 100%;
 }
 
-#hero-btn{
+#hero-btn {
     position: absolute;
     top: 54%;
     left: 50%;
@@ -198,8 +198,8 @@ nav a:hover {
 /* Rental container */
 #rental-container, #rental-page-container {
     display: flex;
-    flex-direction: column; /* Arrange items vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column; 
+    align-items: center;
     margin: 10px;
     padding: 10px;
     text-align: center;
@@ -219,37 +219,37 @@ nav a:hover {
 }
 
 #rentalType {
-    font-size: 1.5rem; /* Adjust the font size as needed */
-    padding: 10px; /* Add padding to make the select box taller */
-    width: 100%; /* To make the select box full width */
-    box-sizing: border-box; /* To include padding in the width */
+    font-size: 1rem; 
+    padding: 10px; 
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
-input{
-    font-size: 2rem;
+input {
+    font-size: 1rem;
 }
 
 input[type="radio"] {
-    transform: scale(2.5); /* This will make the radio button 50% larger than normal */
+    transform: scale(2.5);
     margin: 10px;
     padding: 10px;
   }
   
-textarea{
+textarea {
     padding: 1rem;
 }
 
 #rentalType option {
-    font-size: 2em; /* This increases the font size of the options */
-    padding: 10px; /* This adds padding inside each option */
+    font-size: 2em; 
+    padding: 10px;
 }
 
-#rental-container > div, #rental-page-container > div{
+#rental-container > div, #rental-page-container > div {
     background-color: var(--sand-yellow);
     padding: 1rem;
 }
 
-#rental-table-container{
+#rental-table-container {
     margin: 0 auto;
     text-align: center;
     width: 80%;
@@ -276,7 +276,7 @@ textarea{
 
 ul {
     text-align: center;
-    padding-left: 0; /* Remove default left padding */
+    padding-left: 0;
 }
 
 ul li {
@@ -284,13 +284,13 @@ ul li {
     text-align: left;
 }
 
-#rental-container > * > *, #rental-page-container > * > {
+#rental-container > * > *, #rental-page-container > * {
     margin: 10px;
     padding: 10px;
     text-align: center;
 }
 
-#secure-rental{
+#secure-rental {
     display: inline-block; 
     margin-bottom: 1rem;
     padding: 10px 100px; 
@@ -305,13 +305,13 @@ ul li {
     transition: background-color 0.3s; 
 }
 
-#secure-rental:hover{
+#secure-rental:hover {
     background-color: #0056b3;
     text-decoration: none; 
     color: #ffffff; 
 }
 
-.Reserve{
+.Reserve {
     font-size: 1.5rem;
     background-color: lightskyblue;
     padding: .5rem;
@@ -319,28 +319,28 @@ ul li {
     margin-bottom: 5px;
 }
 /* Rental table data */
-#rental-table{
+#rental-table {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center; 
     }
-    td{
+    td {
         text-align: center;
     }
 
 /* Social media icons */
-.icon{
+.icon {
     max-height: 64px;
 }
 
-footer{
+footer {
     background-color: var(--sunset-orange); 
     position: relative;
     padding: 1rem;
 }
 
-.footer-imgs{
+.footer-imgs {
     max-height: 150px;
 }
 
@@ -351,7 +351,7 @@ footer{
     max-width: 50px;
 }
 
-#like-container{
+#like-container {
     position: absolute;
     top: .5rem;
     left: 4rem;
@@ -361,7 +361,7 @@ footer{
     display: none;
 }
 
-.footer a{
+.footer a {
     color: black;
 }
 
@@ -378,13 +378,11 @@ footer{
 }
 
 /* Reservation Page */
-#form-container{
+#form-container {
     margin: 1rem;
     text-align: left;
-}
-
-#atv-fun{
-    display: none;
+    width: 100%; 
+    margin: auto;
 }
 
 /* contact page */
@@ -393,11 +391,11 @@ footer{
     display: block;
 }
 
-.iframe-container{
+.iframe-container {
     text-align: center;
 }
 
-form{
+form {
     margin: 0 auto;
 }
 
@@ -411,19 +409,23 @@ textarea {
   margin-right: auto;
 }
 
+input::placeholder {
+    color: black; 
+    opacity: 1; 
+  }
+
+input:valid {
+    background-color: rgb(167, 255, 167);
+    color: navy;
+  }
+  
+  input:invalid {
+    background-color: lightpink;
+    color: navy;
+  }
+
 #page-container {
-    width: 100%; /* Adjust this as needed */
-}
-
-#form-container {
-    width: 100%; /* Or set a max-width if you want the form to be narrower */
-    margin: auto;
-}
-
-.display-block {
-    display: block; /* Makes the element take the full width */
-    margin-bottom: 5px; /* Adds some space below the label */
-    text-align: left; /* Aligns the text to the left */
+    width: 100%; 
 }
 
 #form-container input[type="text"],
@@ -431,9 +433,9 @@ textarea {
 #form-container input[type="tel"],
 #form-container select,
 #form-container textarea {
-    width: 100%; /* Makes the input take the full width of the form */
-    box-sizing: border-box; /* Ensures padding and borders are included in the width */
-    margin-bottom: 10px ; /* Adds some space below the input */
+    width: 100%;
+    box-sizing: border-box; 
+    margin-bottom: 10px ;
 }
 
 #duration,
@@ -441,7 +443,7 @@ textarea {
     text-align: left;
 }
 
-/* Align the radio buttons and their labels to the left */
+/* Align the radio buttons */
 #duration label,
 #location label {
     margin-left: 10px;
@@ -458,12 +460,12 @@ textarea {
     text-align: left;
 }
 
-#rental-agreement{
+#rental-agreement {
     margin-left: 1rem;
 }
 
 /* Modal dialog */
-#myModal{
+#myModal {
     background-color: var(--sand-yellow);
     top: 0; 
     margin: 0;
@@ -475,8 +477,7 @@ textarea {
     background-color: rgba(0,0,0,0.4); 
   }
 
-
-  #day1-icon{
+  #day1-icon {
     z-index: 100;
   }
 
