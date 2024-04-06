@@ -64,7 +64,6 @@
 }
 
 /* Shared CSS */
-
 html {
     background-color: var(--pure-white);
 }
@@ -202,7 +201,6 @@ nav a:hover {
     font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
-
 }
 
 /* Rental container */
@@ -491,6 +489,3 @@ input:valid {
   #day1-icon {
     z-index: 100;
   }
-
-
-
