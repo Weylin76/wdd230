@@ -257,11 +257,9 @@ textarea {
     padding: 1rem;
 }
 
-#rental-table-container {
-    margin: 0 auto;
-    text-align: center;
-    width: 80%;
-    margin-bottom: 1rem;
+#rental-table-container{
+    display: flex;
+    justify-content: center;   
 }
 
 .table-bordered {
