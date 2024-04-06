@@ -11,8 +11,8 @@ likesDisplay.textContent = likes.toLocaleString();
 // Add click event listener to the thumbs-up icon
 thumbsUpIcon.addEventListener('click', () => {
     likes++; // Increment likes
-    localStorage.setItem('likes', likes); // Update the value in local storage
-    likesDisplay.textContent = likes.toLocaleString(); // Update the display
+    localStorage.setItem('likes', likes); 
+    likesDisplay.textContent = likes.toLocaleString();
 
     // Scale the icon to 0.9 using transform
     thumbsUpIcon.style.transform = 'scale(0.9)';

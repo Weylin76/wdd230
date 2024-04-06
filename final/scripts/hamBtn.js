@@ -5,25 +5,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to hide the sidebar and show hamburger button
     function hideSidebar() {
-        sidebar.style.display = 'none'; // Hide the sidebar
-        hamBtn.style.display = 'block'; // Show the hamburger button
+        sidebar.style.display = 'none';
+        hamBtn.style.display = 'block'; 
     }
 
     // Function to show the sidebar and hide hamburger button
     function showSidebar() {
-        sidebar.style.display = 'block'; // Show the sidebar
-        hamBtn.style.display = 'none'; // Hide the hamburger button
+        sidebar.style.display = 'block';
+        hamBtn.style.display = 'none';
     }
 
     // Event listener for closing the sidebar
     closeBtn.addEventListener('click', () => {
-        hideSidebar(); // Hides the sidebar when 'X' is clicked
-        hamBtn.style.display = 'block'; // Show the hamburger button when the sidebar is closed
+        hideSidebar(); 
+        hamBtn.style.display = 'block'; 
     }); 
 
     // Event listener for opening the sidebar
     hamBtn.addEventListener('click', () => {
-        showSidebar(); // Shows the sidebar when the hamburger button is clicked
+        showSidebar();
     });
 
     // By default, the hamburger menu is shown and the sidebar menu is hidden

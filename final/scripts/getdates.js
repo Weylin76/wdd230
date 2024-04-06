@@ -14,7 +14,7 @@ const seconds = modifiedDate.getSeconds();
 //If greater than or equal to 12 PM else AM 
 const ampm = hours >= 12 ? 'PM' : 'AM';
 hours = hours % 12;
-hours = hours ? hours : 12; // the hour '0' should be '12'
+hours = hours ? hours : 12; 
 
 // Format hours, minutes, and seconds
 //If value is under 10 adds the 0 as a placeholder
