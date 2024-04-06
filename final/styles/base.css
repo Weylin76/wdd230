@@ -168,6 +168,15 @@ nav a:hover {
     padding: 1rem;
 }
 
+#tomorrow-conditions div {
+    text-align: center;
+  }
+  
+  #tomorrow-conditions img {
+    display: block;
+    margin: auto;
+  }
+
 /* Hero area */
 .image-container {
     width: 100%;
